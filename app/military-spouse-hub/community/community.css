@@ -1,0 +1,499 @@
+/* COMMUNITY — STORY MOSAIC + SUBFOLDER SYSTEM */
+
+.community-mockup-page,
+.community-subpage {
+  background:
+    linear-gradient(rgba(4, 5, 5, 0.68), rgba(4, 5, 5, 0.84)),
+    url("/images/military-spouse-hub/compass-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* MAIN COMMUNITY HERO */
+
+.community-hero {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--msh-border-soft);
+  background:
+    linear-gradient(90deg, rgba(4, 5, 5, 0.88), rgba(4, 5, 5, 0.25)),
+    url("/images/military-spouse-hub/community-hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.community-hero-copy {
+  max-width: 720px;
+}
+
+.community-hero-copy h1,
+.community-subpage-hero-card h1 {
+  margin: 1.25rem 0;
+  color: var(--msh-text);
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.community-hero-copy h1 span,
+.community-subpage-hero-card h1 span {
+  color: var(--msh-gold-light);
+}
+
+.community-hero-copy h2,
+.community-subpage-hero-card h2 {
+  margin-bottom: 1rem;
+  color: var(--msh-gold-light);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.community-hero-copy p,
+.community-subpage-hero-card p {
+  max-width: 700px;
+  color: var(--msh-muted);
+  line-height: 1.8;
+}
+
+/* STATS STRIP */
+
+.community-stats {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--msh-border-soft);
+}
+
+.community-stats div {
+  padding: 1rem 2rem;
+  text-align: center;
+  border-right: 1px solid var(--msh-border-soft);
+}
+
+.community-stats div:last-child {
+  border-right: none;
+}
+
+.community-stats span {
+  color: var(--msh-gold-light);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.community-stats strong {
+  display: block;
+  margin: 0.65rem 0;
+  color: var(--msh-gold);
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.community-stats p {
+  color: var(--msh-muted);
+  line-height: 1.6;
+}
+
+/* PERSONAL STORY PLACEHOLDER */
+
+.community-personal-story {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.community-personal-story-card {
+  padding: 3rem;
+  border: 1px solid var(--msh-border);
+  background:
+    radial-gradient(circle at top left, rgba(184, 138, 68, 0.14), transparent 35%),
+    rgba(8, 9, 9, 0.92);
+}
+
+.community-personal-story-card h2 {
+  margin: 0.75rem 0 1rem;
+  color: var(--msh-text);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.community-personal-story-card p:not(.msh-eyebrow) {
+  margin-bottom: 1rem;
+  color: var(--msh-muted);
+  line-height: 1.8;
+}
+
+/* MAIN STORY MOSAIC */
+
+.community-stories,
+.community-lower-grid,
+.community-connect-card,
+.community-subpage-section,
+.community-subpage-callout {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.community-story-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.community-story-card {
+  overflow: hidden;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+  color: var(--msh-text);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.community-story-card:nth-child(2) {
+  transform: translateY(2rem);
+}
+
+.community-story-card:hover,
+.community-subpage-card:hover,
+.community-journal-card:hover {
+  border-color: var(--msh-gold-light);
+  background: rgba(18, 14, 10, 0.95);
+  transform: translateY(-4px);
+}
+
+.community-story-card:nth-child(2):hover {
+  transform: translateY(1.5rem);
+}
+
+.community-story-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  filter: brightness(0.72) contrast(1.05);
+}
+
+.community-story-card div {
+  padding: 1.5rem;
+}
+
+.community-story-card span,
+.community-story-card small,
+.community-subpage-card span,
+.community-journal-card span {
+  color: var(--msh-gold-light);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.community-story-card h3,
+.community-subpage-card h3,
+.community-journal-card h3 {
+  margin: 1rem 0;
+  color: var(--msh-text);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.community-story-card p,
+.community-subpage-card p,
+.community-journal-card p {
+  margin-bottom: 1.5rem;
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+/* SPOTLIGHT + QUOTE */
+
+.community-lower-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.5rem;
+}
+
+.community-spotlight-card,
+.community-quote-card,
+.community-connect-card,
+.community-subpage-card,
+.community-journal-card {
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+.community-spotlight-card {
+  padding: 2rem;
+}
+
+.community-spotlight-inner {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.community-spotlight-inner img {
+  width: 130px;
+  height: 130px;
+  border: 1px solid var(--msh-border);
+  border-radius: 50%;
+  object-fit: cover;
+  filter: brightness(0.8) contrast(1.05);
+}
+
+.community-spotlight-inner h3 {
+  color: var(--msh-gold-light);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.community-spotlight-inner span {
+  color: var(--msh-gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.community-spotlight-inner p {
+  margin: 1rem 0;
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+.community-spotlight-inner a {
+  color: var(--msh-gold-light);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.community-quote-card {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-quote-card p {
+  max-width: 520px;
+  color: var(--msh-text);
+  font-size: 1.55rem;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* CONNECT CARD */
+
+.community-connect-card {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.community-connect-card p:last-child {
+  color: var(--msh-muted);
+}
+
+/* COMMUNITY SUBPAGES */
+
+.community-subpage-hero {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--msh-border-soft);
+}
+
+.community-subpage-hero-card {
+  max-width: 900px;
+  padding: 3rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.92);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+}
+
+/* DISCORD — CARD CLUSTERS */
+
+.community-cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* SLACK — SPLIT PANELS */
+
+.community-split-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 1.5rem;
+}
+
+.community-split-panel {
+  padding: 2rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+/* WOMEN IN CYBER — HIGHLIGHT CARDS */
+
+.community-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.community-highlight-grid .community-subpage-card {
+  min-height: 260px;
+  background:
+    radial-gradient(circle at top left, rgba(184, 138, 68, 0.12), transparent 35%),
+    rgba(8, 9, 9, 0.9);
+}
+
+/* SUCCESS STORIES — JOURNAL / TESTIMONIAL */
+
+.community-journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.community-journal-card {
+  min-height: 300px;
+  padding: 2rem;
+  position: relative;
+}
+
+.community-journal-card::before {
+  content: "“";
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: rgba(184, 138, 68, 0.22);
+  font-size: 5rem;
+  line-height: 1;
+}
+
+/* GENERAL SUBPAGE CARDS */
+
+.community-subpage-card {
+  min-height: 235px;
+  padding: 2rem;
+  color: var(--msh-text);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.community-subpage-card h3 {
+  color: var(--msh-gold-light);
+  font-size: 0.95rem;
+  letter-spacing: 0.13em;
+}
+
+.community-subpage-card[href^="http"] {
+  position: relative;
+}
+
+.community-subpage-card[href^="http"]::after {
+  content: "↗";
+  position: absolute;
+  right: 1.4rem;
+  bottom: 1.2rem;
+  color: var(--msh-gold);
+}
+
+/* COMMUNITY CALLOUTS */
+
+.community-subpage-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+.community-subpage-callout h2 {
+  margin: 0.75rem 0;
+  color: var(--msh-text);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.community-subpage-callout p:not(.msh-eyebrow) {
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .community-stats,
+  .community-story-grid,
+  .community-lower-grid,
+  .community-cluster-grid,
+  .community-split-grid,
+  .community-highlight-grid,
+  .community-journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community-story-card:nth-child(2),
+  .community-story-card:nth-child(2):hover {
+    transform: none;
+  }
+
+  .community-stats div {
+    border-right: none;
+    border-bottom: 1px solid var(--msh-border-soft);
+  }
+
+  .community-stats div:last-child {
+    border-bottom: none;
+  }
+
+  .community-connect-card,
+  .community-subpage-callout {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .community-hero,
+  .community-subpage-hero {
+    padding: 4rem 1rem;
+  }
+
+  .community-subpage-hero-card,
+  .community-personal-story-card {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .community-spotlight-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .community-spotlight-inner img {
+    margin: 0 auto;
+  }
+}

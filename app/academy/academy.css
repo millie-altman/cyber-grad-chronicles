@@ -1,0 +1,297 @@
+/* =========================================================
+   ACADEMY — UNDER CONSTRUCTION
+========================================================= */
+
+.academy-page {
+  min-height: calc(100vh - 72px);
+
+  display: flex;
+  align-items: center;
+
+  padding: 6rem 1.5rem;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 7, 9, 0.95) 0%,
+      rgba(5, 7, 9, 0.84) 36%,
+      rgba(5, 7, 9, 0.45) 67%,
+      rgba(5, 7, 9, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5, 7, 9, 0.15),
+      rgba(5, 7, 9, 0.7)
+    ),
+    url("/images/academy-page.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--text-primary);
+}
+
+/* =========================================================
+   CONTENT SHELL
+========================================================= */
+
+.academy-coming-soon {
+  width: min(1320px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CONTENT PANEL
+========================================================= */
+
+.academy-coming-soon-card {
+  width: min(720px, 100%);
+
+  padding: clamp(2rem, 5vw, 4rem);
+
+  border: 1px solid rgba(184, 138, 68, 0.34);
+  border-radius: var(--radius-md);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 7, 9, 0.9),
+      rgba(11, 16, 19, 0.82)
+    );
+
+  box-shadow:
+    var(--shadow-heavy),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.academy-eyebrow {
+  margin: 0 0 0.8rem;
+
+  color: var(--accent-light);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.academy-coming-soon-card h1 {
+  max-width: 640px;
+
+  margin: 0 0 1.25rem;
+
+  color: var(--text-primary);
+
+  font-size: clamp(3rem, 6vw, 5.25rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.04em;
+
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.academy-intro {
+  max-width: 620px;
+
+  margin: 0 0 1.4rem;
+
+  color: var(--accent-light);
+
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BODY COPY
+========================================================= */
+
+.academy-coming-soon-card > p:not(
+    .academy-eyebrow,
+    .academy-intro,
+    .academy-closing
+  ) {
+  max-width: 640px;
+
+  margin: 0 0 1.15rem;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.academy-status {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+
+  margin: 2rem 0;
+  padding: 1.2rem 1.3rem;
+
+  border: 1px solid rgba(184, 138, 68, 0.22);
+  border-radius: var(--radius-sm);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(184, 138, 68, 0.08),
+      rgba(184, 138, 68, 0.02)
+    );
+}
+
+.academy-status-dot {
+  width: 9px;
+  height: 9px;
+
+  flex: 0 0 auto;
+
+  margin-top: 0.5rem;
+
+  border-radius: 999px;
+
+  background: var(--accent);
+
+  box-shadow: 0 0 14px rgba(184, 138, 68, 0.6);
+}
+
+.academy-status-content {
+  flex: 1;
+}
+
+.academy-status-label {
+  margin: 0 0 0.25rem;
+
+  color: var(--accent-light);
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.academy-status-content p:last-child {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.academy-note {
+  margin: 2rem 0;
+  padding: 1.4rem 1.5rem;
+
+  border-left: 3px solid var(--accent);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(184, 138, 68, 0.08),
+      rgba(5, 7, 9, 0.2)
+    );
+}
+
+.academy-note p {
+  margin: 0 0 0.75rem;
+
+  color: var(--text-secondary);
+
+  line-height: 1.75;
+}
+
+.academy-note p:last-child {
+  margin-bottom: 0;
+}
+
+.academy-note strong {
+  color: var(--text-primary);
+}
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.academy-closing {
+  margin: 2rem 0 0;
+
+  color: var(--accent-light);
+
+  font-size: 1.15rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .academy-page {
+    align-items: flex-end;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 7, 9, 0.35) 0%,
+        rgba(5, 7, 9, 0.72) 48%,
+        rgba(5, 7, 9, 0.96) 100%
+      ),
+      url("/images/academy-page.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .academy-coming-soon {
+    width: min(100%, 760px);
+  }
+
+  .academy-coming-soon-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .academy-page {
+    min-height: 100vh;
+    padding: 5rem 1rem 2rem;
+  }
+
+  .academy-coming-soon-card {
+    padding: 1.7rem 1.4rem;
+
+    background: rgba(5, 7, 9, 0.9);
+  }
+
+  .academy-coming-soon-card h1 {
+    font-size: clamp(2.6rem, 12vw, 4rem);
+  }
+
+  .academy-intro {
+    font-size: 1.2rem;
+  }
+}

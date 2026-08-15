@@ -1,0 +1,117 @@
+:root {
+  --msh-bg: #050606;
+  --msh-bg-soft: #0b0c0c;
+  --msh-card: rgba(8, 9, 9, 0.9);
+  --msh-card-strong: rgba(12, 12, 11, 0.96);
+  --msh-gold: #b88a44;
+  --msh-gold-light: #d7b06a;
+  --msh-text: #efe7d7;
+  --msh-muted: #b8aa94;
+  --msh-border: rgba(184, 138, 68, 0.3);
+  --msh-border-soft: rgba(184, 138, 68, 0.16);
+}
+
+.msh-page {
+  min-height: 100vh;
+  color: var(--msh-text);
+  background:
+    linear-gradient(rgba(2, 3, 3, 0.82), rgba(2, 3, 3, 0.94)),
+    url("/images/military-spouse-hub/compass-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.msh-eyebrow {
+  color: var(--msh-gold-light);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.msh-button {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid var(--msh-border);
+  color: var(--msh-gold-light);
+  background: rgba(6, 7, 7, 0.72);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: 0.25s ease;
+}
+
+.msh-button:hover {
+  border-color: var(--msh-gold-light);
+  background: rgba(184, 138, 68, 0.12);
+  transform: translateY(-2px);
+}
+
+.msh-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.msh-section-heading {
+  margin-bottom: 2.5rem;
+}
+
+.msh-section-heading.centered {
+  text-align: center;
+}
+
+.msh-section-heading h2 {
+  margin-top: 0.8rem;
+  color: var(--msh-text);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.msh-section-heading p {
+  color: var(--msh-muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .msh-page {
+    background-attachment: scroll;
+  }
+
+  .msh-hero-actions {
+    justify-content: center;
+  }
+}
+
+/* BREADCRUMBS */
+
+.msh-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.25rem;
+  color: var(--msh-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.msh-breadcrumbs a {
+  color: var(--msh-gold-light);
+  text-decoration: none;
+}
+
+.msh-breadcrumbs a:hover {
+  color: var(--msh-text);
+}
+
+.msh-breadcrumbs span {
+  color: var(--msh-muted);
+}

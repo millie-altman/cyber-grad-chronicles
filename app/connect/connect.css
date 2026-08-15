@@ -1,0 +1,349 @@
+.connect-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(184, 138, 68, 0.12), transparent 36%),
+    linear-gradient(180deg, var(--bg-primary), var(--bg-secondary));
+  color: var(--text-primary);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* HERO */
+
+.connect-hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 7rem 8vw;
+  background-image: url("/images/connect-page.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.connect-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(5, 7, 9, 0.9), rgba(5, 7, 9, 0.34)),
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.68) 80%);
+}
+
+.connect-hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  text-align: left;
+}
+
+.connect-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--accent-dark);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.connect-hero h1,
+.connect-intro h2,
+.connect-section-header h2,
+.connect-form-shell h2,
+.connect-callout h2 {
+  color: var(--accent);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.connect-hero h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.8rem, 6vw, 6rem);
+  line-height: 1;
+  text-shadow: 0 0 32px rgba(0, 0, 0, 0.88);
+}
+
+.connect-hero h1 span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--accent-light);
+  font-size: 0.52em;
+  letter-spacing: 0.34em;
+}
+
+.connect-hero-copy p,
+.connect-intro p,
+.connect-card p,
+.connect-form-shell p,
+.connect-callout p {
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.connect-hero-copy p {
+  max-width: 560px;
+  font-size: 1.02rem;
+}
+
+/* BUTTONS */
+
+.connect-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.connect-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 165px;
+  padding: 0.85rem 1.35rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  background: rgba(184, 138, 68, 0.14);
+  cursor: pointer;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.connect-btn.secondary {
+  background: rgba(5, 7, 9, 0.35);
+}
+
+.connect-btn:hover {
+  background: var(--hover-glow);
+  color: var(--accent-light);
+  border-color: var(--accent-light);
+  box-shadow: 0 0 20px var(--hover-glow);
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+
+.connect-intro,
+.connect-section,
+.connect-form-section,
+.connect-callout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.connect-intro {
+  max-width: 900px;
+  text-align: center;
+}
+
+.connect-intro h2,
+.connect-section-header h2,
+.connect-form-shell h2,
+.connect-callout h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.connect-section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* REASON CHIPS */
+
+.connect-reason-list,
+.connect-mini-grid {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.connect-reason-list {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.connect-mini-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.connect-reason-list span,
+.connect-mini-grid span {
+  padding: 0.85rem;
+  border: 1px solid rgba(184, 138, 68, 0.18);
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(8, 11, 13, 0.96),
+      rgba(20, 16, 10, 0.88)
+    );
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* SOCIAL CARDS */
+
+.connect-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+
+.connect-card {
+  min-height: 230px;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.connect-card h3 {
+  margin: 0 0 1rem;
+  color: #d7a35d;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.connect-card p {
+  margin: 0;
+  color: rgba(244, 240, 232, 0.72);
+  font-size: 0.96rem;
+}
+
+.connect-card span {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* FORM SECTION */
+
+.connect-form-section {
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.connect-form-shell {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.connect-form-copy p {
+  margin-bottom: 1rem;
+}
+
+.connect-form {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.connect-form label {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.connect-form input,
+.connect-form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: rgba(5, 7, 9, 0.86);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+}
+
+.connect-form input:focus,
+.connect-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-light);
+  box-shadow: 0 0 18px var(--hover-glow);
+}
+
+/* CALLOUT */
+
+.connect-callout {
+  text-align: center;
+}
+
+.connect-callout > div {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.connect-callout .connect-buttons {
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1120px) {
+  .connect-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .connect-reason-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .connect-form-shell {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .connect-hero {
+    min-height: 80vh;
+    justify-content: center;
+    padding: 7rem 1.5rem 5rem;
+  }
+
+  .connect-overlay {
+    background: rgba(5, 7, 9, 0.78);
+  }
+
+  .connect-hero-copy {
+    text-align: center;
+  }
+
+  .connect-buttons {
+    justify-content: center;
+  }
+
+  .connect-reason-list,
+  .connect-mini-grid,
+  .connect-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connect-btn {
+    width: 100%;
+  }
+
+  .connect-hero h1 span {
+    letter-spacing: 0.22em;
+  }
+}

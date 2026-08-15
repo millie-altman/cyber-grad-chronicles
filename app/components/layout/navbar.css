@@ -1,0 +1,150 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 76px;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.12),
+      transparent 28%
+    ),
+    rgba(5, 7, 9, 0.94);
+
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(214, 184, 123, 0.18);
+}
+
+/* LOGO */
+
+.navbar-logo {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.navbar-logo span {
+  color: var(--accent);
+}
+
+.navbar-logo:hover {
+  color: var(--accent-light);
+}
+
+/* LINKS */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.navbar-links a {
+  position: relative;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: var(--accent);
+  transition: var(--transition);
+}
+
+.navbar-links a:hover {
+  color: var(--accent-light);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* CONNECT BUTTON */
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 110px;
+  padding: 0.7rem 1rem;
+
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+
+  background: rgba(184, 138, 68, 0.12);
+  color: var(--accent-light);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  background: rgba(184, 138, 68, 0.18);
+  border-color: var(--accent-light);
+  color: var(--accent-light);
+
+  box-shadow: 0 0 20px var(--hover-glow);
+  transform: translateY(-1px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .navbar-links {
+    gap: 0.9rem;
+    font-size: 0.68rem;
+  }
+
+  .navbar-logo {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    padding: 0 1.25rem;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .nav-button {
+    min-width: 95px;
+    padding: 0.65rem 0.9rem;
+  }
+}

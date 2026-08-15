@@ -1,0 +1,506 @@
+/* EDUCATION — LIBRARY / STACKED SPLIT + SUBFOLDER SYSTEM */
+
+.education-mockup-page,
+.education-subpage {
+  background:
+    linear-gradient(rgba(4, 5, 5, 0.68), rgba(4, 5, 5, 0.84)),
+    url("/images/military-spouse-hub/compass-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* HERO */
+
+.education-hero,
+.education-subpage-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--msh-border-soft);
+}
+
+.education-hero {
+  background:
+    linear-gradient(90deg, rgba(4, 5, 5, 0.9), rgba(4, 5, 5, 0.25)),
+    url("/images/military-spouse-hub/education-hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.education-hero-copy,
+.education-subpage-hero-card {
+  max-width: 760px;
+}
+
+.education-subpage-hero-card {
+  padding: 3rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.92);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+}
+
+.education-hero-copy h1,
+.education-subpage-hero-card h1 {
+  margin: 1rem 0;
+  color: var(--msh-text);
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education-hero-copy h1 span,
+.education-subpage-hero-card h1 span {
+  color: var(--msh-gold-light);
+}
+
+.education-hero-copy h2,
+.education-subpage-hero-card h2 {
+  margin-bottom: 1rem;
+  color: var(--msh-gold-light);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.education-hero-copy p,
+.education-subpage-hero-card p {
+  max-width: 660px;
+  color: var(--msh-muted);
+  line-height: 1.8;
+}
+
+/* SHARED SECTIONS */
+
+.education-benefits,
+.education-resource-section,
+.education-detail-section,
+.education-pathway-section,
+.education-faq-section,
+.education-study-card,
+.education-subpage-section,
+.education-subpage-callout {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* BENEFITS STRIP */
+
+.education-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.education-benefit-card {
+  min-height: 190px;
+  padding: 2rem 1.25rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+  text-align: center;
+}
+
+.education-benefit-card h3 {
+  color: var(--msh-gold-light);
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education-benefit-card p {
+  margin-top: 1rem;
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+/* LIBRARY RESOURCE CARDS */
+
+.education-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.education-resource-card {
+  overflow: hidden;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.92);
+  color: var(--msh-text);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.education-resource-card:hover,
+.education-detail-card:hover,
+.education-subpage-card:hover,
+.education-shelf-card:hover,
+.education-notice-card:hover {
+  border-color: var(--msh-gold-light);
+  background: rgba(18, 14, 10, 0.95);
+  transform: translateY(-4px);
+}
+
+.education-resource-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(0.72) contrast(1.05);
+}
+
+.education-resource-card div {
+  padding: 1.4rem;
+}
+
+.education-resource-card h3,
+.education-detail-card h3,
+.education-subpage-card h3,
+.education-shelf-card h3,
+.education-notice-card h3 {
+  color: var(--msh-gold-light);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.education-resource-card p,
+.education-detail-card p,
+.education-subpage-card p,
+.education-shelf-card p,
+.education-notice-card p {
+  margin: 1rem 0;
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+.education-resource-card span,
+.education-detail-card span,
+.education-subpage-card span,
+.education-shelf-card span,
+.education-notice-card span {
+  color: var(--msh-gold-light);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* STACKED DETAIL SECTIONS */
+
+.education-detail-block {
+  margin-bottom: 4rem;
+}
+
+.education-detail-grid,
+.education-subpage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.education-detail-card,
+.education-subpage-card {
+  min-height: 240px;
+  padding: 2rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+  color: var(--msh-text);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+/* MYCAA — FEATURED SCHOLARSHIP CARD */
+
+.education-featured-scholarship {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.education-scholarship-image {
+  min-height: 360px;
+  border: 1px solid var(--msh-border);
+  overflow: hidden;
+}
+
+.education-scholarship-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.72) contrast(1.05);
+}
+
+.education-scholarship-card {
+  padding: 3rem;
+  border: 1px solid var(--msh-border);
+  background:
+    radial-gradient(circle at top left, rgba(184, 138, 68, 0.12), transparent 35%),
+    rgba(8, 9, 9, 0.92);
+}
+
+.education-scholarship-card h2 {
+  color: var(--msh-text);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.education-scholarship-card p {
+  margin: 1rem 0;
+  color: var(--msh-muted);
+  line-height: 1.8;
+}
+
+/* CERTIFICATIONS — SHELF / GRID */
+
+.education-shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+
+.education-shelf-card {
+  min-height: 210px;
+  padding: 1.6rem;
+  border: 1px solid var(--msh-border);
+  background:
+    linear-gradient(180deg, rgba(15, 13, 10, 0.94), rgba(8, 9, 9, 0.92));
+  color: var(--msh-text);
+  text-decoration: none;
+  transition: 0.25s ease;
+  position: relative;
+}
+
+.education-shelf-card::before {
+  content: "";
+  position: absolute;
+  left: 1.2rem;
+  right: 1.2rem;
+  bottom: 0.9rem;
+  height: 1px;
+  background: var(--msh-border-soft);
+}
+
+/* LEARNING PLATFORMS — RESOURCE STACKS */
+
+.education-stack-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.education-stack-item {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+.education-stack-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  filter: brightness(0.72) contrast(1.05);
+}
+
+/* DEGREE PATHS — ACADEMIC SPLIT PANELS */
+
+.education-split-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.education-split-card {
+  padding: 2.5rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+.education-split-card h3 {
+  color: var(--msh-gold-light);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.education-split-card p,
+.education-split-card li {
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+/* DISCOUNTS — NOTICE CARDS */
+
+.education-notice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.education-notice-card {
+  min-height: 210px;
+  padding: 2rem;
+  border: 1px solid var(--msh-border);
+  background:
+    radial-gradient(circle at top left, rgba(184, 138, 68, 0.16), transparent 34%),
+    rgba(8, 9, 9, 0.9);
+  transition: 0.25s ease;
+}
+
+/* LEARNING PATH */
+
+.education-path-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.education-path-card {
+  min-height: 170px;
+  padding: 1.5rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+  text-align: center;
+}
+
+.education-path-card h3 {
+  color: var(--msh-gold-light);
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education-path-card p {
+  margin-top: 1rem;
+  color: var(--msh-muted);
+  line-height: 1.6;
+}
+
+/* FAQ */
+
+.education-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.education-faq-card {
+  min-height: 230px;
+  padding: 2rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+.education-faq-card h3 {
+  color: var(--msh-gold-light);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.education-faq-card p {
+  margin-top: 1rem;
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+/* STUDY STRATEGY SPLIT */
+
+.education-study-card,
+.education-subpage-callout {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid var(--msh-border);
+  background: rgba(8, 9, 9, 0.9);
+}
+
+.education-study-card h2,
+.education-subpage-callout h2 {
+  margin: 0.75rem 0;
+  color: var(--msh-text);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.education-study-card p:not(.msh-eyebrow),
+.education-subpage-callout p:not(.msh-eyebrow) {
+  color: var(--msh-muted);
+  line-height: 1.7;
+}
+
+/* FOOTER LINE */
+
+.education-bottom-line {
+  padding: 3rem 2rem 4rem;
+  text-align: center;
+}
+
+.education-bottom-line p {
+  color: var(--msh-gold-light);
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .education-benefit-grid,
+  .education-detail-grid,
+  .education-subpage-grid,
+  .education-faq-grid,
+  .education-notice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-path-grid,
+  .education-shelf-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .education-resource-grid,
+  .education-featured-scholarship,
+  .education-split-panel,
+  .education-stack-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .education-hero,
+  .education-subpage-hero {
+    padding: 4rem 1rem;
+  }
+
+  .education-subpage-hero-card {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .education-benefit-grid,
+  .education-detail-grid,
+  .education-subpage-grid,
+  .education-path-grid,
+  .education-faq-grid,
+  .education-shelf-grid,
+  .education-notice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-study-card,
+  .education-subpage-callout {
+    flex-direction: column;
+    text-align: center;
+  }
+}
