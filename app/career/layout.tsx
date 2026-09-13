@@ -1,3 +1,4 @@
+import Navbar from "../components/layout/Navbar";
 import "./career.css";
 
 export default function CareerLayout({
@@ -5,5 +6,10 @@ export default function CareerLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <>
+      <Navbar />
+      {children}
+    </>
+  );
 }

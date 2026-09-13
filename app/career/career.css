@@ -23,23 +23,11 @@
   pointer-events: none;
 
   background:
-    linear-gradient(
-      rgba(184, 138, 68, 0.025) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(184, 138, 68, 0.025) 1px,
-      transparent 1px
-    );
+    linear-gradient(rgba(184, 138, 68, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 138, 68, 0.025) 1px, transparent 1px);
 
   background-size: 48px 48px;
-  mask-image:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.75),
-      transparent 80%
-    );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 80%);
 }
 
 .career-page::after {
@@ -198,12 +186,7 @@
 .career-button-primary {
   color: #080a0b;
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--accent-light),
-      var(--accent)
-    );
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
 
   border-color: var(--accent-light);
 
@@ -214,12 +197,7 @@
 
 .career-button-primary:hover {
   color: #050709;
-  background:
-    linear-gradient(
-      135deg,
-      #e1c994,
-      var(--accent-light)
-    );
+  background: linear-gradient(135deg, #e1c994, var(--accent-light));
 
   box-shadow:
     0 0 28px rgba(184, 138, 68, 0.24),
@@ -237,8 +215,7 @@
   background: rgba(184, 138, 68, 0.1);
   border-color: var(--accent-light);
 
-  box-shadow:
-    0 0 22px rgba(184, 138, 68, 0.13);
+  box-shadow: 0 0 22px rgba(184, 138, 68, 0.13);
 }
 
 .career-button-full {
@@ -311,13 +288,12 @@
 
   border-bottom: 1px solid rgba(184, 138, 68, 0.16);
 
-  background:
-    linear-gradient(
-      115deg,
-      rgba(5, 7, 9, 0.97),
-      rgba(11, 16, 19, 0.92) 55%,
-      rgba(25, 18, 10, 0.86)
-    );
+  background: linear-gradient(
+    115deg,
+    rgba(5, 7, 9, 0.97),
+    rgba(11, 16, 19, 0.92) 55%,
+    rgba(25, 18, 10, 0.86)
+  );
 }
 
 .career-hero::before,
@@ -328,23 +304,11 @@
   z-index: -1;
 
   background:
-    linear-gradient(
-      90deg,
-      rgba(184, 138, 68, 0.04) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      rgba(184, 138, 68, 0.04) 1px,
-      transparent 1px
-    );
+    linear-gradient(90deg, rgba(184, 138, 68, 0.04) 1px, transparent 1px),
+    linear-gradient(rgba(184, 138, 68, 0.04) 1px, transparent 1px);
 
   background-size: 72px 72px;
-  mask-image:
-    linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.8),
-      transparent
-    );
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .career-hero::after,
@@ -358,12 +322,11 @@
   width: 45%;
   height: 100%;
 
-  background:
-    radial-gradient(
-      circle at center,
-      rgba(184, 138, 68, 0.15),
-      transparent 66%
-    );
+  background: radial-gradient(
+    circle at center,
+    rgba(184, 138, 68, 0.15),
+    transparent 66%
+  );
 }
 
 .career-hero-grid,
@@ -428,8 +391,7 @@
   border-radius: 50%;
   transform: translateY(-50%);
 
-  box-shadow:
-    0 0 10px rgba(184, 138, 68, 0.7);
+  box-shadow: 0 0 10px rgba(184, 138, 68, 0.7);
 }
 
 /* =========================================================
@@ -446,13 +408,12 @@
 
   padding: 2rem;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(10, 14, 16, 0.98),
-      rgba(17, 23, 26, 0.96) 58%,
-      rgba(31, 22, 12, 0.92)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(10, 14, 16, 0.98),
+    rgba(17, 23, 26, 0.96) 58%,
+    rgba(31, 22, 12, 0.92)
+  );
 
   border: 1px solid rgba(184, 138, 68, 0.3);
   border-radius: var(--radius-lg);
@@ -475,12 +436,11 @@
   width: 130px;
   height: 130px;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(184, 138, 68, 0.16),
-      transparent 68%
-    );
+  background: radial-gradient(
+    circle,
+    rgba(184, 138, 68, 0.16),
+    transparent 68%
+  );
 
   pointer-events: none;
 }
@@ -692,13 +652,12 @@
   position: relative;
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(9, 13, 15, 0.97),
-      rgba(17, 23, 26, 0.94) 60%,
-      rgba(27, 20, 12, 0.9)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(9, 13, 15, 0.97),
+    rgba(17, 23, 26, 0.94) 60%,
+    rgba(27, 20, 12, 0.9)
+  );
 
   border: 1px solid rgba(184, 138, 68, 0.18);
   border-radius: var(--radius-md);
@@ -731,13 +690,7 @@
   width: 100%;
   height: 2px;
 
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      var(--accent),
-      transparent
-    );
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
 
   opacity: 0;
   transition: opacity var(--transition);
@@ -756,13 +709,12 @@
 
   border-color: rgba(214, 184, 123, 0.48);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(13, 18, 20, 0.99),
-      rgba(22, 29, 32, 0.96) 58%,
-      rgba(38, 27, 13, 0.92)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(13, 18, 20, 0.99),
+    rgba(22, 29, 32, 0.96) 58%,
+    rgba(38, 27, 13, 0.92)
+  );
 
   box-shadow:
     0 0 26px rgba(184, 138, 68, 0.1),
@@ -1127,12 +1079,11 @@
 .career-report-preview-score {
   padding: 1.1rem;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(184, 138, 68, 0.12),
-      rgba(184, 138, 68, 0.025)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(184, 138, 68, 0.12),
+    rgba(184, 138, 68, 0.025)
+  );
 
   border: 1px solid rgba(184, 138, 68, 0.26);
   border-radius: var(--radius-sm);
@@ -1283,7 +1234,8 @@
   font-size: 1.8rem;
 }
 
-.career-comparison-card > p:not(.career-comparison-label):not(.career-comparison-price) {
+.career-comparison-card
+  > p:not(.career-comparison-label):not(.career-comparison-price) {
   margin-bottom: 1.2rem;
   line-height: 1.8;
 }
@@ -1352,12 +1304,11 @@
    ========================================================= */
 
 .career-purchase {
-  background:
-    linear-gradient(
-      115deg,
-      rgba(10, 14, 16, 0.98),
-      rgba(18, 18, 15, 0.96)
-    );
+  background: linear-gradient(
+    115deg,
+    rgba(10, 14, 16, 0.98),
+    rgba(18, 18, 15, 0.96)
+  );
 }
 
 .career-purchase-grid {
@@ -2033,12 +1984,11 @@
 
   text-align: center;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(10, 14, 16, 0.95),
-      rgba(24, 19, 12, 0.9)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(10, 14, 16, 0.95),
+    rgba(24, 19, 12, 0.9)
+  );
 
   border: 1px dashed rgba(184, 138, 68, 0.4);
   border-radius: var(--radius-md);
@@ -2116,13 +2066,12 @@
 
   padding: 2rem;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(10, 14, 16, 0.98),
-      rgba(17, 23, 26, 0.95) 60%,
-      rgba(31, 22, 12, 0.9)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(10, 14, 16, 0.98),
+    rgba(17, 23, 26, 0.95) 60%,
+    rgba(31, 22, 12, 0.9)
+  );
 
   border: 1px solid rgba(184, 138, 68, 0.26);
   border-radius: var(--radius-lg);
@@ -2181,8 +2130,7 @@
   background: rgba(11, 16, 19, 0.95);
   border-color: var(--accent);
 
-  box-shadow:
-    0 0 0 3px rgba(184, 138, 68, 0.1);
+  box-shadow: 0 0 0 3px rgba(184, 138, 68, 0.1);
 }
 
 .career-form-field > p {
@@ -2271,11 +2219,7 @@
       rgba(184, 138, 68, 0.12),
       transparent 30%
     ),
-    linear-gradient(
-      115deg,
-      rgba(9, 13, 15, 0.98),
-      rgba(24, 18, 10, 0.94)
-    );
+    linear-gradient(115deg, rgba(9, 13, 15, 0.98), rgba(24, 18, 10, 0.94));
 }
 
 .career-final-cta-inner {

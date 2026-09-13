@@ -238,7 +238,11 @@
   padding: 3rem;
   border: 1px solid var(--msh-border);
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.12), transparent 35%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.12),
+      transparent 35%
+    ),
     rgba(8, 9, 9, 0.92);
 }
 
@@ -267,8 +271,11 @@
   min-height: 210px;
   padding: 1.6rem;
   border: 1px solid var(--msh-border);
-  background:
-    linear-gradient(180deg, rgba(15, 13, 10, 0.94), rgba(8, 9, 9, 0.92));
+  background: linear-gradient(
+    180deg,
+    rgba(15, 13, 10, 0.94),
+    rgba(8, 9, 9, 0.92)
+  );
   color: var(--msh-text);
   text-decoration: none;
   transition: 0.25s ease;
@@ -348,7 +355,11 @@
   padding: 2rem;
   border: 1px solid var(--msh-border);
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.16), transparent 34%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.16),
+      transparent 34%
+    ),
     rgba(8, 9, 9, 0.9);
   transition: 0.25s ease;
 }

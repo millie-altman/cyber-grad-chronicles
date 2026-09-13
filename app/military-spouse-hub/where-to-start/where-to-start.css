@@ -80,7 +80,11 @@
   position: relative;
   border: 1px solid var(--msh-border);
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.12), transparent 34%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.12),
+      transparent 34%
+    ),
     rgba(8, 9, 9, 0.9);
   color: var(--msh-text);
   text-decoration: none;
@@ -90,7 +94,11 @@
 .where-path-card:hover {
   border-color: var(--msh-gold-light);
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.18), transparent 36%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.18),
+      transparent 36%
+    ),
     rgba(18, 14, 10, 0.95);
   transform: translateY(-4px);
 }
@@ -228,7 +236,11 @@
   gap: 2rem;
   border: 1px solid var(--msh-border);
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.13), transparent 35%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.13),
+      transparent 35%
+    ),
     rgba(8, 9, 9, 0.92);
 }
 

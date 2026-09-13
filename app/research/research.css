@@ -54,11 +54,7 @@
       rgba(5, 7, 9, 0.58) 55%,
       rgba(5, 7, 9, 0.35)
     ),
-    radial-gradient(
-      circle at center,
-      transparent 0%,
-      rgba(0, 0, 0, 0.76) 80%
-    );
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.76) 80%);
 }
 
 .research-hero-copy {
@@ -266,12 +262,11 @@
   border: 1px solid rgba(184, 138, 68, 0.18);
   border-radius: var(--radius-sm);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(8, 11, 13, 0.96),
-      rgba(20, 16, 10, 0.88)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(8, 11, 13, 0.96),
+    rgba(20, 16, 10, 0.88)
+  );
 
   color: var(--accent);
 
@@ -314,7 +309,6 @@
   color: var(--text-secondary);
   line-height: 1.8;
 }
-
 
 /* =========================================================
    CATEGORY NAVIGATION
@@ -525,11 +519,7 @@
       rgba(184, 138, 68, 0.08),
       transparent 38%
     ),
-    linear-gradient(
-      145deg,
-      rgba(8, 11, 13, 0.98),
-      rgba(15, 13, 10, 0.95)
-    );
+    linear-gradient(145deg, rgba(8, 11, 13, 0.98), rgba(15, 13, 10, 0.95));
 
   box-shadow:
     0 18px 46px rgba(0, 0, 0, 0.34),
@@ -692,12 +682,11 @@
 }
 
 .research-archive-item:hover {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(184, 138, 68, 0.055),
-      rgba(184, 138, 68, 0.01)
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(184, 138, 68, 0.055),
+    rgba(184, 138, 68, 0.01)
+  );
 
   border-color: rgba(184, 138, 68, 0.28);
 
@@ -1000,12 +989,11 @@
   border-left: 4px solid var(--accent);
   border-radius: var(--radius-md);
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(184, 138, 68, 0.12),
-      rgba(8, 12, 12, 0.95)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(184, 138, 68, 0.12),
+    rgba(8, 12, 12, 0.95)
+  );
 }
 
 .personal-note h2 {
@@ -1028,12 +1016,11 @@
   border: 1px solid rgba(184, 138, 68, 0.2);
   border-radius: var(--radius-md);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(7, 9, 11, 0.96),
-      rgba(16, 12, 8, 0.92)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(7, 9, 11, 0.96),
+    rgba(16, 12, 8, 0.92)
+  );
 }
 
 /* ==========================================================
@@ -1186,11 +1173,7 @@
       rgba(184, 138, 68, 0.14),
       transparent 38%
     ),
-    linear-gradient(
-      145deg,
-      rgba(7, 9, 11, 0.98),
-      rgba(17, 12, 8, 0.94)
-    );
+    linear-gradient(145deg, rgba(7, 9, 11, 0.98), rgba(17, 12, 8, 0.94));
 
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.32);
 }
@@ -1288,7 +1271,6 @@
     grid-template-columns: 90px 1fr auto;
   }
 }
-
 
 @media (max-width: 760px) {
   /* HERO */
@@ -1433,7 +1415,6 @@
     font-size: clamp(2rem, 8vw, 3rem);
   }
 }
-
 
 @media (max-width: 520px) {
   /* HERO */

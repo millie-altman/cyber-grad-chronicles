@@ -1,297 +1,508 @@
 /* =========================================================
-   ACADEMY — UNDER CONSTRUCTION
+   ACADEMY LEARNING LIBRARY
 ========================================================= */
 
 .academy-page {
-  min-height: calc(100vh - 72px);
-
-  display: flex;
-  align-items: center;
-
-  padding: 6rem 1.5rem;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5, 7, 9, 0.95) 0%,
-      rgba(5, 7, 9, 0.84) 36%,
-      rgba(5, 7, 9, 0.45) 67%,
-      rgba(5, 7, 9, 0.2) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(5, 7, 9, 0.15),
-      rgba(5, 7, 9, 0.7)
-    ),
-    url("/images/academy-page.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  display: block;
+  min-height: 100vh;
+  padding: 0;
+  background: var(--bg-primary);
   color: var(--text-primary);
 }
 
-/* =========================================================
-   CONTENT SHELL
-========================================================= */
-
-.academy-coming-soon {
-  width: min(1320px, calc(100% - 2rem));
+.academy-shell {
+  width: min(1180px, calc(100% - 3rem));
   margin: 0 auto;
 }
-
-/* =========================================================
-   CONTENT PANEL
-========================================================= */
-
-.academy-coming-soon-card {
-  width: min(720px, 100%);
-
-  padding: clamp(2rem, 5vw, 4rem);
-
-  border: 1px solid rgba(184, 138, 68, 0.34);
-  border-radius: var(--radius-md);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(5, 7, 9, 0.9),
-      rgba(11, 16, 19, 0.82)
-    );
-
-  box-shadow:
-    var(--shadow-heavy),
-    inset 0 1px 0 rgba(255, 255, 255, 0.025);
-
-  backdrop-filter: blur(10px);
+.academy-reading-shell {
+  width: min(760px, calc(100% - 3rem));
+  margin: 0 auto;
 }
-
-/* =========================================================
-   EYEBROW
-========================================================= */
-
+.academy-hero {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background:
+    radial-gradient(
+      circle at 78% 25%,
+      rgba(184, 138, 68, 0.18),
+      transparent 26%
+    ),
+    linear-gradient(135deg, #050709, #0b1013 55%, #100c07);
+  border-bottom: 1px solid rgba(184, 138, 68, 0.16);
+}
+.academy-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.6fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: end;
+}
 .academy-eyebrow {
-  margin: 0 0 0.8rem;
-
+  margin: 0 0 1rem;
   color: var(--accent-light);
-
-  font-size: 0.75rem;
-  font-weight: 800;
+  font:
+    800 0.74rem/1.4 var(--font-sans),
+    sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-
-/* =========================================================
-   TITLE
-========================================================= */
-
-.academy-coming-soon-card h1 {
-  max-width: 640px;
-
-  margin: 0 0 1.25rem;
-
-  color: var(--text-primary);
-
-  font-size: clamp(3rem, 6vw, 5.25rem);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.04em;
-
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+.academy-page h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
 }
-
-/* =========================================================
-   INTRO
-========================================================= */
-
-.academy-intro {
-  max-width: 620px;
-
-  margin: 0 0 1.4rem;
-
-  color: var(--accent-light);
-
-  font-size: clamp(1.2rem, 2vw, 1.45rem);
-  line-height: 1.55;
+.academy-page h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: 0.02em;
 }
-
-/* =========================================================
-   BODY COPY
-========================================================= */
-
-.academy-coming-soon-card > p:not(
-    .academy-eyebrow,
-    .academy-intro,
-    .academy-closing
-  ) {
-  max-width: 640px;
-
-  margin: 0 0 1.15rem;
-
+.academy-lede {
+  max-width: 720px;
+  margin: 1.7rem 0 0;
   color: var(--text-secondary);
-
-  font-size: 1rem;
-  line-height: 1.8;
+  font:
+    400 clamp(1.05rem, 2vw, 1.28rem) / 1.75 var(--font-sans),
+    sans-serif;
 }
-
-/* =========================================================
-   STATUS
-========================================================= */
-
-.academy-status {
+.academy-actions {
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-
-  margin: 2rem 0;
-  padding: 1.2rem 1.3rem;
-
-  border: 1px solid rgba(184, 138, 68, 0.22);
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2.3rem;
+}
+.academy-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid var(--accent);
   border-radius: var(--radius-sm);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(184, 138, 68, 0.08),
-      rgba(184, 138, 68, 0.02)
-    );
-}
-
-.academy-status-dot {
-  width: 9px;
-  height: 9px;
-
-  flex: 0 0 auto;
-
-  margin-top: 0.5rem;
-
-  border-radius: 999px;
-
-  background: var(--accent);
-
-  box-shadow: 0 0 14px rgba(184, 138, 68, 0.6);
-}
-
-.academy-status-content {
-  flex: 1;
-}
-
-.academy-status-label {
-  margin: 0 0 0.25rem;
-
-  color: var(--accent-light);
-
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  font:
+    750 0.74rem/1 var(--font-sans),
+    sans-serif;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
-
-.academy-status-content p:last-child {
-  margin: 0;
-
-  color: var(--text-secondary);
-
-  font-size: 0.95rem;
-  line-height: 1.65;
+.academy-button-primary {
+  background: var(--accent);
+  color: var(--bg-primary);
 }
-
-/* =========================================================
-   NOTE
-========================================================= */
-
-.academy-note {
-  margin: 2rem 0;
-  padding: 1.4rem 1.5rem;
-
-  border-left: 3px solid var(--accent);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(184, 138, 68, 0.08),
-      rgba(5, 7, 9, 0.2)
-    );
+.academy-button-primary:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
 }
-
-.academy-note p {
-  margin: 0 0 0.75rem;
-
-  color: var(--text-secondary);
-
-  line-height: 1.75;
-}
-
-.academy-note p:last-child {
-  margin-bottom: 0;
-}
-
-.academy-note strong {
-  color: var(--text-primary);
-}
-
-/* =========================================================
-   CLOSING
-========================================================= */
-
-.academy-closing {
-  margin: 2rem 0 0;
-
+.academy-button-secondary {
+  background: rgba(184, 138, 68, 0.06);
   color: var(--accent-light);
-
-  font-size: 1.15rem;
-  font-style: italic;
-  line-height: 1.6;
+}
+.academy-button-secondary:hover {
+  background: rgba(184, 138, 68, 0.14);
+}
+.academy-overview {
+  padding: 1.7rem;
+  border: 1px solid rgba(184, 138, 68, 0.28);
+  background: rgba(5, 7, 9, 0.58);
+  box-shadow: var(--shadow-heavy);
+}
+.academy-overview > span {
+  display: block;
+  margin-bottom: 1.25rem;
+  color: var(--accent);
+  font:
+    800 0.7rem/1.4 var(--font-sans),
+    sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.academy-overview strong {
+  display: block;
+  padding: 0.7rem 0;
+  border-top: 1px solid rgba(184, 138, 68, 0.14);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+.academy-overview p {
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font:
+    0.88rem/1.7 var(--font-sans),
+    sans-serif;
+}
+.academy-section {
+  padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+.academy-section-heading {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+.academy-section-heading > p,
+.academy-module-intro {
+  color: var(--text-secondary);
+  font:
+    1rem/1.75 var(--font-sans),
+    sans-serif;
+}
+.academy-module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.academy-module-card {
+  overflow: hidden;
+  border: 1px solid rgba(184, 138, 68, 0.18);
+  background: linear-gradient(
+    145deg,
+    rgba(17, 23, 26, 0.96),
+    rgba(8, 10, 11, 0.98)
+  );
+  transition: var(--transition);
+}
+.academy-module-card:hover {
+  border-color: rgba(214, 184, 123, 0.52);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-heavy);
+}
+.academy-module-image {
+  position: relative;
+  display: block;
+  min-height: 235px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(184, 138, 68, 0.18);
+}
+.academy-module-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 7, 9, 0.78), transparent 65%);
+}
+.academy-module-image img,
+.academy-module-cover img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.academy-module-card:hover .academy-module-image img {
+  transform: scale(1.025);
+}
+.academy-module-image > span {
+  position: absolute;
+  z-index: 1;
+  left: 1.25rem;
+  bottom: 0.8rem;
+  color: var(--accent-light);
+  font-size: 2.2rem;
+}
+.academy-module-content {
+  padding: 1.7rem;
+}
+.academy-module-content > .academy-module-meta {
+  margin-bottom: 0.55rem;
+  color: var(--accent);
+  font:
+    800 0.68rem/1.4 var(--font-sans),
+    sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.academy-module-content h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.7rem;
+}
+.academy-module-content > p {
+  color: var(--text-secondary);
+  font:
+    0.95rem/1.7 var(--font-sans),
+    sans-serif;
+}
+.academy-module-content ul {
+  margin: 1.4rem 0;
+  list-style: none;
+  border-top: 1px solid rgba(184, 138, 68, 0.13);
+}
+.academy-module-content li a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(184, 138, 68, 0.13);
+  color: var(--text-secondary);
+  font:
+    0.88rem/1.4 var(--font-sans),
+    sans-serif;
+}
+.academy-module-content li a:hover,
+.academy-text-link:hover,
+.academy-back-link:hover {
+  color: var(--accent-light);
+}
+.academy-text-link,
+.academy-back-link {
+  color: var(--accent-light);
+  font:
+    800 0.74rem/1.4 var(--font-sans),
+    sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.academy-method {
+  padding: 5rem 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(184, 138, 68, 0.13);
+}
+.academy-method-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(3rem, 8vw, 7rem);
+}
+.academy-method ol {
+  list-style: none;
+}
+.academy-method li {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(184, 138, 68, 0.16);
+}
+.academy-method li > span {
+  color: var(--accent);
+  font:
+    800 0.72rem var(--font-sans),
+    sans-serif;
+}
+.academy-method h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1.25rem;
+}
+.academy-method li p {
+  color: var(--text-secondary);
+  font:
+    0.92rem/1.65 var(--font-sans),
+    sans-serif;
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+.academy-module-hero {
+  padding: 5rem 0;
+  background: linear-gradient(
+    135deg,
+    rgba(184, 138, 68, 0.07),
+    transparent 45%
+  );
+  border-bottom: 1px solid rgba(184, 138, 68, 0.14);
+}
+.academy-module-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+.academy-back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.academy-module-cover {
+  position: relative;
+  min-height: 330px;
+  border: 1px solid rgba(184, 138, 68, 0.25);
+  box-shadow: var(--shadow-heavy);
+}
+.academy-module-page h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+.academy-module-layout {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(3rem, 8vw, 7rem);
+}
+.academy-module-intro {
+  margin-top: 1.4rem;
+}
+.academy-lesson-list {
+  list-style: none;
+  border-top: 1px solid rgba(184, 138, 68, 0.2);
+}
+.academy-lesson-list li a {
+  display: grid;
+  grid-template-columns: 45px 1fr 30px;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  border-bottom: 1px solid rgba(184, 138, 68, 0.2);
+}
+.academy-lesson-list li a:hover {
+  background: rgba(184, 138, 68, 0.055);
+  padding-left: 1rem;
+}
+.academy-lesson-number {
+  color: var(--accent);
+  font:
+    800 0.72rem var(--font-sans),
+    sans-serif;
+}
+.academy-lesson-list strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.academy-lesson-list small {
+  color: var(--text-muted);
+  font:
+    0.76rem var(--font-sans),
+    sans-serif;
+}
+.academy-lesson-arrow {
+  color: var(--accent-light);
+  font-size: 1.3rem;
+}
 
-@media (max-width: 900px) {
+.academy-lesson-header {
+  padding: 5rem 0 4rem;
+  border-bottom: 1px solid rgba(184, 138, 68, 0.16);
+  background: radial-gradient(
+    circle at 75% 10%,
+    rgba(184, 138, 68, 0.11),
+    transparent 28%
+  );
+}
+.academy-lesson-header h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+}
+.academy-lesson-deck {
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+  font:
+    1.15rem/1.8 var(--font-sans),
+    sans-serif;
+}
+.academy-lesson-duration {
+  margin-top: 1.25rem;
+  color: var(--accent);
+  font:
+    800 0.7rem var(--font-sans),
+    sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.academy-lesson-body {
+  padding: 4rem 0 1rem;
+}
+.academy-lesson-body > section {
+  margin-bottom: 3.5rem;
+}
+.academy-lesson-body h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+.academy-lesson-body section p,
+.academy-takeaway > p:last-child {
+  color: #d2ccc1;
+  font:
+    1.04rem/1.9 var(--font-sans),
+    sans-serif;
+}
+.academy-lesson-body section ul {
+  margin: 1.5rem 0 0;
+  padding: 1.25rem 1.25rem 1.25rem 2.8rem;
+  border-left: 2px solid var(--accent);
+  background: rgba(184, 138, 68, 0.055);
+}
+.academy-lesson-body section li {
+  padding: 0.3rem 0;
+  color: var(--text-secondary);
+  font-family: var(--font-sans), sans-serif;
+}
+.academy-takeaway {
+  margin: 4rem 0;
+  padding: clamp(1.7rem, 5vw, 2.8rem);
+  border: 1px solid rgba(184, 138, 68, 0.38);
+  background: linear-gradient(
+    135deg,
+    rgba(184, 138, 68, 0.12),
+    rgba(17, 23, 26, 0.75)
+  );
+}
+.academy-takeaway h2 {
+  margin-bottom: 0.7rem;
+}
+.academy-lesson-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+.academy-lesson-navigation a {
+  padding: 1.2rem;
+  border: 1px solid rgba(184, 138, 68, 0.2);
+}
+.academy-lesson-navigation a:hover {
+  border-color: var(--accent);
+  background: rgba(184, 138, 68, 0.06);
+}
+.academy-lesson-navigation span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--text-muted);
+  font:
+    800 0.66rem var(--font-sans),
+    sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.academy-lesson-navigation strong {
+  color: var(--accent-light);
+  font-weight: 400;
+}
+.academy-next-link {
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .academy-hero-grid,
+  .academy-section-heading,
+  .academy-method-grid,
+  .academy-module-hero-grid,
+  .academy-module-layout {
+    grid-template-columns: 1fr;
+  }
+  .academy-module-cover {
+    min-height: 260px;
+    grid-row: 1;
+  }
+  .academy-module-grid {
+    grid-template-columns: 1fr;
+  }
   .academy-page {
-    align-items: flex-end;
-
-    background:
-      linear-gradient(
-        180deg,
-        rgba(5, 7, 9, 0.35) 0%,
-        rgba(5, 7, 9, 0.72) 48%,
-        rgba(5, 7, 9, 0.96) 100%
-      ),
-      url("/images/academy-page.png");
-
-    background-size: cover;
-    background-position: center;
-  }
-
-  .academy-coming-soon {
-    width: min(100%, 760px);
-  }
-
-  .academy-coming-soon-card {
-    width: 100%;
+    padding: 0;
+    background: var(--bg-primary);
   }
 }
 
-@media (max-width: 650px) {
-  .academy-page {
-    min-height: 100vh;
-    padding: 5rem 1rem 2rem;
+@media (max-width: 540px) {
+  .academy-shell,
+  .academy-reading-shell {
+    width: min(100% - 2rem, 1180px);
   }
-
-  .academy-coming-soon-card {
-    padding: 1.7rem 1.4rem;
-
-    background: rgba(5, 7, 9, 0.9);
+  .academy-hero,
+  .academy-module-hero,
+  .academy-lesson-header {
+    padding: 3.5rem 0;
   }
-
-  .academy-coming-soon-card h1 {
-    font-size: clamp(2.6rem, 12vw, 4rem);
+  .academy-page h1 {
+    font-size: clamp(2.6rem, 13vw, 4rem);
   }
-
-  .academy-intro {
-    font-size: 1.2rem;
+  .academy-module-image {
+    min-height: 190px;
+  }
+  .academy-actions {
+    flex-direction: column;
+  }
+  .academy-lesson-navigation {
+    grid-template-columns: 1fr;
+  }
+  .academy-next-link {
+    text-align: left;
   }
 }

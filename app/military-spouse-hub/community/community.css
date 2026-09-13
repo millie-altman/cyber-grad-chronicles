@@ -114,7 +114,11 @@
   padding: 3rem;
   border: 1px solid var(--msh-border);
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.14), transparent 35%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.14),
+      transparent 35%
+    ),
     rgba(8, 9, 9, 0.92);
 }
 
@@ -362,7 +366,11 @@
 .community-highlight-grid .community-subpage-card {
   min-height: 260px;
   background:
-    radial-gradient(circle at top left, rgba(184, 138, 68, 0.12), transparent 35%),
+    radial-gradient(
+      circle at top left,
+      rgba(184, 138, 68, 0.12),
+      transparent 35%
+    ),
     rgba(8, 9, 9, 0.9);
 }
 

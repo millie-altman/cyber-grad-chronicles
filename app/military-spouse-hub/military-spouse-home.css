@@ -5,8 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid var(--msh-border-soft);
-  background:
-    linear-gradient(90deg, rgba(4, 5, 5, 0.96), rgba(4, 5, 5, 0.45));
+  background: linear-gradient(90deg, rgba(4, 5, 5, 0.96), rgba(4, 5, 5, 0.45));
 }
 
 .msh-hero-left {
@@ -14,8 +13,7 @@
   padding: 4rem;
   align-self: center;
   border: 1px solid var(--msh-border);
-  background:
-    linear-gradient(rgba(5, 6, 6, 0.86), rgba(5, 6, 6, 0.94));
+  background: linear-gradient(rgba(5, 6, 6, 0.86), rgba(5, 6, 6, 0.94));
 }
 
 .msh-hero-left h1 {

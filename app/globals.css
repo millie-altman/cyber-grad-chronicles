@@ -1,4 +1,9 @@
 :root {
+  /* Typography */
+  --font-sans: Georgia, "Times New Roman", serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: Georgia, "Times New Roman", serif;
+
   /* Backgrounds */
   --bg-primary: #050709;
   --bg-secondary: #0b1013;
@@ -52,6 +57,10 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background:
     radial-gradient(
@@ -59,12 +68,7 @@ body {
       rgba(184, 138, 68, 0.08),
       transparent 28%
     ),
-    linear-gradient(
-      135deg,
-      var(--bg-primary),
-      var(--bg-secondary) 45%,
-      #050709
-    );
+    linear-gradient(135deg, var(--bg-primary), var(--bg-secondary) 45%, #050709);
 
   color: var(--text-primary);
   font-family: Georgia, "Times New Roman", serif;
@@ -92,6 +96,26 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+a,
+button,
+input,
+textarea,
+select,
+label,
+small,
+strong {
+  font-family: var(--font-serif);
 }
 
 button {
@@ -143,13 +167,12 @@ img {
 /* UNIVERSAL CARD SYSTEM */
 
 .card {
-  background:
-    linear-gradient(
-      145deg,
-      rgba(8, 11, 13, 0.96) 0%,
-      rgba(12, 16, 18, 0.93) 45%,
-      rgba(20, 16, 10, 0.88) 100%
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(8, 11, 13, 0.96) 0%,
+    rgba(12, 16, 18, 0.93) 45%,
+    rgba(20, 16, 10, 0.88) 100%
+  );
 
   border: 1px solid rgba(184, 138, 68, 0.18);
   border-radius: var(--radius-md);
@@ -163,13 +186,12 @@ img {
 }
 
 .card:hover {
-  background:
-    linear-gradient(
-      145deg,
-      rgba(14, 18, 20, 0.98) 0%,
-      rgba(20, 24, 26, 0.95) 50%,
-      rgba(35, 24, 12, 0.9) 100%
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(14, 18, 20, 0.98) 0%,
+    rgba(20, 24, 26, 0.95) 50%,
+    rgba(35, 24, 12, 0.9) 100%
+  );
 
   border-color: var(--accent-light);
 
@@ -249,17 +271,22 @@ h6 {
   line-height: 1.15;
 }
 
-p,
-li,
-span,
-a,
-button,
-input,
-textarea {
-  font-family: Georgia, "Times New Roman", serif;
-}
-
 /* COMPONENTS UI */
+
+@media (max-width: 700px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: anywhere;
+  }
+
+  .page-shell {
+    padding-inline: 1rem;
+  }
+}
 .page-hero {
   width: min(1180px, 100%);
   margin: 0 auto;
