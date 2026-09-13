@@ -137,62 +137,6 @@
   padding: 5rem 1.5rem;
 }
 
-.connect-intro {
-  max-width: 900px;
-  text-align: center;
-}
-
-.connect-intro h2,
-.connect-section-header h2,
-.connect-form-shell h2,
-.connect-callout h2 {
-  margin: 0 0 1rem;
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: 1.15;
-}
-
-.connect-section-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-/* REASON CHIPS */
-
-.connect-reason-list,
-.connect-mini-grid {
-  display: grid;
-  gap: 0.8rem;
-  margin-top: 2rem;
-}
-
-.connect-reason-list {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.connect-mini-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.connect-reason-list span,
-.connect-mini-grid span {
-  padding: 0.85rem;
-  border: 1px solid rgba(184, 138, 68, 0.18);
-  border-radius: var(--radius-sm);
-  background: linear-gradient(
-    145deg,
-    rgba(8, 11, 13, 0.96),
-    rgba(20, 16, 10, 0.88)
-  );
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* SOCIAL CARDS */
-
 .connect-card-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

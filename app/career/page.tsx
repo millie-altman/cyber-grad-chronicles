@@ -1,599 +1,274 @@
 import Link from "next/link";
+import "./career-home.css";
 
-const services = [
-  {
-    eyebrow: "01",
-    title: "Resume Review",
-    price: "$25",
-    description:
-      "Receive a detailed assessment of your resume with actionable feedback on content, formatting, readability, and job alignment.",
-    features: [
-      "ATS and keyword feedback",
-      "Formatting and readability review",
-      "Bullet point recommendations",
-      "Personalized priority checklist",
-    ],
-    href: "/career/resume-review",
-    linkText: "Explore Resume Reviews",
-  },
-  {
-    eyebrow: "02",
-    title: "Resume Rewrite",
-    price: "$50",
-    description:
-      "Turn an outdated, unfocused, or underperforming resume into a polished document tailored to your career goals.",
-    features: [
-      "Complete resume rewrite",
-      "Stronger summary and skills",
-      "Impact-focused bullet points",
-      "Role-specific positioning",
-    ],
-    href: "/career/resume-rewrite",
-    linkText: "Explore Resume Rewrites",
-  },
-  {
-    eyebrow: "03",
-    title: "LinkedIn Review",
-    price: "$30",
-    description:
-      "Strengthen your professional presence with personalized recommendations for every major section of your LinkedIn profile.",
-    features: [
-      "Headline and About review",
-      "Experience section feedback",
-      "Skills and profile optimization",
-      "Recruiter visibility recommendations",
-    ],
-    href: "/career/linkedin-review",
-    linkText: "Explore LinkedIn Reviews",
-  },
-  {
-    eyebrow: "04",
-    title: "GitHub Review",
-    price: "$20",
-    description:
-      "Make your technical work easier for recruiters and hiring managers to understand, navigate, and evaluate.",
-    features: [
-      "Profile presentation review",
-      "Repository organization",
-      "README and documentation feedback",
-      "Project visibility recommendations",
-    ],
-    href: "/career/github-review",
-    linkText: "Explore GitHub Reviews",
-  },
-  {
-    eyebrow: "05",
-    title: "Portfolio Review",
-    price: "$25",
-    description:
-      "Receive a thorough review of your personal website, project portfolio, or digital body of work.",
-    features: [
-      "Navigation and user experience",
-      "Project presentation",
-      "Content and personal branding",
-      "Recruiter-focused recommendations",
-    ],
-    href: "/career/portfolio-review",
-    linkText: "Explore Portfolio Reviews",
-  },
-  {
-    eyebrow: "06",
-    title: "Interview Preparation",
-    price: "$35",
-    description:
-      "Prepare for your next opportunity with questions, research guidance, and recommendations tailored to the position.",
-    features: [
-      "Behavioral question preparation",
-      "Role-specific technical topics",
-      "Experience talking points",
-      "Personalized preparation guide",
-    ],
-    href: "/career/interview-prep",
-    linkText: "Explore Interview Preparation",
-  },
-];
-
-const processSteps = [
+const readinessPaths = [
   {
     number: "01",
-    title: "Choose your review",
+    label: "Written Foundation",
+    title: "Resume",
     description:
-      "Select the individual service or bundle that best matches your current career goals.",
+      "Make your experience clear, relevant, and easy for employers to understand.",
+    outcomes: [
+      "Stronger positioning and bullet points",
+      "ATS-aware structure and keywords",
+      "A focused story for your target roles",
+    ],
+    links: [
+      { href: "/career/resume-review", text: "Resume Review" },
+      { href: "/career/resume-rewrite", text: "Resume Rewrite" },
+    ],
   },
   {
     number: "02",
-    title: "Share your materials",
+    label: "Professional Presence",
+    title: "LinkedIn",
     description:
-      "Submit your resume, links, job posting, career goals, and any relevant background information.",
+      "Turn your profile into a consistent, searchable extension of your career story.",
+    outcomes: [
+      "Clear headline and About section",
+      "Stronger experience presentation",
+      "Better recruiter-facing visibility",
+    ],
+    links: [{ href: "/career/linkedin-review", text: "LinkedIn Review" }],
   },
   {
     number: "03",
-    title: "Receive a thorough review",
+    label: "Visible Proof",
+    title: "Portfolio & GitHub",
     description:
-      "I personally evaluate your materials and identify the changes that will make the greatest difference.",
+      "Help people quickly understand what you built, what you learned, and how you think.",
+    outcomes: [
+      "Better project presentation",
+      "Clearer READMEs and navigation",
+      "Consistent technical storytelling",
+    ],
+    links: [
+      { href: "/career/portfolio-review", text: "Portfolio Review" },
+      { href: "/career/github-review", text: "GitHub Review" },
+    ],
   },
   {
     number: "04",
-    title: "Use your action plan",
+    label: "Guidance & Direction",
+    title: "Mentorship",
     description:
-      "Apply clear, prioritized recommendations or receive a completed rewrite based on the service you selected.",
-  },
-];
-
-const audiences = [
-  "Cybersecurity students and recent graduates",
-  "Military spouses and veterans",
-  "Career changers entering technology",
-  "Early-career cybersecurity professionals",
-  "Job seekers building technical portfolios",
-  "Applicants struggling to communicate their value",
-];
-
-const principles = [
-  {
-    title: "Personalized",
-    description:
-      "Your feedback is based on your experience, goals, target roles, and current materials—not a generic checklist.",
-  },
-  {
-    title: "Educational",
-    description:
-      "I explain why changes are recommended so you can make stronger career decisions long after the review is complete.",
-  },
-  {
-    title: "Honest",
-    description:
-      "You will receive practical feedback about what is working, what is weakening your presentation, and what to prioritize.",
-  },
-  {
-    title: "Research-informed",
-    description:
-      "Recommendations draw from cybersecurity hiring research, recruiter guidance, ATS practices, and ongoing career development.",
-  },
-];
-
-const bundleHighlights = [
-  {
-    title: "Foundation Bundle",
-    price: "$65",
-    description:
-      "A practical starting point for students, recent graduates, and early-career professionals.",
-    included: ["Resume Review", "LinkedIn Review", "GitHub Review"],
-  },
-  {
-    title: "Career Presence Bundle",
-    price: "$95",
-    description:
-      "A more complete package for job seekers who need stronger materials across multiple platforms.",
-    included: [
-      "Resume Rewrite",
-      "LinkedIn Review",
-      "Portfolio Review",
-      "GitHub Review",
+      "Share where you are, what feels unclear, and what support could help you move forward.",
+    outcomes: [
+      "Honest career transparency",
+      "Answers to focused questions",
+      "Practical next-step direction",
     ],
+    links: [{ href: "/career/mentorship", text: "Mentorship Interest" }],
     featured: true,
   },
+];
+
+const supportLinks = [
   {
-    title: "Complete Career Review",
-    price: "$145",
-    description:
-      "A comprehensive review of the materials supporting your professional brand and job search.",
-    included: [
-      "Resume Rewrite",
-      "LinkedIn Review",
-      "Portfolio Review",
-      "GitHub Review",
-      "Interview Preparation",
-    ],
+    title: "Interview Preparation",
+    text: "Prepare stories, questions, and role-specific talking points.",
+    href: "/career/interview-prep",
+  },
+  {
+    title: "Service Bundles",
+    text: "Coordinate feedback across your complete professional presence.",
+    href: "/career/bundles",
+  },
+  {
+    title: "Testimonials",
+    text: "Read what others say about their Career Intelligence experience.",
+    href: "/career/testimonials",
+  },
+  {
+    title: "Frequently Asked Questions",
+    text: "Review process, boundaries, turnaround, and service details.",
+    href: "/career/faq",
   },
 ];
 
 export default function CareerPage() {
   return (
-    <>
-      <main className="career-page">
-        <section className="career-hero">
-          <div className="career-container career-hero-grid">
-            <div className="career-hero-content">
-              <p className="career-eyebrow">Career Intelligence</p>
-
-              <h1>Turn your experience into a story employers understand.</h1>
-
-              <p className="career-hero-description">
-                Personalized resume, LinkedIn, GitHub, portfolio, and interview
-                reviews for cybersecurity students, military spouses, veterans,
-                career changers, and early-career professionals.
-              </p>
-
-              <div className="career-hero-actions">
-                <a className="career-button career-button-primary" href="#services">
-                  Explore Services
-                </a>
-
-                <Link
-                  className="career-button career-button-secondary"
-                  href="/career/bundles"
-                >
-                  View Bundles
-                </Link>
-              </div>
-
-              <ul
-                className="career-hero-details"
-                aria-label="Career review highlights"
+    <main className="career-page">
+      <section className="career-home-hero">
+        <div className="career-container career-home-hero-grid">
+          <div>
+            <p className="career-eyebrow">Career Readiness</p>
+            <h1>Build a career story employers can understand.</h1>
+            <p className="career-home-hero-copy">
+              Choose the part of your professional presence that needs attention
+              now—from your resume and LinkedIn profile to your technical proof
+              and career direction.
+            </p>
+            <div className="career-home-actions">
+              <a
+                className="career-button career-button-primary"
+                href="#readiness-paths"
               >
-                <li>Personalized feedback</li>
-                <li>Actionable recommendations</li>
-                <li>Beginner-friendly guidance</li>
-              </ul>
-            </div>
-
-            <aside
-              className="career-hero-panel"
-              aria-label="Career Intelligence review overview"
-            >
-              <p className="career-panel-label">Review Framework</p>
-
-              <div className="career-score-preview">
-                <div className="career-score-heading">
-                  <span>Career Readiness</span>
-                  <strong>Detailed Assessment</strong>
-                </div>
-
-                <div className="career-score-item">
-                  <span>Clarity</span>
-                  <span>Positioning</span>
-                </div>
-
-                <div className="career-score-item">
-                  <span>Technical Evidence</span>
-                  <span>Presentation</span>
-                </div>
-
-                <div className="career-score-item">
-                  <span>Role Alignment</span>
-                  <span>Next Steps</span>
-                </div>
-              </div>
-
-              <p className="career-panel-note">
-                Every review focuses on helping you communicate what you know,
-                what you have accomplished, and where you are ready to go next.
-              </p>
-            </aside>
-          </div>
-        </section>
-
-        <section className="career-introduction career-section">
-          <div className="career-container career-introduction-grid">
-            <div>
-              <p className="career-section-eyebrow">A Better Kind of Feedback</p>
-              <h2>More than proofreading and generic career advice.</h2>
-            </div>
-
-            <div className="career-introduction-copy">
-              <p>
-                You have probably been told to add keywords, quantify your
-                achievements, improve your personal brand, or make your projects
-                stand out. Those suggestions are not helpful when no one explains
-                what they should look like for your specific experience.
-              </p>
-
-              <p>
-                Career Intelligence reviews provide detailed, practical guidance
-                based on your goals, target roles, current materials, and stage of
-                your career. You will learn what is already working, what may be
-                holding you back, and which changes deserve your attention first.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="career-services career-section" id="services">
-          <div className="career-container">
-            <div className="career-section-heading">
-              <div>
-                <p className="career-section-eyebrow">Individual Reviews</p>
-                <h2>Choose the support you need right now.</h2>
-              </div>
-
-              <p>
-                Start with one focused review or combine services for a more
-                complete assessment of your professional presence.
-              </p>
-            </div>
-
-            <div className="career-services-grid">
-              {services.map((service) => (
-                <article className="career-service-card" key={service.title}>
-                  <div className="career-service-card-header">
-                    <span className="career-service-number">
-                      {service.eyebrow}
-                    </span>
-                    <span className="career-service-price">{service.price}</span>
-                  </div>
-
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
-
-                  <ul>
-                    {service.features.map((feature) => (
-                      <li key={feature}>{feature}</li>
-                    ))}
-                  </ul>
-
-                  <Link className="career-text-link" href={service.href}>
-                    {service.linkText}
-                    <span aria-hidden="true"> →</span>
-                  </Link>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="career-audience career-section">
-          <div className="career-container career-audience-grid">
-            <div className="career-audience-content">
-              <p className="career-section-eyebrow">Who It Is For</p>
-              <h2>Career support for people still building their path.</h2>
-
-              <p>
-                These services are designed for people who may not have a
-                traditional path, an established professional network, or years
-                of industry experience—but still have valuable skills and
-                experiences worth presenting well.
-              </p>
-
-              <Link className="career-text-link" href="/career/faq">
-                Read the frequently asked questions
-                <span aria-hidden="true"> →</span>
-              </Link>
-            </div>
-
-            <ul className="career-audience-list">
-              {audiences.map((audience) => (
-                <li key={audience}>
-                  <span aria-hidden="true">+</span>
-                  {audience}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        <section className="career-principles career-section">
-          <div className="career-container">
-            <div className="career-section-heading">
-              <div>
-                <p className="career-section-eyebrow">The Review Standard</p>
-                <h2>Thoughtful guidance without empty promises.</h2>
-              </div>
-
-              <p>
-                The goal is not to make your materials sound impressive at any
-                cost. The goal is to represent your experience clearly,
-                confidently, and honestly.
-              </p>
-            </div>
-
-            <div className="career-principles-grid">
-              {principles.map((principle, index) => (
-                <article className="career-principle-card" key={principle.title}>
-                  <span className="career-principle-number">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3>{principle.title}</h3>
-                  <p>{principle.description}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="career-process career-section">
-          <div className="career-container">
-            <div className="career-section-heading">
-              <div>
-                <p className="career-section-eyebrow">How It Works</p>
-                <h2>A clear process from submission to next steps.</h2>
-              </div>
-
-              <p>
-                You will know what information to provide, what your service
-                includes, and what you will receive at the end of the review.
-              </p>
-            </div>
-
-            <div className="career-process-list">
-              {processSteps.map((step) => (
-                <article className="career-process-step" key={step.number}>
-                  <span className="career-process-number">{step.number}</span>
-
-                  <div>
-                    <h3>{step.title}</h3>
-                    <p>{step.description}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="career-report career-section">
-          <div className="career-container career-report-grid">
-            <div className="career-report-content">
-              <p className="career-section-eyebrow">
-                Career Intelligence Report
-              </p>
-
-              <h2>Understand what to change—and why it matters.</h2>
-
-              <p>
-                Reviews are structured to make your next steps clear. Instead of
-                receiving a page of disconnected comments, you will receive
-                organized feedback that identifies strengths, weaknesses,
-                priority changes, and practical recommendations.
-              </p>
-
-              <ul className="career-report-features">
-                <li>Overall assessment and first impression</li>
-                <li>What is already working well</li>
-                <li>High-priority improvements</li>
-                <li>Section-by-section recommendations</li>
-                <li>Role and audience alignment</li>
-                <li>Clear next steps</li>
-              </ul>
-            </div>
-
-            <aside
-              className="career-report-preview"
-              aria-label="Example Career Intelligence Report"
-            >
-              <div className="career-report-preview-header">
-                <p>Cyber Grad Chronicles</p>
-                <span>Career Intelligence Report</span>
-              </div>
-
-              <div className="career-report-preview-body">
-                <div className="career-report-preview-score">
-                  <span>Overall Assessment</span>
-                  <strong>Career Readiness</strong>
-                </div>
-
-                <div className="career-report-preview-section">
-                  <span>01</span>
-                  <p>Top Strengths</p>
-                </div>
-
-                <div className="career-report-preview-section">
-                  <span>02</span>
-                  <p>Priority Improvements</p>
-                </div>
-
-                <div className="career-report-preview-section">
-                  <span>03</span>
-                  <p>Detailed Recommendations</p>
-                </div>
-
-                <div className="career-report-preview-section">
-                  <span>04</span>
-                  <p>Next-Step Action Plan</p>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section className="career-bundles career-section">
-          <div className="career-container">
-            <div className="career-section-heading">
-              <div>
-                <p className="career-section-eyebrow">Service Bundles</p>
-                <h2>Build a stronger professional presence across platforms.</h2>
-              </div>
-
-              <p>
-                Bundles are designed for job seekers who need coordinated
-                feedback across more than one career document or platform.
-              </p>
-            </div>
-
-            <div className="career-bundles-grid">
-              {bundleHighlights.map((bundle) => (
-                <article
-                  className={`career-bundle-card${
-                    bundle.featured ? " career-bundle-card-featured" : ""
-                  }`}
-                  key={bundle.title}
-                >
-                  {bundle.featured && (
-                    <span className="career-bundle-badge">Recommended</span>
-                  )}
-
-                  <h3>{bundle.title}</h3>
-                  <p className="career-bundle-price">{bundle.price}</p>
-                  <p>{bundle.description}</p>
-
-                  <ul>
-                    {bundle.included.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-
-                  <Link
-                    className={
-                      bundle.featured
-                        ? "career-button career-button-primary"
-                        : "career-button career-button-secondary"
-                    }
-                    href="/career/bundles"
-                  >
-                    View Bundle Details
-                  </Link>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="career-transparency career-section">
-          <div className="career-container career-transparency-grid">
-            <div>
-              <p className="career-section-eyebrow">A Transparent Approach</p>
-              <h2>Advice grounded in research, experience, and continued learning.</h2>
-            </div>
-
-            <div className="career-transparency-copy">
-              <p>
-                I am not presenting myself as a recruiter, hiring manager, or
-                career coach with decades of industry experience. I am a
-                cybersecurity professional, researcher, military spouse, and
-                career builder who has spent extensive time studying hiring
-                practices, resume strategy, portfolio development, federal
-                applications, LinkedIn, and the challenges facing early-career
-                candidates.
-              </p>
-
-              <p>
-                My role is to give you the same kind of thorough, thoughtful
-                review I would want when preparing my own career materials. I do
-                not guarantee interviews, job offers, or employment outcomes. I
-                provide honest feedback and practical recommendations that can
-                help you present your work more effectively.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="career-final-cta">
-          <div className="career-container career-final-cta-inner">
-            <div>
-              <p className="career-section-eyebrow">
-                Your Work Deserves to Be Understood
-              </p>
-              <h2>Build career materials you feel confident sharing.</h2>
-              <p>
-                Choose an individual review or explore a bundled assessment for
-                more complete guidance.
-              </p>
-            </div>
-
-            <div className="career-final-cta-actions">
-              <a className="career-button career-button-primary" href="#services">
-                Choose a Service
+                Choose a pathway
               </a>
-
               <Link
                 className="career-button career-button-secondary"
-                href="/career/faq"
+                href="/career/mentorship"
               >
-                Read the FAQ
+                Explore mentorship
               </Link>
             </div>
           </div>
-        </section>
-      </main>
-    </>
+          <aside
+            className="career-home-summary"
+            aria-label="Career readiness pathways"
+          >
+            <span>Your readiness map</span>
+            <ol>
+              {readinessPaths.map((path) => (
+                <li key={path.number}>
+                  <span>{path.number}</span>
+                  {path.title}
+                </li>
+              ))}
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section className="career-section" id="readiness-paths">
+        <div className="career-container">
+          <div className="career-readiness-intro">
+            <div>
+              <p className="career-section-eyebrow">
+                Four Ways to Move Forward
+              </p>
+              <h2>Start with the gap that matters most.</h2>
+            </div>
+            <p>
+              Career readiness is not one document or one perfect profile. It is
+              the alignment between what you know, the proof you can show, the
+              story you tell, and the direction you choose next.
+            </p>
+          </div>
+          <div className="career-readiness-grid">
+            {readinessPaths.map((path) => (
+              <article
+                className={`career-readiness-card${path.featured ? " career-readiness-card-featured" : ""}`}
+                key={path.title}
+              >
+                <div className="career-readiness-card-top">
+                  <span className="career-readiness-number">{path.number}</span>
+                  <span className="career-readiness-label">{path.label}</span>
+                </div>
+                <h3>{path.title}</h3>
+                <p>{path.description}</p>
+                <ul>
+                  {path.outcomes.map((outcome) => (
+                    <li key={outcome}>{outcome}</li>
+                  ))}
+                </ul>
+                <div className="career-readiness-links">
+                  {path.links.map((link) => (
+                    <Link
+                      className="career-button career-button-secondary"
+                      href={link.href}
+                      key={link.href}
+                    >
+                      {link.text}
+                    </Link>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="career-support-section career-section">
+        <div className="career-container">
+          <div className="career-support-heading">
+            <p className="career-section-eyebrow">Additional Support</p>
+            <h2>Prepare for the whole process.</h2>
+            <p>
+              Once your foundation is clear, strengthen how you interview,
+              compare coordinated services, and understand what to expect.
+            </p>
+          </div>
+          <div className="career-support-grid">
+            {supportLinks.map((item) => (
+              <article className="career-support-card" key={item.href}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+                <Link href={item.href}>Explore {item.title} →</Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="career-section">
+        <div className="career-container career-home-process">
+          <div>
+            <p className="career-section-eyebrow">A Clear Starting Point</p>
+            <h2>Build in the right order.</h2>
+          </div>
+          <ol className="career-home-steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Choose the current gap</h3>
+                <p>
+                  Focus on the document, platform, proof, or question creating
+                  the most friction.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Share useful context</h3>
+                <p>
+                  Your goals, target roles, experience, and constraints make
+                  guidance more relevant.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Apply prioritized feedback</h3>
+                <p>
+                  Make the highest-impact changes first instead of rebuilding
+                  everything at once.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section className="career-final-cta">
+        <div className="career-container career-final-cta-inner">
+          <div>
+            <p className="career-section-eyebrow">Proof Before Opportunity</p>
+            <h2>You do not need a traditional path to build credible work.</h2>
+            <p>
+              Start with a readiness pathway or share your goals through the
+              mentorship interest questionnaire.
+            </p>
+          </div>
+          <div className="career-final-cta-actions">
+            <a
+              className="career-button career-button-primary"
+              href="#readiness-paths"
+            >
+              Choose a pathway
+            </a>
+            <Link
+              className="career-button career-button-secondary"
+              href="/career/mentorship"
+            >
+              Mentorship Interest
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

@@ -42,12 +42,6 @@ const socialLinks = [
     href: "https://www.tiktok.com/@cybergradchronicles",
     label: "Open TikTok →",
   },
-  {
-    title: "Instagram",
-    text: "Follow visual updates, resources, and Cyber Grad Chronicles posts.",
-    href: "https://www.instagram.com/cybergradchronicles",
-    label: "Open Instagram →",
-  },
 ];
 
 export default function ConnectPage() {
@@ -73,7 +67,10 @@ export default function ConnectPage() {
             </p>
 
             <div className="connect-buttons">
-              <a href="mailto:cybergradchronicles@gmail.com" className="connect-btn">
+              <a
+                href="mailto:cybergradchronicles@gmail.com"
+                className="connect-btn"
+              >
                 Email Me
               </a>
 
@@ -112,7 +109,11 @@ export default function ConnectPage() {
                 key={link.title}
                 href={link.href}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  link.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className="connect-card card"
               >
                 <h3>{link.title}</h3>
@@ -150,7 +151,12 @@ export default function ConnectPage() {
             >
               <label>
                 Name
-                <input type="text" name="name" placeholder="Your name" required />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
               </label>
 
               <label>
