@@ -89,6 +89,30 @@ const certifications = [
   },
 ];
 
+const professionalMemberships = [
+  {
+    title: "National Society of Leadership and Success (NSLS)",
+    affiliation: "American Military University Alumni Chapter",
+    type: "Member",
+    description:
+      "Pursuing leadership development, mentorship, and professional networking to support my continued growth in technology and the development of Cyber Grad Chronicles.",
+  },
+  {
+    title: "Women in CyberSecurity (WiCyS)",
+    affiliation: "Professional Membership",
+    type: "Member",
+    description:
+      "Connected to a global community supporting the recruitment, retention, and advancement of women in cybersecurity.",
+  },
+  {
+    title: "Golden Key International Honour Society",
+    affiliation: "Academic Honor Society",
+    type: "Member",
+    description:
+      "Recognized for academic excellence while completing a Bachelor of Science in Cybersecurity at American Military University.",
+  },
+];
+
 const projects = [
   {
     title: "Threat Intelligence Portfolio",
@@ -426,6 +450,36 @@ export default function CredentialsPage() {
                 ) : (
                   <span>{item.type}</span>
                 )}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* LEADERSHIP & PROFESSIONAL MEMBERSHIPS */}
+        <section className="credential-section">
+          <div className="credential-section-heading">
+            <p className="credentials-eyebrow">
+              Leadership &amp; Professional Memberships
+            </p>
+
+            <h2>Learning, leadership, and community.</h2>
+
+            <p>
+              Professional communities supporting my continued development in
+              cybersecurity, technology leadership, education, and
+              entrepreneurship.
+            </p>
+          </div>
+
+          <div className="credential-list">
+            {professionalMemberships.map((membership) => (
+              <article className="credential-row" key={membership.title}>
+                <div>
+                  <p className="credential-tag">{membership.type}</p>
+                  <h3>{membership.title}</h3>
+                  <p>{membership.affiliation}</p>
+                  <p>{membership.description}</p>
+                </div>
               </article>
             ))}
           </div>
