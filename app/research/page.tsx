@@ -1,3 +1,4 @@
+import LibrarySearch from "../components/ui/LibrarySearch";
 import Link from "next/link";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
@@ -230,14 +231,16 @@ export default function ResearchPage() {
               resources built through documented practice.
             </p>
 
-            <p>
-              This is where Cyber Grad Chronicles becomes part research archive,
-              part analyst notebook, and part proof-of-work portfolio.
-            </p>
+
+            <div className="research-stats" aria-label="Library overview">
+              <span>{researchArticles.length} articles</span>
+              <span>{categories.length} topics</span>
+              <span>Research, projects, and practical guides</span>
+            </div>
 
             <div className="research-buttons">
-              <Link href="#threat-intelligence" className="research-btn primary">
-                Browse Intelligence
+              <Link href="#research-library" className="research-btn primary">
+                Find an article
               </Link>
 
               <Link
@@ -250,19 +253,23 @@ export default function ResearchPage() {
           </div>
         </section>
 
-        {/* INTRO */}
-        <section className="research-intro">
-          <p className="research-eyebrow">Intelligence Library</p>
-
-          <h2>Research, reflection, and technical proof.</h2>
-
-          <p>
-            Browse threat intelligence, hands-on projects, career reflections,
-            and practical cybersecurity resources built through documented
-            learning and professional growth.
-          </p>
-        </section>
-
+        <LibrarySearch
+          anchor="research-library"
+          label="Search Research articles"
+          noun="articles"
+          hint="Search article titles, summaries, categories, tags, and key takeaways."
+          items={researchArticles.map((article) => ({
+            href: `/research/${article.slug}`,
+            title: article.title,
+            description: article.description,
+            category: article.category,
+            meta: article.difficulty + " \u00b7 Updated " + article.lastUpdated,
+            keywords: [
+              article.originalTitle ?? "", article.fileId, article.type,
+              article.difficulty, ...article.quickStart, ...article.keyTakeaways,
+            ].join(" "),
+          }))}
+        >
         {/* CATEGORY NAVIGATION */}
         <nav className="research-jump-strip" aria-label="Research categories">
           {categories.map((category) => (
@@ -345,6 +352,8 @@ export default function ResearchPage() {
           );
         })}
 
+        </LibrarySearch>
+
         {/* CLOSING CALLOUT */}
         <section className="research-callout">
           <div>
@@ -356,11 +365,9 @@ export default function ResearchPage() {
             </h2>
 
             <p>
-              <p>
-                Every file in this library is part of that record: a lab, reflection,
-                research brief, technical project, or resource created while building my
-                path into technology and cybersecurity.
-              </p>
+              Every file in this library is part of that record: a lab, reflection,
+              research brief, technical project, or resource created while building my
+              path into technology and cybersecurity.
             </p>
 
             <div className="research-buttons">

@@ -1,3 +1,4 @@
+import LibrarySearch from "../components/ui/LibrarySearch";
 import Image from "next/image";
 import Link from "next/link";
 import { academyModules } from "./academyData";
@@ -17,7 +18,7 @@ export default function AcademyPage() {
             <h1>Cybersecurity, explained one clear lesson at a time.</h1>
             <p className="academy-lede">Build practical digital safety habits, understand common threats, and explore cybersecurity without assuming you already speak the language.</p>
             <div className="academy-actions">
-              <a className="academy-button academy-button-primary" href="#modules">Explore modules</a>
+              <a className="academy-button academy-button-primary" href="#academy-library">Explore modules</a>
               <Link className="academy-button academy-button-secondary" href="/academy/cybersecurity-101/what-is-cybersecurity">Start your first lesson</Link>
             </div>
           </div>
@@ -28,6 +29,28 @@ export default function AcademyPage() {
         </div>
       </section>
 
+      <LibrarySearch
+        anchor="academy-library"
+        label="Search Academy lessons"
+        noun="lessons"
+        hint="Find a lesson by title, module, or a topic covered in the lesson."
+        items={academyModules.flatMap((module) =>
+          module.lessons.map((lesson) => ({
+            href: `/academy/${module.slug}/${lesson.slug}`,
+            title: lesson.title,
+            description: lesson.introduction,
+            category: module.title,
+            meta: lesson.duration + " \u00b7 Beginner",
+            keywords: [
+              module.description,
+              lesson.takeaway,
+              ...lesson.sections.flatMap((section) => [
+                section.title, section.body, ...(section.tips ?? []),
+              ]),
+            ].join(" "),
+          })),
+        )}
+      >
       <section className="academy-section" id="modules">
         <div className="academy-shell">
           <div className="academy-section-heading">
@@ -38,7 +61,7 @@ export default function AcademyPage() {
             {academyModules.map((module) => (
               <article className="academy-module-card" key={module.slug}>
                 <Link href={`/academy/${module.slug}`} className="academy-module-image" aria-label={`Open ${module.title}`}>
-                  <Image src={module.image} alt="" fill sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw" />
+                  <Image src={module.image} alt="" fill sizes="(max-width: 800px) 100vw, 50vw" />
                   <span>{module.number}</span>
                 </Link>
                 <div className="academy-module-content">
@@ -46,7 +69,7 @@ export default function AcademyPage() {
                   <h3><Link href={`/academy/${module.slug}`}>{module.title}</Link></h3>
                   <p>{module.description}</p>
                   <ul aria-label={`${module.title} lessons`}>
-                    {module.lessons.map((lesson) => <li key={lesson.slug}><Link href={`/academy/${module.slug}/${lesson.slug}`}>{lesson.title}<span aria-hidden="true">→</span></Link></li>)}
+                    {module.lessons.map((lesson) => <li key={lesson.slug}><Link href={`/academy/${module.slug}/${lesson.slug}`}><span className="academy-lesson-preview">{lesson.title}<small>{lesson.duration}</small></span><span aria-hidden="true">→</span></Link></li>)}
                   </ul>
                   <Link className="academy-text-link" href={`/academy/${module.slug}`}>View module <span aria-hidden="true">→</span></Link>
                 </div>
@@ -55,6 +78,8 @@ export default function AcademyPage() {
           </div>
         </div>
       </section>
+
+      </LibrarySearch>
 
       <section className="academy-method">
         <div className="academy-shell academy-method-grid">

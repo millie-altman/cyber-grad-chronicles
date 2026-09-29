@@ -1,3 +1,7 @@
+import PromptInjectionContent from "./prompt-injection";
+import IndirectPromptInjectionContent from "./indirect-prompt-injection";
+import AutonomousOffensiveCyberContent from "./autonomous-offensive-cyber";
+import ShinyHuntersContent from "./shinyhunters";
 import BuildingFromAlaskaContent from "./building-from-alaska";
 import BuildingProofBeforeOpportunityContent from "./building-proof-before-opportunity";
 import CTIResearchLabContent from "./cti-research-lab";
@@ -23,6 +27,10 @@ import VoltTyphoonContent from "./volt-typhoon";
 import TransitionGapContent from "./the-transition-gap";
 
 export const contentMap: Record<string, React.ComponentType> = {
+  "prompt-injection": PromptInjectionContent,
+  "indirect-prompt-injection": IndirectPromptInjectionContent,
+  "autonomous-offensive-cyber": AutonomousOffensiveCyberContent,
+  "shinyhunters": ShinyHuntersContent,
   "building-from-alaska": BuildingFromAlaskaContent,
   "building-proof-before-opportunity": BuildingProofBeforeOpportunityContent,
   "cti-research-lab": CTIResearchLabContent,

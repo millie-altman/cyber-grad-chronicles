@@ -8,9 +8,7 @@
   text-align: center;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/* HERO */
 
 .cg-hero {
   position: relative;
@@ -19,11 +17,9 @@
   align-items: center;
   justify-content: center;
   padding: 7rem 1.5rem 5rem;
-
   background-image: url("/images/home-page.png");
   background-size: cover;
   background-position: center;
-
   overflow: hidden;
   border-bottom: 1px solid var(--border-light);
 }
@@ -31,7 +27,6 @@
 .cg-hero-overlay {
   position: absolute;
   inset: 0;
-
   background:
     radial-gradient(
       circle at center,
@@ -44,16 +39,13 @@
 .cg-hero-content {
   position: relative;
   z-index: 2;
-
   max-width: 900px;
   margin-top: 4rem;
-
   text-align: center;
 }
 
 .cg-eyebrow {
   margin: 0 0 1rem;
-
   color: var(--accent-dark);
   font-size: 0.76rem;
   font-weight: 700;
@@ -67,7 +59,6 @@
 .cg-career-feature h2,
 .cg-callout h2 {
   margin: 0;
-
   color: var(--accent);
   font-weight: 400;
   letter-spacing: 0.13em;
@@ -78,15 +69,12 @@
 .cg-hero h1 {
   font-size: clamp(3.2rem, 7vw, 7rem);
   line-height: 0.95;
-
   text-shadow: 0 0 34px rgba(0, 0, 0, 0.95);
 }
 
 .cg-hero h1 span {
   display: block;
-
   margin-top: 0.5rem;
-
   color: var(--accent-light);
   font-size: 0.38em;
   letter-spacing: 0.42em;
@@ -95,7 +83,6 @@
 .cg-hero-text {
   max-width: 760px;
   margin: 1.8rem auto 0;
-
   color: var(--text-primary);
   font-size: 1.08rem;
   line-height: 1.8;
@@ -106,9 +93,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-
   margin-top: 1.5rem;
-
   color: var(--text-secondary);
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -128,16 +113,13 @@
   transform: translateX(4px);
 }
 
-/* =========================================================
-   BUTTONS
-   ========================================================= */
+/* BUTTONS */
 
 .cg-buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-
   margin-top: 2.1rem;
 }
 
@@ -145,22 +127,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   min-width: 175px;
   padding: 0.9rem 1.35rem;
-
   color: var(--accent);
   background: rgba(5, 7, 9, 0.35);
   border: 1px solid var(--accent);
   border-radius: var(--radius-sm);
-
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
   transition: var(--transition);
 }
 
@@ -172,14 +150,11 @@
   color: var(--accent-light);
   background: var(--hover-glow);
   border-color: var(--accent-light);
-
   box-shadow: 0 0 24px var(--hover-glow);
   transform: translateY(-2px);
 }
 
-/* =========================================================
-   SHARED SECTIONS
-   ========================================================= */
+/* SHARED SECTIONS */
 
 .cg-intro,
 .cg-section,
@@ -187,9 +162,7 @@
 .cg-callout {
   width: 100%;
   padding: 5rem 1.5rem;
-
   box-sizing: border-box;
-
   background:
     radial-gradient(
       circle at top left,
@@ -230,7 +203,6 @@
 .cg-career-feature h2,
 .cg-callout h2 {
   margin-bottom: 1rem;
-
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 1.15;
 }
@@ -244,9 +216,7 @@
   line-height: 1.8;
 }
 
-/* =========================================================
-   SECTION HEADER
-   ========================================================= */
+/* SECTION HEADER */
 
 .cg-section-header {
   margin-bottom: 2.5rem;
@@ -258,9 +228,7 @@
   margin: 1rem auto 0;
 }
 
-/* =========================================================
-   EXPLORE CARDS
-   ========================================================= */
+/* EXPLORE CARDS */
 
 .cg-card-grid {
   display: grid;
@@ -272,28 +240,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
   min-height: 270px;
   padding: 2rem;
-
   text-decoration: none;
-
   background: linear-gradient(
     145deg,
     rgba(8, 11, 13, 0.96) 0%,
     rgba(12, 16, 18, 0.93) 45%,
     rgba(20, 16, 10, 0.88) 100%
   );
-
   border: 1px solid rgba(184, 138, 68, 0.18);
   border-radius: var(--radius-md);
-
   box-shadow:
     0 12px 30px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
-
   backdrop-filter: blur(10px);
-
   transition: var(--transition);
 }
 
@@ -302,12 +263,9 @@
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 2px;
-
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
-
   opacity: 0;
   transition: opacity var(--transition);
 }
@@ -319,13 +277,10 @@
     rgba(20, 24, 26, 0.95) 50%,
     rgba(35, 24, 12, 0.9) 100%
   );
-
   border-color: var(--accent-light);
-
   box-shadow:
     0 0 28px rgba(184, 138, 68, 0.14),
     0 14px 34px rgba(0, 0, 0, 0.55);
-
   transform: translateY(-5px);
 }
 
@@ -335,9 +290,7 @@
 
 .cg-card > span:first-child {
   display: block;
-
   margin-bottom: 1rem;
-
   color: var(--accent-dark);
   font-size: 0.75rem;
   font-weight: 700;
@@ -346,7 +299,6 @@
 
 .cg-card h3 {
   margin: 0 0 1rem;
-
   color: #d7a35d;
   font-size: 1.05rem;
   font-weight: 400;
@@ -357,7 +309,6 @@
 
 .cg-card p {
   margin: 0 0 1.5rem;
-
   color: rgba(244, 240, 232, 0.72);
   font-size: 0.98rem;
 }
@@ -366,9 +317,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
   margin-top: auto;
-
   color: var(--accent-light);
   font-size: 0.72rem;
   font-weight: 700;
@@ -378,11 +327,9 @@
 
 .cg-card-link span {
   margin: 0;
-
   color: var(--accent);
   font-size: inherit;
   letter-spacing: normal;
-
   transition: transform var(--transition);
 }
 
@@ -394,14 +341,12 @@
 
 .cg-card-featured {
   border-color: rgba(214, 184, 123, 0.52);
-
   background: linear-gradient(
     145deg,
     rgba(13, 17, 19, 0.98),
     rgba(24, 27, 25, 0.95) 52%,
     rgba(45, 30, 13, 0.92)
   );
-
   box-shadow:
     0 0 30px rgba(184, 138, 68, 0.12),
     0 14px 34px rgba(0, 0, 0, 0.52);
@@ -411,31 +356,24 @@
   position: absolute;
   top: 1.4rem;
   right: 1.4rem;
-
   margin: 0;
   padding: 0.35rem 0.65rem;
-
   color: var(--bg-primary);
   background: var(--accent-light);
   border-radius: var(--radius-sm);
-
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-/* =========================================================
-   CAREER INTELLIGENCE FEATURE
-   ========================================================= */
+/* CAREER INTELLIGENCE FEATURE */
 
 .cg-career-feature {
   position: relative;
   overflow: hidden;
-
   border-top: 1px solid rgba(184, 138, 68, 0.18);
   border-bottom: 1px solid rgba(184, 138, 68, 0.18);
-
   background:
     radial-gradient(
       circle at 85% 20%,
@@ -449,11 +387,9 @@
   content: "";
   position: absolute;
   inset: 0;
-
   background:
     linear-gradient(rgba(184, 138, 68, 0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(184, 138, 68, 0.025) 1px, transparent 1px);
-
   background-size: 48px 48px;
   pointer-events: none;
 }
@@ -461,7 +397,6 @@
 .cg-career-feature-content {
   position: relative;
   z-index: 1;
-
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: 4rem;
@@ -481,7 +416,6 @@
 .cg-career-feature-services {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
   border-top: 1px solid rgba(184, 138, 68, 0.22);
 }
 
@@ -489,10 +423,8 @@
   display: flex;
   align-items: center;
   gap: 0.9rem;
-
   min-height: 76px;
   padding: 1rem 1.2rem;
-
   color: var(--text-secondary);
   border-bottom: 1px solid var(--border);
   transition: var(--transition);
@@ -517,17 +449,13 @@
 .cg-career-feature > .cg-buttons {
   position: relative;
   z-index: 1;
-
   margin-top: 3rem;
 }
 
-/* =========================================================
-   CALLOUT
-   ========================================================= */
+/* CALLOUT */
 
 .cg-callout {
   text-align: center;
-
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -543,9 +471,7 @@
   margin-right: auto;
 }
 
-/* =========================================================
-   ACCESSIBILITY
-   ========================================================= */
+/* ACCESSIBILITY */
 
 .cg-card:focus-visible,
 .cg-btn:focus-visible,
@@ -555,9 +481,7 @@
   outline-offset: 4px;
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* RESPONSIVE */
 
 @media (max-width: 1050px) {
   .cg-card-grid {

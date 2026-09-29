@@ -1,41 +1,49 @@
 :root {
   /* Typography */
+
   --font-sans: Georgia, "Times New Roman", serif;
   --font-serif: Georgia, "Times New Roman", serif;
   --font-mono: Georgia, "Times New Roman", serif;
 
   /* Backgrounds */
+
   --bg-primary: #050709;
   --bg-secondary: #0b1013;
   --bg-card: #11171a;
   --bg-hover: #1a2226;
 
   /* Borders */
+
   --border: #232b2f;
   --border-light: #374047;
 
   /* Accent */
+
   --accent: #b88a44;
   --accent-light: #d6b87b;
   --accent-dark: #8f6b35;
 
   /* Text */
+
   --text-primary: #f4f0e8;
   --text-secondary: #b8b1a5;
   --text-muted: #8a8a87;
 
   /* Status */
+
   --success: #4c8c62;
   --warning: #d9a441;
   --danger: #b84d4d;
   --info: #4f7da8;
 
   /* Effects */
+
   --hover-glow: rgba(197, 161, 120, 0.18);
   --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.28);
   --shadow-heavy: 0 16px 40px rgba(0, 0, 0, 0.42);
 
   /* Layout */
+
   --radius-sm: 0.25rem;
   --radius-md: 0.45rem;
   --radius-lg: 0.75rem;
@@ -69,7 +77,6 @@ body {
       transparent 28%
     ),
     linear-gradient(135deg, var(--bg-primary), var(--bg-secondary) 45%, #050709);
-
   color: var(--text-primary);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.7;
@@ -173,14 +180,11 @@ img {
     rgba(12, 16, 18, 0.93) 45%,
     rgba(20, 16, 10, 0.88) 100%
   );
-
   border: 1px solid rgba(184, 138, 68, 0.18);
   border-radius: var(--radius-md);
-
   box-shadow:
     0 12px 30px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
-
   backdrop-filter: blur(10px);
   transition: var(--transition);
 }
@@ -192,13 +196,10 @@ img {
     rgba(20, 24, 26, 0.95) 50%,
     rgba(35, 24, 12, 0.9) 100%
   );
-
   border-color: var(--accent-light);
-
   box-shadow:
     0 0 28px rgba(184, 138, 68, 0.14),
     0 14px 34px rgba(0, 0, 0, 0.55);
-
   transform: translateY(-4px);
 }
 
@@ -287,6 +288,7 @@ h6 {
     padding-inline: 1rem;
   }
 }
+
 .page-hero {
   width: min(1180px, 100%);
   margin: 0 auto;
@@ -313,4 +315,11 @@ h6 {
 
 .section-card p {
   color: var(--text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
 }

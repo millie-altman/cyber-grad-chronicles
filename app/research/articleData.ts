@@ -27,6 +27,126 @@ export type ResearchArticle = {
 
 export const researchArticles: ResearchArticle[] = [
   {
+    fileId: "AI-001",
+    slug: "prompt-injection",
+    title: "Prompt Injection: When Input Becomes an Instruction",
+    originalTitle: "Prompt Injection",
+    category: "Labs & Projects",
+    type: "Agentic AI Security Research",
+    difficulty: "Intermediate",
+    description: "How prompt injection can redirect tool-enabled agents, and why authorization, least privilege, and action validation belong outside the model.",
+    lastUpdated: "September 28, 2026",
+    quickStart: [
+      "Agentic AI",
+      "Prompt Injection",
+      "Tool Authorization",
+      "Research in Progress"
+    ],
+    note: "The useful design question is what an agent can do after it misinterprets input. Restricting permissions and checking actions independently makes that question testable.",
+    keyTakeaways: [
+      "Untrusted content can redirect an agent toward an unauthorized objective.",
+      "Tool access increases the consequences of manipulated reasoning.",
+      "Authorization must be enforced independently of the model.",
+      "The proposed lab compares controls; completed test results are not claimed."
+    ],
+    github: "https://github.com/millie-altman/agentic-ai-security/blob/main/research/01-prompt-injection.md",
+    related: [
+      "indirect-prompt-injection",
+      "autonomous-offensive-cyber",
+      "cti-research-lab"
+    ]
+  },
+  {
+    fileId: "AI-002",
+    slug: "indirect-prompt-injection",
+    title: "Indirect Prompt Injection: The Risk in What Agents Read",
+    originalTitle: "Indirect Prompt Injection",
+    category: "Labs & Projects",
+    type: "Agentic AI Security Research",
+    difficulty: "Intermediate",
+    description: "A study of malicious instructions in retrieved documents, tool responses, and agent memory, with a proposed synthetic-data defense lab.",
+    lastUpdated: "September 28, 2026",
+    quickStart: [
+      "Agentic AI",
+      "Indirect Prompt Injection",
+      "RAG",
+      "Trust Boundaries"
+    ],
+    note: "A legitimate retrieval tool can return hostile content. Source provenance and task-scoped permissions should remain visible throughout retrieval, planning, and tool execution.",
+    keyTakeaways: [
+      "The attacker can influence an agent without using its chat interface.",
+      "Retrieved content and tool responses do not grant authority.",
+      "Memory and agent handoffs can carry poisoned context forward.",
+      "Measure attempted actions, blocked actions, and actual disclosure separately."
+    ],
+    github: "https://github.com/millie-altman/agentic-ai-security/blob/main/research/02-indirect-prompt-injection.md",
+    related: [
+      "prompt-injection",
+      "autonomous-offensive-cyber",
+      "social-engineering-everyday"
+    ]
+  },
+  {
+    fileId: "AI-003",
+    slug: "autonomous-offensive-cyber",
+    title: "Autonomous Offensive Cyber: Reading the Evidence",
+    originalTitle: "Autonomous Offensive Cyber: Analysis of Booz Allen's The Offensive Frontier",
+    category: "Labs & Projects",
+    type: "Agentic AI Research Analysis",
+    difficulty: "Intermediate",
+    description: "An analysis of Booz Allen's Cyber Weapon Index, the difference between vulnerability research and intrusion execution, and the limits of controlled evaluations.",
+    lastUpdated: "September 28, 2026",
+    quickStart: [
+      "Agentic AI",
+      "Booz Allen",
+      "Cyber Weapon Index",
+      "Defensive Evaluation"
+    ],
+    note: "An assessment is more useful when it preserves the test environment, tools, and permissions behind a result. A ranking alone cannot describe the risk to a particular organization.",
+    keyTakeaways: [
+      "Vulnerability research and intrusion execution are distinct capabilities.",
+      "Evaluate the model together with its tools, permissions, and operating environment.",
+      "Controlled-test success does not establish universal real-world success.",
+      "The source analysis notes an addendum that supersedes the original rankings."
+    ],
+    github: "https://github.com/millie-altman/agentic-ai-security/blob/main/research/03-autonomous-offensive-cyber.md",
+    related: [
+      "prompt-injection",
+      "indirect-prompt-injection",
+      "cti-research-lab"
+    ]
+  },
+  {
+    fileId: "ACT-005",
+    slug: "shinyhunters",
+    title: "ShinyHunters: Claims, Evidence, and the FBIJobs.gov Investigation",
+    originalTitle: "Threat Actor Profile: ShinyHunters",
+    category: "Threat Intelligence",
+    type: "Developing Threat Actor Profile",
+    difficulty: "Intermediate",
+    description: "A September 25, 2026 assessment of the FBIJobs.gov incident, separating the reported investigation from unverified data-volume and intrusion-method claims.",
+    lastUpdated: "September 28, 2026",
+    quickStart: [
+      "ShinyHunters",
+      "FBIJobs.gov",
+      "Data Theft",
+      "Developing Assessment"
+    ],
+    note: "Attribution and incident scope need their own evidence. A recognizable actor name or apparently genuine sample does not establish the entry point, the full volume of data, or access to a wider enterprise.",
+    keyTakeaways: [
+      "This article reflects the source profile's September 25, 2026 evidence cutoff.",
+      "The reported investigation does not establish the full scope of a compromise.",
+      "The claimed data volume and PeopleSoft entry point remain unverified in the source.",
+      "The separate PeopleSoft campaign must not be treated as proof of the FBIJobs.gov attack path."
+    ],
+    github: "https://github.com/millie-altman/threat-actor-profiles/blob/main/cybercriminal/shinyhunters.md",
+    related: [
+      "scattered-spider",
+      "cl0p",
+      "phishing-red-flags"
+    ]
+  },
+  {
     fileId: "INT-001",
     slug: "blackcat-alphv",
     title: "The BlackCat / ALPHV Dossier",

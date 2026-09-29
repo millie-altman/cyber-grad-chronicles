@@ -62,6 +62,13 @@ export default async function ResearchArticlePage({ params }: Props) {
 
           <p className="last-updated">Last Updated: {article.lastUpdated}</p>
 
+          <nav className="research-reading-links" aria-label="Article sections">
+            <a href="#article-analysis">Analysis</a>
+            <a href="#article-takeaways">Key takeaways</a>
+            {article.github && <a href="#article-source">Source research</a>}
+            {relatedArticles.length > 0 && <a href="#article-related">Related reading</a>}
+          </nav>
+
           {article.image && (
             <div
               className="library-article-hero"
@@ -69,7 +76,7 @@ export default async function ResearchArticlePage({ params }: Props) {
             />
           )}
 
-          <section className="article-section">
+          <section className="article-section" id="article-analysis">
             {ArticleContent ? (
               <ArticleContent />
             ) : (
@@ -82,11 +89,11 @@ export default async function ResearchArticlePage({ params }: Props) {
           </section>
 
           <section className="personal-note">
-            <h2>Millie's Perspective</h2>
+            <h2>Millie&apos;s Perspective</h2>
             <p>{article.note}</p>
           </section>
 
-          <section className="article-section">
+          <section className="article-section" id="article-takeaways">
             <h2>Key Takeaways</h2>
 
             <ul>
@@ -97,7 +104,7 @@ export default async function ResearchArticlePage({ params }: Props) {
           </section>
 
           {article.github && (
-            <section className="github-callout">
+            <section className="github-callout" id="article-source">
               <h2>Project Repository</h2>
 
               <p>
@@ -117,7 +124,7 @@ export default async function ResearchArticlePage({ params }: Props) {
           )}
 
           {relatedArticles.length > 0 && (
-            <section className="related-pages">
+            <section className="related-pages" id="article-related">
               <h2>Related Reading</h2>
 
               <div className="related-page-grid">
