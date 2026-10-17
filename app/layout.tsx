@@ -1,5 +1,24 @@
 import type { Metadata } from "next";
+import { JetBrains_Mono, Libre_Baskerville, Manrope } from "next/font/google";
 import "./globals.css";
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  variable: "--font-libre-baskerville",
+  weight: ["400", "700"],
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cybergradchronicles.com"),
@@ -78,7 +97,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${libreBaskerville.variable} ${manrope.variable} ${jetBrainsMono.variable}`}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
       <body>{children}</body>
     </html>
   );

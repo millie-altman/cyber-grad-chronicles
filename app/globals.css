@@ -1,21 +1,23 @@
 :root {
   /* Typography */
 
-  --font-sans: Georgia, "Times New Roman", serif;
-  --font-serif: Georgia, "Times New Roman", serif;
-  --font-mono: Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-manrope), Manrope, ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-libre-baskerville), "Libre Baskerville", Georgia, serif;
+  --font-ui: var(--font-manrope), Manrope, ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-libre-baskerville), "Libre Baskerville", Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
 
   /* Backgrounds */
 
-  --bg-primary: #050709;
-  --bg-secondary: #0b1013;
-  --bg-card: #11171a;
-  --bg-hover: #1a2226;
+  --bg-primary: #0b0e0f;
+  --bg-secondary: #111718;
+  --bg-card: #182022;
+  --bg-hover: #222c2d;
 
   /* Borders */
 
-  --border: #232b2f;
-  --border-light: #374047;
+  --border: #293334;
+  --border-light: #485351;
 
   /* Accent */
 
@@ -38,15 +40,15 @@
 
   /* Effects */
 
-  --hover-glow: rgba(197, 161, 120, 0.18);
-  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.28);
-  --shadow-heavy: 0 16px 40px rgba(0, 0, 0, 0.42);
+  --hover-glow: rgba(214, 184, 123, 0.18);
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.3);
+  --shadow-heavy: 0 22px 48px rgba(0, 0, 0, 0.46);
 
   /* Layout */
 
-  --radius-sm: 0.25rem;
-  --radius-md: 0.45rem;
-  --radius-lg: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.9rem;
+  --radius-lg: 1.25rem;
   --transition: 0.25s ease;
 }
 
@@ -78,7 +80,7 @@ body {
     ),
     linear-gradient(135deg, var(--bg-primary), var(--bg-secondary) 45%, #050709);
   color: var(--text-primary);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   line-height: 1.7;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -123,6 +125,29 @@ label,
 small,
 strong {
   font-family: var(--font-serif);
+}
+
+em,
+i,
+.script-accent {
+  font-family: var(--font-script);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+button,
+input,
+textarea,
+select,
+.eyebrow,
+.meta-text,
+.cg-eyebrow,
+.cg-btn,
+.navbar-links,
+.nav-button,
+.footer-eyebrow,
+.footer-column h4 {
+  font-family: var(--font-ui);
 }
 
 button {
@@ -266,7 +291,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
   letter-spacing: 0.08em;
   line-height: 1.15;

@@ -3,262 +3,98 @@ import Footer from "./components/layout/Footer";
 import Link from "next/link";
 import "./home.css";
 
+const coreAreas = [
+  { number: "01", title: "Academy", href: "/academy", description: "Build practical cybersecurity knowledge through lessons, learning paths, quizzes, achievements, and module completion.", link: "Start learning" },
+  { number: "02", title: "Career Intelligence", href: "/career", description: "Turn experience into direction with career roadmaps, resume and portfolio tools, interview preparation, and mentorship.", link: "Plan your next move" },
+  { number: "03", title: "Research Lab", href: "/research", description: "Explore threat intelligence, AI research, ransomware analysis, technical projects, and field notes from the lab.", link: "Enter the lab" },
+  { number: "04", title: "Community", href: "/military-spouse-hub", description: "Find encouragement, stories, practical resources, and a supportive starting point for military-connected learners.", link: "Find your community" },
+  { number: "05", title: "About the Founder", href: "/about", description: "Follow the journey, credentials, experience, GitHub projects, and the future vision for a digital twin.", link: "Meet the founder" },
+];
+
 export default function HomePage() {
   return (
     <>
       <LocalBanner />
-
       <main className="home-page">
-        {/* HERO */}
         <section className="cg-hero">
           <div className="cg-hero-overlay" />
-
           <div className="cg-hero-content">
-            <p className="cg-eyebrow">
-              Cybersecurity • Learning • Careers • Resilience
-            </p>
-
-            <h1>
-              Cyber Grad <span>Chronicles</span>
-            </h1>
-
-            <p className="cg-hero-text">
-              A cybersecurity learning hub, portfolio, research archive, and
-              career resource built for students, career changers, military
-              spouses, and rural learners.
-            </p>
-
+            <p className="cg-eyebrow">Cybersecurity · Learning · Careers · Resilience</p>
+            <h1>Cyber Grad <span>Chronicles</span></h1>
+            <p className="cg-hero-text">A cybersecurity learning and career platform for students, career changers, military spouses, and rural learners building what comes next.</p>
             <div className="cg-buttons">
-              <Link href="/academy" className="cg-btn primary">
-                Visit the Academy
-              </Link>
-
-              <Link href="/career" className="cg-btn secondary">
-                Explore Career Support
-              </Link>
+              <Link href="/academy" className="cg-btn primary">Visit the Academy</Link>
+              <Link href="/my-journey" className="cg-btn secondary">View My Journey</Link>
             </div>
-
-            <Link href="/journey" className="cg-hero-text-link">
-              Read the story behind Cyber Grad Chronicles
-              <span aria-hidden="true"> →</span>
-            </Link>
+            <Link href="/journey" className="cg-hero-text-link">Read the story behind Cyber Grad Chronicles <span aria-hidden="true"> →</span></Link>
           </div>
         </section>
 
-        {/* MISSION */}
         <section className="cg-intro">
-          <p className="cg-eyebrow">Mission</p>
-
+          <p className="cg-eyebrow">One platform, five ways forward</p>
           <h2>You can never fail if you do not stop trying.</h2>
-
-          <p>
-            Cyber Grad Chronicles documents the process of learning, building,
-            researching, failing forward, and proving that location,
-            background, and an unconventional path do not define potential.
-          </p>
+          <p>Cyber Grad Chronicles brings learning, career development, research, community, and the founder&apos;s story into one connected experience. Start with the area that meets you where you are, then follow the path that fits what you are building.</p>
         </section>
 
-        {/* EXPLORE */}
-        <section className="cg-section">
+        <section className="cg-section" aria-labelledby="core-areas-heading">
           <div className="cg-section-header">
-            <p className="cg-eyebrow">Explore</p>
-
-            <h2>Choose where you want to begin.</h2>
-
-            <p>
-              Explore cybersecurity research, career support, credentials,
-              community resources, and the journey behind the work.
-            </p>
+            <p className="cg-eyebrow">Explore the platform</p>
+            <h2 id="core-areas-heading">Choose where you want to begin.</h2>
+            <p>Each area has its own purpose, while the whole platform works together to support your growth.</p>
           </div>
-
-          <div className="cg-card-grid">
-            <Link href="/academy" className="cg-card cg-card-featured">
-              <span>01</span>
-
-              <div className="cg-card-badge">In Progress</div>
-
-              <h3>Academy</h3>
-
-              <p>
-                A beginner-friendly cybersecurity learning space currently being
-                rebuilt with clearer lessons, practical learning paths, and a
-                simpler experience.
-              </p>
-
-              <div className="cg-card-link">
-                Preview the Academy
-                <span aria-hidden="true"> →</span>
-              </div>
-            </Link>
-
-            <Link href="/research" className="cg-card">
-              <span>02</span>
-
-              <h3>Research</h3>
-
-              <p>
-                Threat briefs, actor profiles, lab notes, cyber awareness
-                articles, and career reflections.
-              </p>
-
-              <div className="cg-card-link">
-                Explore the Archive
-                <span aria-hidden="true"> →</span>
-              </div>
-            </Link>
-
-            <Link href="/career" className="cg-card">
-              <span>03</span>
-
-              <h3>Career Intelligence</h3>
-
-              <p>
-                Personalized resume, LinkedIn, GitHub, portfolio, and interview
-                support for people building their professional path.
-              </p>
-
-              <div className="cg-card-link">
-                View Career Services
-                <span aria-hidden="true"> →</span>
-              </div>
-            </Link>
-
-            <Link href="/credentials" className="cg-card">
-              <span>04</span>
-
-              <h3>Credentials</h3>
-
-              <p>
-                Certifications, technical projects, academic achievements, and
-                evidence of continued professional growth.
-              </p>
-
-              <div className="cg-card-link">
-                View Credentials
-                <span aria-hidden="true"> →</span>
-              </div>
-            </Link>
-
-            <Link href="/military-spouse-hub" className="cg-card">
-              <span>05</span>
-
-              <h3>Military Spouse Hub</h3>
-
-              <p>
-                Career resources, education programs, funding options, remote
-                work support, and relocation guidance.
-              </p>
-
-              <div className="cg-card-link">
-                Explore the Hub
-                <span aria-hidden="true"> →</span>
-              </div>
-            </Link>
-
-            <Link href="/journey" className="cg-card">
-              <span>06</span>
-
-              <h3>Journey</h3>
-
-              <p>
-                Honest reflections on learning cybersecurity, building from
-                Alaska, career transitions, resilience, and progress.
-              </p>
-
-              <div className="cg-card-link">
-                Read the Journey
-                <span aria-hidden="true"> →</span>
-              </div>
-            </Link>
+          <div className="cg-card-grid cg-core-grid">
+            {coreAreas.map((area) => (
+              <Link href={area.href} className="cg-card" key={area.title}>
+                <span>{area.number}</span>
+                <h3>{area.title}</h3>
+                <p>{area.description}</p>
+                <div className="cg-card-link">{area.link}<span aria-hidden="true"> →</span></div>
+              </Link>
+            ))}
           </div>
         </section>
 
-        {/* CAREER INTELLIGENCE FEATURE */}
+        <section className="cg-journey-feature">
+          <div>
+            <p className="cg-eyebrow">Optional progress dashboard</p>
+            <h2>Make your progress visible.</h2>
+            <p>My Journey is a personal dashboard for tracking Academy modules, career activities, achievements, and next steps. It is separate from the founder&apos;s personal Journey page, so your progress and the story behind the platform stay easy to understand.</p>
+          </div>
+          <Link href="/my-journey" className="cg-btn primary">Explore My Journey</Link>
+        </section>
+
         <section className="cg-career-feature">
           <div className="cg-career-feature-content">
             <div>
               <p className="cg-eyebrow">Career Intelligence</p>
-
               <h2>Your experience deserves to be understood.</h2>
-
-              <p>
-                Career Intelligence provides detailed, personalized support for
-                job seekers who need help communicating their skills,
-                experience, projects, and professional direction.
-              </p>
+              <p>Get focused support for communicating your skills, experience, projects, and professional direction.</p>
             </div>
-
             <div className="cg-career-feature-services">
-              <Link href="/career/resume-review">
-                <span>01</span>
-                Resume Review
-              </Link>
-
-              <Link href="/career/resume-rewrite">
-                <span>02</span>
-                Resume Rewrite
-              </Link>
-
-              <Link href="/career/linkedin-review">
-                <span>03</span>
-                LinkedIn Review
-              </Link>
-
-              <Link href="/career/github-review">
-                <span>04</span>
-                GitHub Review
-              </Link>
-
-              <Link href="/career/portfolio-review">
-                <span>05</span>
-                Portfolio Review
-              </Link>
-
-              <Link href="/career/interview-prep">
-                <span>06</span>
-                Interview Preparation
-              </Link>
+              <Link href="/career/resume-review"><span>01</span>Resume Review</Link>
+              <Link href="/career/resume-rewrite"><span>02</span>Resume Rewrite</Link>
+              <Link href="/career/linkedin-review"><span>03</span>LinkedIn Review</Link>
+              <Link href="/career/github-review"><span>04</span>GitHub Review</Link>
+              <Link href="/career/portfolio-review"><span>05</span>Portfolio Review</Link>
+              <Link href="/career/interview-prep"><span>06</span>Interview Preparation</Link>
             </div>
           </div>
-
           <div className="cg-buttons">
-            <Link href="/career" className="cg-btn primary">
-              Explore Career Intelligence
-            </Link>
-
-            <Link href="/career/bundles" className="cg-btn secondary">
-              Compare Bundles
-            </Link>
+            <Link href="/career" className="cg-btn primary">Explore Career Intelligence</Link>
+            <Link href="/career/bundles" className="cg-btn secondary">Compare Bundles</Link>
           </div>
         </section>
 
-        {/* CALLOUT */}
         <section className="cg-callout">
           <p className="cg-eyebrow">Built with purpose</p>
-
-          <h2>
-            Cybersecurity education and career resources should be easier to
-            find.
-          </h2>
-
-          <p>
-            This platform brings together the lessons, tools, programs, study
-            materials, professional guidance, and opportunities I wish I had
-            when I started building a cybersecurity career from rural Alaska.
-          </p>
-
+          <h2>There is more than one way to build a cybersecurity career.</h2>
+          <p>This platform brings together the lessons, tools, research, professional guidance, and community resources I wish I had when I started building from rural Alaska.</p>
           <div className="cg-buttons">
-            <Link href="/military-spouse-hub" className="cg-btn primary">
-              View Community Resources
-            </Link>
-
-            <Link href="/connect" className="cg-btn secondary">
-              Connect With Me
-            </Link>
+            <Link href="/military-spouse-hub" className="cg-btn primary">View Community Resources</Link>
+            <Link href="/connect" className="cg-btn secondary">Connect With Me</Link>
           </div>
         </section>
       </main>
-
       <Footer />
     </>
   );
