@@ -160,8 +160,6 @@ export default function PhishingRedFlagsContent() {
         real weapon.
       </p>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         I wanted to publish these stories because local experiences make
         cybersecurity feel real. Every person who shared what happened helped

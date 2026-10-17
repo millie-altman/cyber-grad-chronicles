@@ -72,6 +72,28 @@ export default function LocalBanner() {
           Connect
         </Link>
       </div>
+
+      <details className="navbar-mobile-menu">
+        <summary aria-label="Open navigation menu">Menu</summary>
+        <div className="navbar-mobile-panel">
+          <Link href="/academy">Academy</Link>
+          <Link href="/academy/cybersecurity-101">Lessons</Link>
+          <Link href="/academy/threats">Quizzes &amp; Practice</Link>
+          <Link href="/career">Career Intelligence</Link>
+          <Link href="/career/resume-review">Resume Support</Link>
+          <Link href="/career/interview-prep">Interview Preparation</Link>
+          <Link href="/research">Research Lab</Link>
+          <Link href="/research/cti-research-lab">Threat Intelligence</Link>
+          <Link href="/research/python-security-tools">Technical Projects</Link>
+          <Link href="/military-spouse-hub">Community</Link>
+          <Link href="/military-spouse-hub/where-to-start">Practical Resources</Link>
+          <Link href="/military-spouse-hub/community/success-stories">Stories</Link>
+          <Link href="/about">About the Founder</Link>
+          <Link href="/my-journey">My Journey</Link>
+          <Link href="/changelog">Changelog</Link>
+          <Link href="/connect">Connect</Link>
+        </div>
+      </details>
     </nav>
   );
 }

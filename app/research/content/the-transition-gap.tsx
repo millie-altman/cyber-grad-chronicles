@@ -107,8 +107,6 @@ export default function TransitionGapContent() {
         redefine who we are beyond our titles or roles.
       </p>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         This session resonated with me because I've experienced many of these
         challenges while building a cybersecurity career as a military spouse.

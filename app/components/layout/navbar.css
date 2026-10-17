@@ -19,6 +19,15 @@
   border-bottom: 1px solid rgba(214, 184, 123, 0.18);
 }
 
+.navbar,
+.navbar * {
+  font-family: var(--font-serif);
+}
+
+.navbar-mobile-menu {
+  display: none;
+}
+
 /* LOGO */
 
 .navbar-logo {
@@ -233,5 +242,62 @@
   .nav-button {
     min-width: 95px;
     padding: 0.65rem 0.9rem;
+  }
+
+  .navbar-mobile-menu {
+    position: relative;
+    display: block;
+  }
+
+  .navbar-mobile-menu summary {
+    list-style: none;
+    padding: 0.7rem 0.9rem;
+    color: var(--accent-light);
+    border: 1px solid rgba(214, 184, 123, 0.35);
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .navbar-mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .navbar-mobile-menu[open] summary {
+    color: var(--bg-primary);
+    background: var(--accent-light);
+  }
+
+  .navbar-mobile-panel {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    z-index: 120;
+    display: grid;
+    min-width: min(18rem, calc(100vw - 2rem));
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    padding: 0.65rem;
+    background: rgba(11, 14, 15, 0.98);
+    border: 1px solid rgba(214, 184, 123, 0.24);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-heavy);
+  }
+
+  .navbar-mobile-panel a {
+    padding: 0.75rem 0.8rem;
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .navbar-mobile-panel a:hover,
+  .navbar-mobile-panel a:focus-visible {
+    color: var(--accent-light);
+    background: rgba(184, 138, 68, 0.1);
+    border-radius: var(--radius-sm);
   }
 }

@@ -70,8 +70,6 @@ export default function LessonsFromTheLabContent() {
         process rather than a sign that I was doing something wrong.
       </p>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         Labs helped me move from “I understand the concept” to “I can explain
         what happened, why it matters, and what I would check next.” That shift

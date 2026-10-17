@@ -692,6 +692,34 @@ export const researchArticles: ResearchArticle[] = [
   ],
   },
   {
+    fileId: "CAR-008",
+    slug: "moved-across-the-country",
+    title: "I Moved Across the Country for My Career. Four Days Later, I Was Flying Home.",
+    originalTitle: "I Moved Across the Country for My Career. Four Days Later, I Was Flying Home.",
+    category: "Career Journal",
+    type: "Personal Chronicles",
+    difficulty: "Beginner",
+    description:
+      "A candid reflection on leaving Alaska for a new career opportunity, returning home four days later, and learning that changing direction does not erase how far you have come.",
+    lastUpdated: "October 2026",
+    quickStart: ["Career Reflection", "Resilience", "Life Transitions", "Military Spouse Journey"],
+    note:
+      "You can be ambitious and still have boundaries. You can be proud of yourself and disappointed at the same time. Changing direction does not erase how far you have come.",
+    keyTakeaways: [
+      "A difficult outcome does not erase the work that made the opportunity possible.",
+      "Being capable of pushing through something does not mean you always have to.",
+      "Career goals can remain intact even when the path changes.",
+      "Boundaries and peace are part of sustainable ambition.",
+      "Sharing the messy parts of a career journey can help other people feel less alone.",
+    ],
+    related: [
+      "opportunity-finally-came",
+      "qualified-capable-still-waiting",
+      "military-spouse-cybersecurity",
+      "the-transition-gap",
+    ],
+  },
+  {
     fileId: "AWR-001",
     slug: "securing-the-interior",
     title: "Securing the Interior",

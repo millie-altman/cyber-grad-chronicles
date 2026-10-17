@@ -66,8 +66,6 @@ export default function GetToKnowMeContent() {
         changers, and anyone interested in cybersecurity.
       </p>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         Building Cyber Grad Chronicles has taught me that growth is rarely
         linear. Some days are filled with breakthroughs, while others involve

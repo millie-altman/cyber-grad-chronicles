@@ -87,8 +87,6 @@ export default function CTIResearchLabContent() {
         <li>The Diamond Model for intrusion analysis and intelligence reporting</li>
       </ul>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         Building this lab helped me realize that I enjoy asking "why" just as
         much as "how." While learning technical tools is important, what excites

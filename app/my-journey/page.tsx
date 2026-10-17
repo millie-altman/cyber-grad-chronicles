@@ -55,7 +55,7 @@ export default function MyJourneyPage() {
               <p>Explore your next milestone</p>
               <span>Continue →</span>
             </Link>
-            <Link href="/academy" className="cg-command-card">
+            <Link href="/my-journey/rewards" className="cg-command-card">
               <Gift size={23} strokeWidth={1.7} aria-hidden="true" />
               <h2>Rewards</h2>
               <p>Discover what you&apos;ve unlocked</p>

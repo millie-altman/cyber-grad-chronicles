@@ -11,6 +11,12 @@ const coreAreas = [
   { number: "05", title: "About the Founder", href: "/about", description: "Follow the journey, credentials, experience, GitHub projects, and the future vision for a digital twin.", link: "Meet the founder" },
 ];
 
+const latestUpdates = [
+  { date: "October 2026", title: "I moved across the country for my career", text: "A personal reflection on returning home four days later, changing direction, and learning that resilience can include choosing peace.", href: "/research/moved-across-the-country" },
+  { date: "October 2026", title: "Rewards for your next step", text: "Resume templates, AI career prompts, and GitHub-based portfolio walkthroughs are now available inside My Journey.", href: "/my-journey/rewards" },
+  { date: "October 2026", title: "Your Command Center", text: "My Journey now brings learning progress, milestones, career direction, and rewards into one focused dashboard.", href: "/my-journey" },
+];
+
 export default function HomePage() {
   return (
     <>
@@ -34,6 +40,27 @@ export default function HomePage() {
           <p className="cg-eyebrow">One platform, five ways forward</p>
           <h2>You can never fail if you do not stop trying.</h2>
           <p>Cyber Grad Chronicles brings learning, career development, research, community, and the founder&apos;s story into one connected experience. Start with the area that meets you where you are, then follow the path that fits what you are building.</p>
+        </section>
+
+        <section className="cg-latest" aria-labelledby="latest-heading">
+          <div className="cg-latest-heading">
+            <div>
+              <p className="cg-eyebrow">A living platform</p>
+              <h2 id="latest-heading">Latest from the Chronicles</h2>
+            </div>
+            <Link href="/changelog" className="cg-latest-all">View what&apos;s new →</Link>
+          </div>
+
+          <div className="cg-latest-list">
+            {latestUpdates.map((update) => (
+              <Link href={update.href} className="cg-latest-item" key={update.title}>
+                <p className="cg-latest-date">{update.date}</p>
+                <h3>{update.title}</h3>
+                <p>{update.text}</p>
+                <span className="cg-latest-arrow" aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
         </section>
 
         <section className="cg-section" aria-labelledby="core-areas-heading">

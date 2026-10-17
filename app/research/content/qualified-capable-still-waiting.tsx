@@ -126,8 +126,6 @@ export default function QualifiedCapableStillWaitingContent() {
         continue the career they were building.
       </p>
 
-      <h2>Millie&apos;s Perspective</h2>
-
       <p>
         My own experience exists within this larger reality. I pursued
         cybersecurity while living in Alaska as a military spouse, far from

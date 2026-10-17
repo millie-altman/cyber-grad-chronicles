@@ -68,6 +68,10 @@ body {
 }
 
 html {
+  scroll-padding-top: 5rem;
+}
+
+html {
   overflow-x: hidden;
 }
 
@@ -80,7 +84,7 @@ body {
     ),
     linear-gradient(135deg, var(--bg-primary), var(--bg-secondary) 45%, #050709);
   color: var(--text-primary);
-  font-family: var(--font-serif);
+  font-family: var(--font-ui);
   line-height: 1.7;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -112,19 +116,25 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: var(--font-serif);
+}
+
 p,
 li,
-span,
-a,
-button,
-input,
-textarea,
-select,
 label,
 small,
 strong {
-  font-family: var(--font-serif);
+  font-family: var(--font-ui);
+}
+
+a {
+  font-family: inherit;
+}
+
+:where(a, button, summary, input, textarea, select):focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
 }
 
 em,

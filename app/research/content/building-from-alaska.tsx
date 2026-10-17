@@ -67,8 +67,6 @@ export default function BuildingFromAlaskaContent() {
         accessible education.
       </p>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         There were moments when I questioned whether building this career from
         Alaska was realistic. Hearing that opportunities were limited was

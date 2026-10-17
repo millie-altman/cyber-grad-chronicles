@@ -77,8 +77,6 @@ export default function DigitalSafetyMilitaryFamiliesContent() {
         <li>Fake benefits, grant, or financial assistance messages</li>
       </ul>
 
-      <h2>Millie's Perspective</h2>
-
       <p>
         As a military spouse, this topic is personal. Every move means solving
         several high-stakes problems at once: finding housing, rebuilding a

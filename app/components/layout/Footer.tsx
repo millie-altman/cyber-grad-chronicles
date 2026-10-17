@@ -25,6 +25,7 @@ export default function Footer() {
           <Link href="/my-journey">My Journey Dashboard</Link>
           <Link href="/journey">Founder&apos;s Journey</Link>
           <Link href="/credentials">Credentials</Link>
+          <Link href="/changelog">Changelog / What&apos;s New</Link>
           <Link href="/connect">Connect</Link>
         </div>
 

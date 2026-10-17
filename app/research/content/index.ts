@@ -25,6 +25,7 @@ import APT29Content from "./apt29";
 import LazarusGroupContent from "./lazarus-group";
 import VoltTyphoonContent from "./volt-typhoon";
 import TransitionGapContent from "./the-transition-gap";
+import MovedAcrossTheCountryContent from "./moved-across-the-country";
 
 export const contentMap: Record<string, React.ComponentType> = {
   "prompt-injection": PromptInjectionContent,
@@ -53,5 +54,6 @@ export const contentMap: Record<string, React.ComponentType> = {
   "apt29": APT29Content,
   "lazarus-group": LazarusGroupContent,
   "volt-typhoon": VoltTyphoonContent,
-  "the-transition-gap": TransitionGapContent
+  "the-transition-gap": TransitionGapContent,
+  "moved-across-the-country": MovedAcrossTheCountryContent
 };

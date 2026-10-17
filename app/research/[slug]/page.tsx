@@ -89,7 +89,6 @@ export default async function ResearchArticlePage({ params }: Props) {
           </section>
 
           <section className="personal-note">
-            <h2>Millie&apos;s Perspective</h2>
             <p>{article.note}</p>
           </section>
 
