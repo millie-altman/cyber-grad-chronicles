@@ -103,7 +103,7 @@ export default function LocalBanner() {
           <Link href="/military-spouse-hub/community/success-stories">Stories</Link>
           <Link href="/about">About the Founder</Link>
           <Link href="/next-chapter">The Next Chapter</Link>
-          <Link href="/my-journey">The Founder&apos;s Journey</Link>
+          <Link href="/journey">The Founder&apos;s Journey</Link>
           <Link href="/changelog">Changelog</Link>
           <Link href="/connect">Connect</Link>
         </div>
