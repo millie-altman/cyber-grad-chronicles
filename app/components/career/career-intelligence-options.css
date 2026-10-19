@@ -1,0 +1,15 @@
+.career-intelligence-options{min-width:0;padding:1rem;border:1px solid rgba(184,138,68,.28)}
+.career-intelligence-options legend{padding:0 .35rem;color:var(--accent);font-size:.73rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.career-intelligence-options>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
+.career-intelligence-options label{display:flex;gap:.7rem;align-items:flex-start;padding:.85rem;border:1px solid rgba(184,138,68,.18);background:rgba(184,138,68,.035);cursor:pointer}
+.career-intelligence-options label:hover{border-color:rgba(214,184,123,.5);background:rgba(184,138,68,.08)}
+.career-intelligence-options input{flex:0 0 auto;margin-top:.2rem;accent-color:var(--accent)}
+.career-intelligence-options span{display:grid;gap:.3rem;color:var(--text-secondary);font-size:.78rem;font-weight:400;letter-spacing:0;line-height:1.45;text-transform:none}
+.career-intelligence-options strong{color:var(--text-primary);font-size:.84rem}
+@media(max-width:600px){.career-intelligence-options>div{grid-template-columns:1fr}}
+.career-intelligence-resources{position:relative;z-index:1;display:grid;gap:.75rem;margin-top:2.2rem;padding-top:1.4rem;border-top:1px solid rgba(184,138,68,.22)}
+.career-intelligence-resources .career-section-eyebrow{margin-bottom:.15rem}
+.career-intelligence-resources a{display:grid;gap:.18rem;padding:.8rem;border:1px solid rgba(184,138,68,.18);background:rgba(184,138,68,.035)}
+.career-intelligence-resources a:hover{border-color:rgba(214,184,123,.5);background:rgba(184,138,68,.08)}
+.career-intelligence-resources strong{color:var(--accent-light);font-size:.82rem;letter-spacing:.04em}
+.career-intelligence-resources span{color:var(--text-secondary);font-size:.76rem;line-height:1.5}

@@ -54,22 +54,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const careerPages: MetadataRoute.Sitemap = [
     {
+      url: `${baseUrl}/next-chapter`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/career/resume-review`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/career/resume-rewrite`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/career/linkedin-review`,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/career/github-review`,
       changeFrequency: "monthly",
       priority: 0.7,
     },

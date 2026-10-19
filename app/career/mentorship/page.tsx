@@ -1,34 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import MentorshipInterest from "../../components/career/MentorshipInterest";
+import CareerIntelligenceService, { type CareerServiceConfig } from "../../components/career/CareerIntelligenceService";
 
-export const metadata: Metadata = {
-  title: "Mentorship Interest",
-  description:
-    "Share your cybersecurity learning and career goals with Cyber Grad Chronicles.",
-};
-
-export default function MentorshipPage() {
-  return (
-    <main className="career-page">
-      <section className="career-service-hero">
-        <div className="career-container">
-          <Link className="career-back-link" href="/career">
-            ← Career Readiness
-          </Link>
-          <p className="career-eyebrow">
-            Mentorship · Honest Guidance · Practical Direction
-          </p>
-          <h1>Build your path with someone who understands the long way in.</h1>
-          <p className="career-hero-description">
-            Mentorship interest is for beginners, military spouses, career
-            changers, and early-career professionals looking for realistic
-            conversation about cybersecurity learning, visible proof, setbacks,
-            and next steps.
-          </p>
-        </div>
-      </section>
-      <MentorshipInterest />
-    </main>
-  );
-}
+export const metadata: Metadata = { title: "Mentorship Interest", description: "Share your cybersecurity learning and career goals for free, practical guidance." };
+const service: CareerServiceConfig = { slug: "mentorship", title: "Mentorship Interest", eyebrow: "Mentorship Interest", description: "Share where you are, what feels unclear, and what practical support could help you take your next step.", intro: "My path into technology was shaped by school, certifications, labs, public projects, persistence, military spouse life, relocation, and building from rural Alaska.", fieldLabel: "What are you most interested in?", fieldName: "interest", fieldPlaceholder: "e.g. breaking into cybersecurity, portfolio building", checklist: ["Honest career transparency", "Focused questions and direction", "Practical next-step ideas"], faqs: [{ question: "Does submitting this guarantee mentorship?", answer: "No. This is an expression of interest so I can understand what support may be useful while I continue shaping the program." }, { question: "Is mentorship interest free?", answer: "Yes. It is free for now while I build out the resources, structure, and advice behind Career Intelligence." }, { question: "Who is this for?", answer: "Beginners, students, career changers, military spouses, veterans, and early-career professionals are all welcome to share their goals." }] };
+export default function MentorshipPage() { return <CareerIntelligenceService service={service} />; }

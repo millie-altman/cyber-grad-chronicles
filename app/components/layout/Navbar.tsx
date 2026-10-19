@@ -16,14 +16,16 @@ export default function LocalBanner() {
             <Link href="/academy/cybersecurity-101">Lessons</Link>
             <Link href="/academy">Learning Paths</Link>
             <Link href="/academy/threats">Quizzes &amp; Practice</Link>
-            <Link href="/academy">Achievements</Link>
+            <Link href="/my-journey/rewards">Achievements</Link>
+            <Link href="/next-chapter">The Next Chapter</Link>
           </div>
         </div>
 
         <div className="nav-menu">
           <Link href="/career">Career Intelligence</Link>
           <div className="nav-dropdown">
-            <Link href="/career">Career Roadmap</Link>
+            <Link href="/next-chapter#career-roadmap">Career Roadmap</Link>
+            <Link href="/next-chapter#career-packages">Career Packages</Link>
             <Link href="/career/resume-review">Resume Support</Link>
             <Link href="/career/portfolio-review">Portfolio Tools</Link>
             <Link href="/career/interview-prep">Interview Preparation</Link>
@@ -34,11 +36,10 @@ export default function LocalBanner() {
         <div className="nav-menu">
           <Link href="/research">Research Lab</Link>
           <div className="nav-dropdown">
-            <Link href="/research/cti-research-lab">Threat Intelligence</Link>
-            <Link href="/research/prompt-injection">AI Research</Link>
-            <Link href="/research/ransomware-tic-brief">Ransomware Analysis</Link>
-            <Link href="/research/python-security-tools">Technical Projects</Link>
-            <Link href="/research">Research Archive</Link>
+            <Link href="/research#threat-intelligence">Threat Intelligence</Link>
+            <Link href="/research#labs-projects">Labs &amp; Projects</Link>
+            <Link href="/research#career-journal">Career Journal</Link>
+            <Link href="/research#community-awareness">Community Awareness</Link>
           </div>
         </div>
 
@@ -55,13 +56,14 @@ export default function LocalBanner() {
         <div className="nav-menu">
           <Link href="/about">About the Founder</Link>
           <div className="nav-dropdown">
-            <Link href="/journey">My Journey</Link>
+            <Link href="/journey">The Founder&apos;s Journey</Link>
             <Link href="/credentials">Credentials</Link>
-            <Link href="/about">Experience</Link>
             <a href="https://github.com/millie-altman" target="_blank" rel="noopener noreferrer">GitHub Projects</a>
-            <Link href="/about">Future Digital Twin</Link>
+            <Link href="/next-chapter#next-01">Digital Twin</Link>
+            <Link href="/next-chapter">The Next Chapter</Link>
           </div>
         </div>
+
       </div>
 
       <div className="navbar-actions">
@@ -79,17 +81,22 @@ export default function LocalBanner() {
           <Link href="/academy">Academy</Link>
           <Link href="/academy/cybersecurity-101">Lessons</Link>
           <Link href="/academy/threats">Quizzes &amp; Practice</Link>
+          <Link href="/my-journey/rewards">Academy Achievements</Link>
           <Link href="/career">Career Intelligence</Link>
+          <Link href="/career/bundles">Career Packages</Link>
           <Link href="/career/resume-review">Resume Support</Link>
           <Link href="/career/interview-prep">Interview Preparation</Link>
           <Link href="/research">Research Lab</Link>
-          <Link href="/research/cti-research-lab">Threat Intelligence</Link>
-          <Link href="/research/python-security-tools">Technical Projects</Link>
+          <Link href="/research#threat-intelligence">Threat Intelligence</Link>
+          <Link href="/research#labs-projects">Labs &amp; Projects</Link>
+          <Link href="/research#career-journal">Career Journal</Link>
+          <Link href="/research#community-awareness">Community Awareness</Link>
           <Link href="/military-spouse-hub">Community</Link>
           <Link href="/military-spouse-hub/where-to-start">Practical Resources</Link>
           <Link href="/military-spouse-hub/community/success-stories">Stories</Link>
           <Link href="/about">About the Founder</Link>
-          <Link href="/my-journey">My Journey</Link>
+          <Link href="/next-chapter">The Next Chapter</Link>
+          <Link href="/my-journey">The Founder&apos;s Journey</Link>
           <Link href="/changelog">Changelog</Link>
           <Link href="/connect">Connect</Link>
         </div>

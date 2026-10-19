@@ -15,7 +15,6 @@ const readinessPaths = [
     ],
     links: [
       { href: "/career/resume-review", text: "Resume Review" },
-      { href: "/career/resume-rewrite", text: "Resume Rewrite" },
     ],
   },
   {
@@ -44,7 +43,6 @@ const readinessPaths = [
     ],
     links: [
       { href: "/career/portfolio-review", text: "Portfolio Review" },
-      { href: "/career/github-review", text: "GitHub Review" },
     ],
   },
   {

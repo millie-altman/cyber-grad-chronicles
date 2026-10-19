@@ -99,9 +99,7 @@ export default function HomePage() {
             </div>
             <div className="cg-career-feature-services">
               <Link href="/career/resume-review"><span>01</span>Resume Review</Link>
-              <Link href="/career/resume-rewrite"><span>02</span>Resume Rewrite</Link>
               <Link href="/career/linkedin-review"><span>03</span>LinkedIn Review</Link>
-              <Link href="/career/github-review"><span>04</span>GitHub Review</Link>
               <Link href="/career/portfolio-review"><span>05</span>Portfolio Review</Link>
               <Link href="/career/interview-prep"><span>06</span>Interview Preparation</Link>
             </div>
