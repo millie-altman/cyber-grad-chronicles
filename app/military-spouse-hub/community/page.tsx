@@ -1,224 +1,38 @@
+import Link from "next/link";
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
-import Link from "next/link";
+import EncouragementFlashcard from "./EncouragementFlashcard";
 import "../military-spouse-hub.css";
-import "./community.css";
+import "./encouragement.css";
 
-const storyCards = [
-  {
-    tag: "Relocation to Resilience",
-    title: "From Uncertainty to Purpose",
-    text: "After multiple moves, she built a career path that gave her freedom, clarity, and fulfillment.",
-    href: "/military-spouse-hub/community/success-stories",
-    image: "/images/military-spouse-hub/relocation.png",
-  },
-  {
-    tag: "Career Reinvention",
-    title: "A New Chapter, A Stronger Me",
-    text: "A career break became the reset she needed to launch a new professional path.",
-    href: "/military-spouse-hub/career/career-breaks",
-    image: "/images/military-spouse-hub/career-resources.png",
-  },
-  {
-    tag: "Education & Growth",
-    title: "Degree in Progress, Future in Focus",
-    text: "Pursuing education while supporting the mission because personal goals matter too.",
-    href: "/military-spouse-hub/education",
-    image: "/images/military-spouse-hub/education.png",
-  },
+const reminders = [
+  ["01", "You still count", "Your goals do not become less important because someone else’s orders set the timeline."],
+  ["02", "A move is not a reset", "You carry skills, relationships, lessons, and proof with you—even when the address changes."],
+  ["03", "Small progress is real progress", "One application, one lesson, one conversation, or one hour of rest can be a meaningful next step."],
+  ["04", "You are not behind", "Your path may be interrupted, redirected, or rebuilt. It is still yours, and it is still moving."],
 ];
 
-const communityStats = [
-  ["Real Stories", "Shared by military spouses building nontraditional paths"],
-  ["Global Perspective", "Support that moves across duty stations and time zones"],
-  ["Career Momentum", "Encouragement for education, remote work, and reinvention"],
-  ["Stronger Together", "A reminder that you do not have to build alone"],
-];
-
-const communityPaths = [
-  {
-    title: "Success Stories",
-    text: "Read examples of military spouses navigating education, work, relocation, and reinvention.",
-    href: "/military-spouse-hub/community/success-stories",
-  },
-  {
-    title: "Career Support",
-    text: "Turn encouragement into action with resumes, LinkedIn, job boards, and interview prep.",
-    href: "/military-spouse-hub/career",
-  },
-  {
-    title: "Education Resources",
-    text: "Find funded learning, scholarships, cybersecurity platforms, and skill-building options.",
-    href: "/military-spouse-hub/education",
-  },
+const paths = [
+  { title: "Read Success Stories", text: "Find stories of pivots, education wins, remote work, and starting again.", href: "/military-spouse-hub/community/success-stories" },
+  { title: "Find Your Starting Point", text: "Choose a practical next step for career, education, relocation, or encouragement.", href: "/military-spouse-hub/where-to-start" },
+  { title: "Build Career Momentum", text: "Explore resumes, LinkedIn, interviews, job boards, and portable career resources.", href: "/career" },
+  { title: "Keep Learning", text: "Find scholarships, certifications, platforms, and learning paths that meet you where you are.", href: "/military-spouse-hub/education" },
 ];
 
 export default function CommunityPage() {
-  return (
-    <>
-      <Navbar />
+  return <><Navbar /><main className="msh-page encouragement-page">
+    <section className="encouragement-hero"><div className="encouragement-hero-overlay" /><div className="encouragement-hero-content"><nav className="msh-breadcrumbs"><Link href="/military-spouse-hub">Military Spouse Hub</Link><span>›</span><span>Community</span></nav><p className="msh-eyebrow">Community · Encouragement · You Belong Here</p><h1>You are not building alone.</h1><p>Military spouse life can ask you to begin again before you are ready. This space is a reminder that your goals still matter, your progress still counts, and there are people who understand the weight of carrying a career through change.</p><div className="msh-hero-actions"><Link href="#reminders" className="msh-button">Find a reminder</Link><Link href="/military-spouse-hub/community/success-stories" className="msh-button secondary">Read real stories</Link></div></div></section>
 
-      <main className="msh-page community-mockup-page">
-        <section className="community-hero">
-          <div className="community-hero-copy">
-            <nav className="msh-breadcrumbs">
-              <Link href="/military-spouse-hub">Military Spouse Hub</Link>
-              <span>›</span>
-              <span>Community</span>
-            </nav>
+    <section className="encouragement-intro"><p className="msh-eyebrow">A place to come back to</p><h2>You do not have to be strong every minute to keep going.</h2><p>Some seasons are for applying. Some are for learning. Some are for resting, grieving, adapting, or figuring out what you want next. None of those seasons make you less ambitious or less capable.</p></section>
 
-            <p className="msh-eyebrow">Community</p>
+    <section className="encouragement-reminders" id="reminders"><div className="msh-section-heading centered"><p className="msh-eyebrow">Keep These Close</p><h2>Reminders for the days that feel heavy.</h2><p>Save the one you need today. Come back when the next move, delay, rejection, or transition makes you question your place.</p></div><div className="encouragement-reminder-grid">{reminders.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
 
-            <h1>Community</h1>
+    <section className="encouragement-card-section"><EncouragementFlashcard /></section>
 
-            <h2>Real stories. Real people. Real impact.</h2>
+    <section className="encouragement-personal"><div className="encouragement-personal-copy"><p className="msh-eyebrow">From Millie’s Journey</p><h2>Proof can begin before opportunity arrives.</h2><p>Building a career through military spouse life has meant adapting to uncertainty, relocation, and seasons that did not look like the plan. It has also meant continuing to create proof, even when the next opportunity was not visible yet.</p><p className="encouragement-quote">“I was told building this career from Alaska would be difficult, so I started documenting the proof anyway.”</p><Link href="/journey" className="msh-button">Read the founder’s journey →</Link></div><div className="encouragement-personal-image" aria-hidden="true" /></section>
 
-            <p>
-              Military spouse life can feel isolating when every season brings
-              change. This space is for stories, support, encouragement, and
-              reminders that your goals still matter no matter where duty calls.
-            </p>
-          </div>
-        </section>
+    <section className="encouragement-paths"><div className="msh-section-heading centered"><p className="msh-eyebrow">Support for the Next Step</p><h2>Encouragement can become momentum.</h2><p>You do not have to solve everything at once. Start with the kind of support that fits today.</p></div><div className="encouragement-path-grid">{paths.map((path) => <Link href={path.href} key={path.title}><h3>{path.title}</h3><p>{path.text}</p><span>Explore →</span></Link>)}</div></section>
 
-        <section className="community-stats">
-          {communityStats.map(([label, text]) => (
-            <div key={label}>
-              <span>{label}</span>
-              <strong>✦</strong>
-              <p>{text}</p>
-            </div>
-          ))}
-        </section>
-
-        <section className="community-personal-story">
-          <div className="community-personal-story-card">
-            <p className="msh-eyebrow">Personal Story</p>
-
-            <h2>Why this space exists.</h2>
-
-            <p>
-              This section will hold a personal note about military spouse life,
-              starting over, building a career through uncertainty, and why
-              community matters when the path feels isolating.
-            </p>
-
-            <p>
-              Placeholder: Add your story here — the moves, the setbacks, the
-              growth, the career-building moments, and the reason you created
-              this hub.
-            </p>
-
-            <Link href="/about" className="msh-button">
-              Read More →
-            </Link>
-          </div>
-        </section>
-
-        <section className="community-stories">
-          <div className="msh-section-heading centered">
-            <p className="msh-eyebrow">Featured Success Stories</p>
-            <h2>Stories that make the path feel possible.</h2>
-            <p>
-              Explore snapshots of resilience, reinvention, education, and
-              career-building through military life.
-            </p>
-          </div>
-
-          <div className="community-story-grid">
-            {storyCards.map((story) => (
-              <Link
-                href={story.href}
-                className="community-story-card"
-                key={story.title}
-              >
-                <img src={story.image} alt="" />
-
-                <div>
-                  <span>{story.tag}</span>
-                  <h3>{story.title}</h3>
-                  <p>{story.text}</p>
-                  <small>Read Story →</small>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="community-lower-grid">
-          <div className="community-spotlight-card">
-            <p className="msh-eyebrow">Community Spotlight</p>
-
-            <div className="community-spotlight-inner">
-              <img
-                src="/images/military-spouse-hub/community.png"
-                alt="Community spotlight"
-              />
-
-              <div>
-                <h3>Meet Amber</h3>
-                <span>Navy Spouse & Freelance Writer</span>
-                <p>
-                  Amber turned her writing skills into a portable freelance
-                  career that gave her flexibility, confidence, and a way to
-                  keep building through relocation.
-                </p>
-
-                <Link href="/military-spouse-hub/community/success-stories">
-                  Read Amber’s Story →
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="community-quote-card">
-            <p>
-              “We may not wear the uniform, but we are part of the mission. Our
-              stories, goals, and futures matter too.”
-            </p>
-          </div>
-        </section>
-
-        <section className="community-subpage-section">
-          <div className="msh-section-heading centered">
-            <p className="msh-eyebrow">Find Your Next Step</p>
-            <h2>Community should lead to momentum.</h2>
-          </div>
-
-          <div className="community-cluster-grid">
-            {communityPaths.map((path) => (
-              <Link
-                href={path.href}
-                className="community-subpage-card"
-                key={path.title}
-              >
-                <h3>{path.title}</h3>
-                <p>{path.text}</p>
-                <span>Explore →</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="community-connect-card">
-          <div>
-            <p className="msh-eyebrow">Stay Connected</p>
-            <p>
-              Use community as a source of support, strategy, and encouragement
-              while you build your next chapter.
-            </p>
-          </div>
-
-          <Link
-            href="/military-spouse-hub/community/success-stories"
-            className="msh-button"
-          >
-            View Stories →
-          </Link>
-        </section>
-      </main>
-
-      <Footer />
-    </>
-  );
+    <section className="encouragement-closing"><p className="msh-eyebrow">A Note Before You Go</p><h2>Your life is not an obstacle to your future.</h2><p>You are allowed to want a career, an education, creative work, community, rest, and a future that feels like yours. Keep going in the way that is possible today. You are not alone in it.</p><Link href="/connect" className="msh-button">Stay connected →</Link></section>
+  </main><Footer /></>;
 }

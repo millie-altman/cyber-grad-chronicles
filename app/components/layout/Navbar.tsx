@@ -24,9 +24,12 @@ export default function LocalBanner() {
         <div className="nav-menu">
           <Link href="/career">Career Intelligence</Link>
           <div className="nav-dropdown">
-            <Link href="/next-chapter#career-roadmap">Career Roadmap</Link>
-            <Link href="/next-chapter#career-packages">Career Packages</Link>
+            <Link href="/next-chapter#next-07">Career Roadmap</Link>
+            <Link href="/next-chapter#next-02">Career Packages</Link>
+            <Link href="/career/ai-tools">AI Tools</Link>
+            <Link href="/career#military-spouse-resources">Military Spouse Resources</Link>
             <Link href="/career/resume-review">Resume Support</Link>
+            <Link href="/career/linkedin-review">LinkedIn Review</Link>
             <Link href="/career/portfolio-review">Portfolio Tools</Link>
             <Link href="/career/interview-prep">Interview Preparation</Link>
             <Link href="/career/mentorship">Mentorship</Link>
@@ -84,7 +87,11 @@ export default function LocalBanner() {
           <Link href="/my-journey/rewards">Academy Achievements</Link>
           <Link href="/career">Career Intelligence</Link>
           <Link href="/career/bundles">Career Packages</Link>
+          <Link href="/career/ai-tools">AI Tools</Link>
+          <Link href="/career#military-spouse-resources">Military Spouse Resources</Link>
           <Link href="/career/resume-review">Resume Support</Link>
+          <Link href="/career/linkedin-review">LinkedIn Review</Link>
+          <Link href="/career/portfolio-review">Portfolio Tools</Link>
           <Link href="/career/interview-prep">Interview Preparation</Link>
           <Link href="/research">Research Lab</Link>
           <Link href="/research#threat-intelligence">Threat Intelligence</Link>

@@ -9,7 +9,7 @@ const sections = [
     title: "Career",
     description:
       "Find jobs, build your brand, prepare for interviews, and grow your career — wherever life takes you.",
-    href: "/military-spouse-hub/career",
+    href: "/career",
     items: [
       "AI Tools",
       "Career Breaks",
@@ -52,7 +52,7 @@ const resources = [
   },
   {
     title: "Remote Work Red Flags",
-    href: "/military-spouse-hub/career/remote-red-flags",
+    href: "/career/remote-red-flags",
   },
   {
     title: "Scholarships & Financial Aid",
@@ -60,7 +60,7 @@ const resources = [
   },
   {
     title: "Resume Templates",
-    href: "/military-spouse-hub/career/resume",
+    href: "/career/resume-review",
   },
 ];
 
@@ -145,7 +145,7 @@ export default function MilitarySpouseHubPage() {
               ))}
             </ul>
 
-            <Link href="/military-spouse-hub/career" className="msh-button">
+            <Link href="/career" className="msh-button">
               View All Resources →
             </Link>
           </div>
@@ -165,7 +165,7 @@ export default function MilitarySpouseHubPage() {
               the future you’re moving toward.
             </p>
 
-            <span>// Resilience is strategy</span>
+            <span>{"// Resilience is strategy"}</span>
           </div>
         </section>
 

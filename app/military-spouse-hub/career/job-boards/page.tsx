@@ -99,7 +99,7 @@ export default function JobBoardsPage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>Job Boards</span>
             </nav>
@@ -125,7 +125,7 @@ export default function JobBoardsPage() {
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/resume"
+                href="/career/resume-review"
                 className="msh-button"
               >
                 Resume Help →
@@ -200,7 +200,7 @@ export default function JobBoardsPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/resume"
+            href="/career/resume-review"
             className="msh-button"
           >
             Resume Help →
@@ -232,7 +232,7 @@ export default function JobBoardsPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/interview-prep"
+            href="/career/interview-prep"
             className="msh-button"
           >
             Interview Prep →
@@ -247,7 +247,7 @@ export default function JobBoardsPage() {
 
           <div className="career-featured-grid">
             <Link
-              href="/military-spouse-hub/career/resume"
+              href="/career/resume-review"
               className="career-featured-card"
             >
               <h3>Resume Resources</h3>
@@ -256,7 +256,7 @@ export default function JobBoardsPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/linkedin"
+              href="/career/linkedin"
               className="career-featured-card"
             >
               <h3>LinkedIn Optimization</h3>
@@ -265,7 +265,7 @@ export default function JobBoardsPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/remote-red-flags"
+              href="/career/remote-red-flags"
               className="career-featured-card"
             >
               <h3>Remote Red Flags</h3>

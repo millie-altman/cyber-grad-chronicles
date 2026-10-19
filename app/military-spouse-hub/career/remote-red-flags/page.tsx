@@ -168,7 +168,7 @@ export default function RemoteRedFlagsPage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>Remote Red Flags</span>
             </nav>
@@ -194,7 +194,7 @@ export default function RemoteRedFlagsPage() {
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/job-boards"
+                href="/career/job-boards"
                 className="msh-button"
               >
                 Safer Job Boards →
@@ -238,7 +238,7 @@ export default function RemoteRedFlagsPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/job-boards"
+            href="/career/job-boards"
             className="msh-button"
           >
             Safer Boards →
@@ -316,7 +316,7 @@ export default function RemoteRedFlagsPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/job-boards"
+            href="/career/job-boards"
             className="msh-button"
           >
             Safer Job Boards →
@@ -331,7 +331,7 @@ export default function RemoteRedFlagsPage() {
 
           <div className="career-featured-grid">
             <Link
-              href="/military-spouse-hub/career/job-boards"
+              href="/career/job-boards"
               className="career-featured-card"
             >
               <h3>Job Boards</h3>
@@ -340,7 +340,7 @@ export default function RemoteRedFlagsPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/resume"
+              href="/career/resume-review"
               className="career-featured-card"
             >
               <h3>Resume Resources</h3>
@@ -349,7 +349,7 @@ export default function RemoteRedFlagsPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/relocation-survival-kit"
+              href="/career/relocation-survival-kit"
               className="career-featured-card"
             >
               <h3>Relocation Survival Kit</h3>

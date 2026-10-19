@@ -12,6 +12,9 @@ const coreAreas = [
 ];
 
 const latestUpdates = [
+  { date: "October 2026", title: "The Next Chapter is taking shape", text: "Explore the future files planned across Academy, Career Intelligence, Research Lab, Community, and the founder story.", href: "/next-chapter" },
+  { date: "October 2026", title: "Career Intelligence is free while it grows", text: "Resume, LinkedIn, portfolio, and mentorship support now share a simpler experience with helpful resources and no costs while they are being built out.", href: "/career" },
+  { date: "October 2026", title: "A clearer path through the platform", text: "Research sections, career resources, The Next Chapter, and the Founder's Journey are now easier to find from navigation.", href: "/changelog" },
   { date: "October 2026", title: "I moved across the country for my career", text: "A personal reflection on returning home four days later, changing direction, and learning that resilience can include choosing peace.", href: "/research/moved-across-the-country" },
   { date: "October 2026", title: "Rewards for your next step", text: "Resume templates, AI career prompts, and GitHub-based portfolio walkthroughs are now available inside My Journey.", href: "/my-journey/rewards" },
   { date: "October 2026", title: "Your Command Center", text: "My Journey now brings learning progress, milestones, career direction, and rewards into one focused dashboard.", href: "/my-journey" },

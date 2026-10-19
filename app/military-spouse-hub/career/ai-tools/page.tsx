@@ -270,10 +270,10 @@ const aiTips = [
   "Use your real projects as proof.",
 ];
 
-export default function AIToolsPage() {
+export function AIToolsPage({ includeSiteChrome = true }: { includeSiteChrome?: boolean }) {
   return (
     <>
-      <Navbar />
+      {includeSiteChrome ? <Navbar /> : null}
 
       <main className="msh-page career-subpage">
         <section className="career-subpage-hero">
@@ -281,7 +281,7 @@ export default function AIToolsPage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>AI Tools</span>
             </nav>
@@ -307,7 +307,7 @@ export default function AIToolsPage() {
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/resume"
+                href="/career/resume-review"
                 className="msh-button"
               >
                 Resume Resources →
@@ -350,7 +350,7 @@ export default function AIToolsPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/interview-prep"
+            href="/career/interview-prep"
             className="msh-button"
           >
             Interview Prep →
@@ -408,7 +408,7 @@ export default function AIToolsPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/resume"
+            href="/career/resume-review"
             className="msh-button"
           >
             Resume Resources →
@@ -416,7 +416,9 @@ export default function AIToolsPage() {
         </section>
       </main>
 
-      <Footer />
+      {includeSiteChrome ? <Footer /> : null}
     </>
   );
 }
+
+export default AIToolsPage;

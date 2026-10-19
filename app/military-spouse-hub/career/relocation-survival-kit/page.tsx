@@ -128,7 +128,7 @@ export default function RelocationSurvivalKitPage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>Relocation Survival Kit</span>
             </nav>
@@ -154,7 +154,7 @@ export default function RelocationSurvivalKitPage() {
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/ai-tools"
+                href="/career/ai-tools"
                 className="msh-button"
               >
                 AI Career Tools →
@@ -274,7 +274,7 @@ export default function RelocationSurvivalKitPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/ai-tools"
+            href="/career/ai-tools"
             className="msh-button"
           >
             AI Career Tools →
@@ -289,7 +289,7 @@ export default function RelocationSurvivalKitPage() {
 
           <div className="career-featured-grid">
             <Link
-              href="/military-spouse-hub/career/resume"
+            href="/career/resume-review"
               className="career-featured-card"
             >
               <h3>Resume Resources</h3>
@@ -298,7 +298,7 @@ export default function RelocationSurvivalKitPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/linkedin"
+            href="/career/linkedin"
               className="career-featured-card"
             >
               <h3>LinkedIn Optimization</h3>
@@ -307,7 +307,7 @@ export default function RelocationSurvivalKitPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/remote-red-flags"
+            href="/career/remote-red-flags"
               className="career-featured-card"
             >
               <h3>Remote Red Flags</h3>

@@ -59,6 +59,37 @@ const readinessPaths = [
     links: [{ href: "/career/mentorship", text: "Mentorship Interest" }],
     featured: true,
   },
+  {
+    number: "05",
+    label: "Practical Tools",
+    title: "AI Tools",
+    description:
+      "Use thoughtful prompts and workflows to support your career planning without losing your voice.",
+    outcomes: [
+      "Resume and LinkedIn prompt support",
+      "Interview preparation ideas",
+      "Career pivot and portfolio planning",
+    ],
+    links: [{ href: "/career/ai-tools", text: "Explore AI Tools" }],
+  },
+  {
+    number: "06",
+    label: "Portable Support",
+    title: "Military Spouse Resources",
+    description:
+      "Find career guidance designed for relocation, transitions, caregiving, and portable professional growth.",
+    outcomes: [
+      "PCS and relocation planning",
+      "Federal jobs and spouse resources",
+      "Remote-work and career-break guidance",
+    ],
+    links: [
+      {
+        href: "#military-spouse-resources",
+        text: "View Spouse Resources",
+      },
+    ],
+  },
 ];
 
 const supportLinks = [
@@ -82,6 +113,17 @@ const supportLinks = [
     text: "Review process, boundaries, turnaround, and service details.",
     href: "/career/faq",
   },
+];
+
+const militarySpouseResources = [
+  { title: "AI Tools", text: "Use practical prompts for resumes, LinkedIn, interviews, career pivots, and portfolio planning.", href: "/career/ai-tools" },
+  { title: "Career Breaks", text: "Translate PCS, caregiving, education, and life transitions into an honest career story.", href: "/career/career-breaks" },
+  { title: "Federal Jobs", text: "Understand USAJOBS, spouse preference, GS levels, and federal hiring pathways.", href: "/career/federal-jobs" },
+  { title: "Job Boards", text: "Find curated boards for military spouses, remote work, fellowships, and cybersecurity.", href: "/career/job-boards" },
+  { title: "LinkedIn", text: "Build a portable professional presence and become easier for recruiters to discover.", href: "/career/linkedin" },
+  { title: "Relocation Kit", text: "Protect your momentum during PCS with planning tools, timelines, and reset points.", href: "/career/relocation-survival-kit" },
+  { title: "Remote Red Flags", text: "Learn how to spot fake jobs, recruiter scams, and suspicious hiring practices.", href: "/career/remote-red-flags" },
+  { title: "Military Spouse Hub", text: "Return to the broader hub for encouragement, education, community, and starting points.", href: "/military-spouse-hub" },
 ];
 
 export default function CareerPage() {
@@ -134,7 +176,7 @@ export default function CareerPage() {
           <div className="career-readiness-intro">
             <div>
               <p className="career-section-eyebrow">
-                Four Ways to Move Forward
+                Ways to Move Forward
               </p>
               <h2>Start with the gap that matters most.</h2>
             </div>
@@ -194,6 +236,27 @@ export default function CareerPage() {
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
                 <Link href={item.href}>Explore {item.title} →</Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="career-section career-military-resources" id="military-spouse-resources">
+        <div className="career-container">
+          <div className="career-support-heading">
+            <p className="career-section-eyebrow">Military Spouse Resources</p>
+            <h2>Career support that accounts for the life around the work.</h2>
+            <p>
+              Portable careers need more than a resume. Use these focused resources when relocation, caregiving, remote work, federal hiring, or a career restart is part of the picture.
+            </p>
+          </div>
+          <div className="career-support-grid">
+            {militarySpouseResources.map((resource) => (
+              <article className="career-support-card" key={resource.href}>
+                <h3>{resource.title}</h3>
+                <p>{resource.text}</p>
+                <Link href={resource.href}>Open {resource.title} →</Link>
               </article>
             ))}
           </div>

@@ -109,7 +109,7 @@ export default function InterviewPrepPage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>Interview Prep</span>
             </nav>
@@ -138,7 +138,7 @@ export default function InterviewPrepPage() {
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/ai-tools"
+                href="/career/ai-tools"
                 className="msh-button"
               >
                 AI Practice Tools →
@@ -202,7 +202,7 @@ export default function InterviewPrepPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/ai-tools"
+            href="/career/ai-tools"
             className="msh-button"
           >
             Practice With AI →
@@ -247,7 +247,7 @@ export default function InterviewPrepPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/ai-tools"
+            href="/career/ai-tools"
             className="msh-button"
           >
             AI Career Tools →
@@ -262,7 +262,7 @@ export default function InterviewPrepPage() {
 
           <div className="career-featured-grid">
             <Link
-              href="/military-spouse-hub/career/resume"
+              href="/career/resume-review"
               className="career-featured-card"
             >
               <h3>Resume Resources</h3>
@@ -271,7 +271,7 @@ export default function InterviewPrepPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/linkedin"
+              href="/career/linkedin"
               className="career-featured-card"
             >
               <h3>LinkedIn Optimization</h3>
@@ -280,7 +280,7 @@ export default function InterviewPrepPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/job-boards"
+              href="/career/job-boards"
               className="career-featured-card"
             >
               <h3>Job Boards</h3>

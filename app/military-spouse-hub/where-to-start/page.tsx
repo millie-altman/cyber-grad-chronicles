@@ -23,28 +23,28 @@ const startingPoints = [
     title: "I Need a Job",
     description:
       "Find spouse-friendly job boards, fellowships, federal roles, remote jobs, and cyber career paths.",
-    href: "/military-spouse-hub/career/job-boards",
+    href: "/career/job-boards",
     icon: "✦",
   },
   {
     title: "I’m Relocating Soon",
     description:
       "Use the relocation survival kit to keep your career moving through PCS and transitions.",
-    href: "/military-spouse-hub/career/relocation-survival-kit",
+    href: "/career/relocation-survival-kit",
     icon: "⌖",
   },
   {
     title: "I’m Worried About Scams",
     description:
       "Learn how to spot fake remote jobs, fake recruiters, and equipment scams.",
-    href: "/military-spouse-hub/career/remote-red-flags",
+    href: "/career/remote-red-flags",
     icon: "⚠",
   },
   {
     title: "I Don’t Know My Path Yet",
     description:
       "Use AI prompts, career pivots, and self-discovery tools to explore options.",
-    href: "/military-spouse-hub/career/ai-tools",
+    href: "/career/ai-tools",
     icon: "◇",
   },
 ];

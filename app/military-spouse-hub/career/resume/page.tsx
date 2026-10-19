@@ -84,7 +84,7 @@ export default function ResumePage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>Resume</span>
             </nav>
@@ -110,7 +110,7 @@ export default function ResumePage() {
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/linkedin"
+                href="/career/linkedin"
                 className="msh-button"
               >
                 LinkedIn Tips →
@@ -180,7 +180,7 @@ export default function ResumePage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/ai-tools"
+            href="/career/ai-tools"
             className="msh-button"
           >
             Use AI Career Tools →
@@ -214,7 +214,7 @@ export default function ResumePage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/linkedin"
+            href="/career/linkedin"
             className="msh-button"
           >
             LinkedIn Tips →
@@ -229,7 +229,7 @@ export default function ResumePage() {
 
           <div className="career-featured-grid">
             <Link
-              href="/military-spouse-hub/career/linkedin"
+              href="/career/linkedin"
               className="career-featured-card"
             >
               <h3>LinkedIn Optimization</h3>
@@ -238,7 +238,7 @@ export default function ResumePage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/job-boards"
+              href="/career/job-boards"
               className="career-featured-card"
             >
               <h3>Job Boards</h3>
@@ -247,7 +247,7 @@ export default function ResumePage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/interview-prep"
+              href="/career/interview-prep"
               className="career-featured-card"
             >
               <h3>Interview Prep</h3>

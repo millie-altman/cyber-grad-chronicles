@@ -1505,6 +1505,9 @@
 
 .cg-changelog-page {
   padding-bottom: 5rem;
+  background:
+    linear-gradient(rgba(5, 7, 9, 0.78), rgba(5, 7, 9, 0.9)),
+    url("/images/home-page.png") center top / cover fixed;
 }
 
 .cg-changelog-hero {
@@ -1592,6 +1595,148 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.cg-changelog-explorer {
+  width: min(980px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.cg-changelog-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.cg-changelog-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cg-changelog-tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 46px;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(184, 138, 68, 0.25);
+  border-radius: var(--radius-sm);
+  background: rgba(184, 138, 68, 0.04);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cg-changelog-tabs button:hover,
+.cg-changelog-tabs button:focus-visible,
+.cg-changelog-tabs button.is-active {
+  border-color: var(--accent-light);
+  background: rgba(184, 138, 68, 0.14);
+  color: var(--accent-light);
+}
+
+.cg-changelog-tabs button span {
+  display: inline-grid;
+  min-width: 1.4rem;
+  min-height: 1.4rem;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(184, 138, 68, 0.14);
+  color: var(--accent);
+  font-size: 0.64rem;
+}
+
+.cg-changelog-search {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--accent-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cg-changelog-search input {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(184, 138, 68, 0.28);
+  border-radius: var(--radius-sm);
+  background: rgba(5, 7, 9, 0.78);
+  color: var(--text-primary);
+}
+
+.cg-changelog-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.cg-changelog-search input:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
+.cg-changelog-result-count {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.cg-changelog-explorer .cg-changelog-list {
+  width: 100%;
+}
+
+.cg-changelog-empty {
+  padding: 3rem 1.5rem;
+  border: 1px solid rgba(184, 138, 68, 0.2);
+  border-radius: var(--radius-md);
+  background: rgba(184, 138, 68, 0.035);
+  text-align: center;
+}
+
+.cg-changelog-empty h2 {
+  margin-bottom: 0.6rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cg-changelog-empty p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 760px) {
+  .cg-changelog-explorer {
+    width: calc(100% - 3rem);
+  }
+
+  .cg-changelog-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .cg-changelog-tabs button {
+    flex: 1 1 calc(50% - 0.5rem);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .cg-changelog-explorer {
+    width: calc(100% - 2.4rem);
+  }
+
+  .cg-changelog-tabs {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cg-changelog-tabs button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {

@@ -54,7 +54,7 @@ export default function CareerBreaksPage() {
             <nav className="msh-breadcrumbs">
               <Link href="/military-spouse-hub">Military Spouse Hub</Link>
               <span>›</span>
-              <Link href="/military-spouse-hub/career">Career</Link>
+              <Link href="/career">Career</Link>
               <span>›</span>
               <span>Career Breaks</span>
             </nav>
@@ -77,14 +77,14 @@ export default function CareerBreaksPage() {
 
             <div className="msh-hero-actions">
               <Link
-                href="/military-spouse-hub/career/linkedin"
+                href="/career/linkedin"
                 className="msh-button"
               >
                 LinkedIn Tips →
               </Link>
 
               <Link
-                href="/military-spouse-hub/career/resume"
+                href="/career/resume-review"
                 className="msh-button"
               >
                 Resume Help →
@@ -106,7 +106,7 @@ export default function CareerBreaksPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/ai-tools"
+            href="/career/ai-tools"
             className="msh-button"
           >
             Reframe with AI →
@@ -183,7 +183,7 @@ export default function CareerBreaksPage() {
           </div>
 
           <Link
-            href="/military-spouse-hub/career/interview-prep"
+            href="/career/interview-prep"
             className="msh-button"
           >
             Interview Prep →
@@ -198,7 +198,7 @@ export default function CareerBreaksPage() {
 
           <div className="career-featured-grid">
             <Link
-              href="/military-spouse-hub/career/resume"
+              href="/career/resume-review"
               className="career-featured-card"
             >
               <h3>Resume Resources</h3>
@@ -207,7 +207,7 @@ export default function CareerBreaksPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/linkedin"
+              href="/career/linkedin"
               className="career-featured-card"
             >
               <h3>LinkedIn Optimization</h3>
@@ -216,7 +216,7 @@ export default function CareerBreaksPage() {
             </Link>
 
             <Link
-              href="/military-spouse-hub/career/ai-tools"
+              href="/career/ai-tools"
               className="career-featured-card"
             >
               <h3>AI Career Tools</h3>

@@ -237,7 +237,7 @@ export default function CertificationsPage() {
             </p>
           </div>
 
-          <Link href="/military-spouse-hub/career" className="msh-button">
+          <Link href="/career" className="msh-button">
             Explore Career Paths →
           </Link>
         </section>

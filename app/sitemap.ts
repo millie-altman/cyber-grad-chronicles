@@ -107,52 +107,37 @@ const militarySpousePages: MetadataRoute.Sitemap = [
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/military-spouse-hub/career`,
+    url: `${baseUrl}/career/ai-tools`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    url: `${baseUrl}/career/career-breaks`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
+  {
+    url: `${baseUrl}/career/federal-jobs`,
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/military-spouse-hub/career/ai-tools`,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  },
-  {
-    url: `${baseUrl}/military-spouse-hub/career/career-breaks`,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  },
-  {
-    url: `${baseUrl}/military-spouse-hub/career/federal-jobs`,
+    url: `${baseUrl}/career/job-boards`,
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/military-spouse-hub/career/interview-prep`,
+    url: `${baseUrl}/career/linkedin`,
     changeFrequency: "monthly",
     priority: 0.6,
   },
   {
-    url: `${baseUrl}/military-spouse-hub/career/job-boards`,
+    url: `${baseUrl}/career/relocation-survival-kit`,
     changeFrequency: "monthly",
     priority: 0.7,
   },
   {
-    url: `${baseUrl}/military-spouse-hub/career/linkedin`,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  },
-  {
-    url: `${baseUrl}/military-spouse-hub/career/relocation-survival-kit`,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    url: `${baseUrl}/military-spouse-hub/career/remote-red-flags`,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  },
-  {
-    url: `${baseUrl}/military-spouse-hub/career/resume`,
+    url: `${baseUrl}/career/remote-red-flags`,
     changeFrequency: "monthly",
     priority: 0.6,
   },
