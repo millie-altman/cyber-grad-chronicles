@@ -1,14 +1,8 @@
-import { Award, BookOpen, Gift, Sparkles, Target, Zap } from "lucide-react";
+import { Gift, Sparkles, Target } from "lucide-react";
 import Link from "next/link";
 import LocalBanner from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import "../home.css";
-
-const stats = [
-  { value: "08", label: "Modules", icon: BookOpen },
-  { value: "250", label: "XP Earned", icon: Zap },
-  { value: "03", label: "Milestones", icon: Award },
-];
 
 export default function MyJourneyPage() {
   return (
@@ -24,28 +18,14 @@ export default function MyJourneyPage() {
             <Sparkles className="cg-command-sparkle" aria-hidden="true" />
           </div>
 
-          <div className="cg-stat-grid">
-            {stats.map(({ value, label, icon: Icon }) => (
-              <div className="cg-stat-card" key={label}>
-                <Icon size={22} strokeWidth={1.7} aria-hidden="true" />
-                <strong>{value}</strong>
-                <span>{label}</span>
-              </div>
-            ))}
-          </div>
-
           <section className="cg-module-card" aria-labelledby="module-heading">
             <div className="cg-module-heading">
               <div>
-                <p className="cg-eyebrow">Current learning path</p>
-                <h2 id="module-heading">Cybersecurity 101</h2>
+                <p className="cg-eyebrow">Progress tracking</p>
+                <h2 id="module-heading">Your personal progress will appear here.</h2>
               </div>
-              <span className="cg-module-percent">75%</span>
             </div>
-            <div className="cg-module-progress" role="progressbar" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
-              <span />
-            </div>
-            <p className="cg-module-note">You&apos;re closer than you were yesterday.</p>
+            <p className="cg-module-note">Connect an account to save lessons, milestones, and achievements to your journey.</p>
           </section>
 
           <div className="cg-command-actions">
