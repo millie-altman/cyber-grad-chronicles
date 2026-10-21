@@ -68,6 +68,7 @@ body {
 }
 
 html {
+  color-scheme: dark;
   scroll-padding-top: 5rem;
 }
 
@@ -118,6 +119,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
+  text-wrap: balance;
 }
 
 p,
@@ -199,7 +201,7 @@ img {
 .page-shell {
   width: min(1180px, 100%);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
 }
 
 .section {
@@ -339,6 +341,11 @@ h6 {
   display: block;
   padding: 2rem;
   text-decoration: none;
+}
+
+.section-card:focus-visible {
+  border-color: var(--accent-light);
+  box-shadow: 0 0 0 3px rgba(214, 184, 123, 0.18), var(--shadow-soft);
 }
 
 .section-card h3 {

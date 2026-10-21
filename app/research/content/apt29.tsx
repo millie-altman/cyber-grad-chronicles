@@ -84,7 +84,7 @@ export default function APT29Content() {
       <h2>Why persistence matters</h2>
 
       <p>
-        Persistence is one of APT29's defining characteristics. Maintaining
+        Persistence is one of APT29&apos;s defining characteristics. Maintaining
         access over long periods provides attackers with opportunities to gather
         intelligence, observe organizational behavior, and expand their access
         when needed.

@@ -58,7 +58,7 @@ export default function CareerIntelligenceService({ service }: { service: Career
             {service.resourceLinks && <div className="career-intelligence-resources"><p className="career-section-eyebrow">Helpful resources</p>{service.resourceLinks.map((resource) => resource.external ? <a href={resource.href} target="_blank" rel="noopener noreferrer" key={resource.href}><strong>{resource.label}</strong><span>{resource.description}</span></a> : <Link href={resource.href} key={resource.href}><strong>{resource.label}</strong><span>{resource.description}</span></Link>)}</div>}
           </aside>
 
-          <form className="career-intelligence-form" action="https://formspree.io/f/mpqgdjge" method="POST" encType="multipart/form-data">
+          <form className="career-intelligence-form" action={service.slug === "resume-review" || service.slug === "linkedin-review" || service.slug === "portfolio-review" ? "https://formspree.io/f/xrpewywr" : "https://formspree.io/f/mpqgdjge"} method="POST" encType="multipart/form-data">
             <input type="hidden" name="form_type" value={`${service.title} inquiry`} />
             <input type="hidden" name="service" value={service.title} />
             <div className="career-intelligence-form-heading"><p className="career-section-eyebrow">{service.title} inquiry</p><h2>Tell me what you are working toward.</h2><p>Share a little context so I can understand where feedback would be most useful.</p></div>

@@ -30,7 +30,7 @@ export default function TransitionGapContent() {
       </p>
 
       <p>
-        When that system is removed, many people don't lose their capability;
+        When that system is removed, many people don&apos;t lose their capability;
         they lose the structure that continually reminded them of their value.
         Understanding this distinction can help explain why transition often
         feels emotionally difficult even when someone remains highly skilled and
@@ -43,8 +43,8 @@ export default function TransitionGapContent() {
 
       <p>
         According to Simone Atkinson, the transition gap is created by losing
-        the external system that answered questions like "Who am I?", "Do I
-        belong?", "Am I competent?", and "Am I needed?" Military members do not
+        the external system that answered questions like &quot;Who am I?&quot;, &quot;Do I
+        belong?&quot;, &quot;Am I competent?&quot;, and &quot;Am I needed?&quot; Military members do not
         lose their leadership, discipline, or resilience—they lose the system
         that consistently reflected those qualities back to them.
       </p>
@@ -55,11 +55,11 @@ export default function TransitionGapContent() {
         Civilian hiring processes often struggle to recognize military
         experience. Rejections may create self-doubt, but they do not erase the
         knowledge, leadership, or capability developed through military service.
-        The market's evaluation is not always an accurate reflection of personal
+        The market&apos;s evaluation is not always an accurate reflection of personal
         worth.
       </p>
 
-      <h3>Everyone has different "worth rules."</h3>
+      <h3>Everyone has different &quot;worth rules.&quot;</h3>
 
       <p>
         Simone introduced five Deservingness Profiles that describe how people
@@ -108,25 +108,25 @@ export default function TransitionGapContent() {
       </p>
 
       <p>
-        This session resonated with me because I've experienced many of these
+        This session resonated with me because I&apos;ve experienced many of these
         challenges while building a cybersecurity career as a military spouse.
-        After countless job applications and rejection emails, it's easy to
-        question your abilities—even when you know how much you've learned and
-        how hard you've worked.
+        After countless job applications and rejection emails, it&apos;s easy to
+        question your abilities—even when you know how much you&apos;ve learned and
+        how hard you&apos;ve worked.
       </p>
 
       <p>
-        One of my biggest takeaways was realizing that rejection doesn't
-        necessarily mean I'm unqualified. Sometimes it simply means I'm standing
+        One of my biggest takeaways was realizing that rejection doesn&apos;t
+        necessarily mean I&apos;m unqualified. Sometimes it simply means I&apos;m standing
         between two systems: one that no longer defines my identity and another
-        that hasn't fully recognized it yet.
+        that hasn&apos;t fully recognized it yet.
       </p>
 
       <p>
-        That perspective doesn't eliminate the challenges of transition, but it
-        reframes them. Instead of chasing constant external validation, I'm
+        That perspective doesn&apos;t eliminate the challenges of transition, but it
+        reframes them. Instead of chasing constant external validation, I&apos;m
         learning to build confidence from within—to trust my skills, continue
-        growing, and recognize that my value isn't determined by a job title or
+        growing, and recognize that my value isn&apos;t determined by a job title or
         a hiring decision.
       </p>
 
@@ -137,7 +137,7 @@ export default function TransitionGapContent() {
         presented by <strong>Simone Atkinson</strong>, Founder of{" "}
         <strong>The Atkinson Institute</strong>. The concepts of the{" "}
         <em>Transition Gap</em>, <em>Internal Legitimacy</em>, and the{" "}
-        <em>Deservingness Profiles</em> are Simone Atkinson's original work and
+        <em>Deservingness Profiles</em> are Simone Atkinson&apos;s original work and
         are summarized here with attribution as part of my own learning journey.
         Full credit belongs to Simone Atkinson and The Atkinson Institute for
         developing these frameworks.

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type SectionCardProps = {
   eyebrow?: string;
   title: string;
@@ -23,9 +25,9 @@ export default function SectionCard({
 
   if (href) {
     return (
-      <a href={href} className={`card section-card ${className}`}>
+      <Link href={href} className={`card section-card ${className}`}>
         {content}
-      </a>
+      </Link>
     );
   }
 

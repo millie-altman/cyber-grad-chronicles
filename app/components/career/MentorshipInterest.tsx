@@ -77,7 +77,7 @@ export default function MentorshipInterest() {
 
         <form
           className="mentorship-form"
-          action="https://formspree.io/f/mpqgdjge"
+          action="https://formspree.io/f/xwlvdrdw"
           method="POST"
         >
           <input type="hidden" name="form_type" value="Mentorship interest" />

@@ -158,7 +158,7 @@ export default function MilitarySpouseHubPage() {
           </div>
 
           <div className="msh-quote-card">
-            <h3>The path may change. The mission doesn't.</h3>
+             <h3>The path may change. The mission doesn&apos;t.</h3>
 
             <p>
               You’ve already proven you can adapt to anything. Now, let’s build

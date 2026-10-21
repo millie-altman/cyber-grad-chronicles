@@ -88,8 +88,8 @@ export default function CTIResearchLabContent() {
       </ul>
 
       <p>
-        Building this lab helped me realize that I enjoy asking "why" just as
-        much as "how." While learning technical tools is important, what excites
+        Building this lab helped me realize that I enjoy asking &quot;why&quot; just as
+        much as &quot;how.&quot; While learning technical tools is important, what excites
         me most is connecting small observations into a larger story about
         attacker behavior.
       </p>

@@ -9,9 +9,9 @@ export default function PhishingRedFlagsContent() {
       </p>
 
       <p>
-        Today's scams are built around psychology. They create urgency, exploit
+        Today&apos;s scams are built around psychology. They create urgency, exploit
         trust, imitate legitimate organizations, and pressure people into making
-        quick decisions before they have time to verify what they're seeing.
+        quick decisions before they have time to verify what they&apos;re seeing.
       </p>
 
       <section className="analyst-snapshot">

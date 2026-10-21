@@ -72,7 +72,7 @@ export default function VoltTyphoonContent() {
       <h2>Living-off-the-land techniques</h2>
 
       <p>
-        One of Volt Typhoon's defining characteristics is the extensive use of
+        One of Volt Typhoon&apos;s defining characteristics is the extensive use of
         legitimate operating system utilities and administrative tools instead
         of deploying large amounts of custom malware.
       </p>
@@ -87,7 +87,7 @@ export default function VoltTyphoonContent() {
       <h2>Critical infrastructure focus</h2>
 
       <p>
-        The group's reported targeting of critical infrastructure highlights how
+        The group&apos;s reported targeting of critical infrastructure highlights how
         cyber operations can extend beyond traditional espionage. Organizations
         responsible for transportation, communications, energy, and other
         essential services represent attractive targets because disruptions may

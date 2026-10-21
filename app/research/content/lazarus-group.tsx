@@ -70,7 +70,7 @@ export default function LazarusGroupContent() {
       <h2>A unique operational model</h2>
 
       <p>
-        One of Lazarus Group's defining characteristics is the combination of
+        One of Lazarus Group&apos;s defining characteristics is the combination of
         espionage and financially motivated operations. While many nation-state
         actors primarily gather intelligence, Lazarus has repeatedly conducted
         operations designed to generate revenue through cyber theft.

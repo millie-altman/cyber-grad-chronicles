@@ -33,7 +33,7 @@ export default function BuildingFromAlaskaContent() {
 
       <h2>Key Concepts & Lessons</h2>
 
-      <h3>Opportunity isn't always local.</h3>
+      <h3>Opportunity isn&apos;t always local.</h3>
 
       <p>
         While local cybersecurity communities can be valuable, online
@@ -61,7 +61,7 @@ export default function BuildingFromAlaskaContent() {
       <h3>Cybersecurity is a community problem.</h3>
 
       <p>
-        Living in Alaska reinforced that cybersecurity isn't limited to major
+        Living in Alaska reinforced that cybersecurity isn&apos;t limited to major
         corporations. Small businesses, military families, schools, healthcare
         providers, and local governments all face cyber threats and benefit from
         accessible education.
@@ -70,13 +70,13 @@ export default function BuildingFromAlaskaContent() {
       <p>
         There were moments when I questioned whether building this career from
         Alaska was realistic. Hearing that opportunities were limited was
-        discouraging, but it also shifted my mindset. If I couldn't rely on
+        discouraging, but it also shifted my mindset. If I couldn&apos;t rely on
         proximity to opportunity, I could build a portfolio that demonstrated my
         abilities regardless of location.
       </p>
 
       <p>
-        My advice to anyone starting from a place that feels "behind" is to
+        My advice to anyone starting from a place that feels &quot;behind&quot; is to
         focus on consistency rather than comparison. Publish your work, connect
         with people online, keep learning, and document your progress. Over
         time, those individual projects become a body of work that speaks for

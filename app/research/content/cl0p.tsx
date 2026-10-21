@@ -95,7 +95,7 @@ export default function Cl0pContent() {
 
       <p>
         This makes vulnerability management, asset inventories, vendor risk
-        assessments, and rapid patching critical parts of an organization's
+        assessments, and rapid patching critical parts of an organization&apos;s
         security strategy.
       </p>
 

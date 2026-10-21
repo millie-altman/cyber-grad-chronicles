@@ -55,7 +55,7 @@ export default function WannaCryContent() {
 
       <p>
         First observed in 2017, WannaCry spread rapidly by exploiting a known
-        vulnerability in Microsoft's SMB protocol. Unlike many ransomware
+        vulnerability in Microsoft&apos;s SMB protocol. Unlike many ransomware
         families that rely primarily on phishing or stolen credentials,
         WannaCry possessed worm-like capabilities that allowed it to move
         automatically between vulnerable systems.

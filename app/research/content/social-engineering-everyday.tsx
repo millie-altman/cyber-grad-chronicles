@@ -41,12 +41,12 @@ export default function SocialEngineeringEverydayContent() {
       </p>
 
       <ul>
-        <li><strong>Urgency</strong> — "Act immediately."</li>
-        <li><strong>Authority</strong> — "This is your bank, employer, or government agency."</li>
-        <li><strong>Fear</strong> — "Your account will be closed."</li>
-        <li><strong>Trust</strong> — "This message came from someone you know."</li>
-        <li><strong>Empathy</strong> — "Someone needs your help."</li>
-        <li><strong>Reward</strong> — "You've won a prize."</li>
+        <li><strong>Urgency</strong> — &quot;Act immediately.&quot;</li>
+        <li><strong>Authority</strong> — &quot;This is your bank, employer, or government agency.&quot;</li>
+        <li><strong>Fear</strong> — &quot;Your account will be closed.&quot;</li>
+        <li><strong>Trust</strong> — &quot;This message came from someone you know.&quot;</li>
+        <li><strong>Empathy</strong> — &quot;Someone needs your help.&quot;</li>
+        <li><strong>Reward</strong> — &quot;You&apos;ve won a prize.&quot;</li>
       </ul>
 
       <p>
@@ -68,7 +68,7 @@ export default function SocialEngineeringEverydayContent() {
         <li>Rental scams</li>
         <li>Tech support scams</li>
         <li>Bank account alerts</li>
-        <li>"Family emergency" messages</li>
+        <li>&quot;Family emergency&quot; messages</li>
         <li>Help desk impersonation</li>
       </ul>
 

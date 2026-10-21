@@ -356,3 +356,39 @@
     border-radius: var(--radius-sm);
   }
 }
+
+@media (max-width: 560px) {
+  .navbar {
+    min-height: 68px;
+    gap: 0.6rem;
+    padding-inline: 0.9rem;
+  }
+
+  .navbar-logo {
+    max-width: 11rem;
+    overflow: hidden;
+    font-size: 0.78rem;
+    text-overflow: ellipsis;
+  }
+
+  .navbar-actions,
+  .navbar-auth {
+    gap: 0.35rem;
+  }
+
+  .nav-auth-link {
+    display: none;
+  }
+
+  .nav-auth-button,
+  .nav-button {
+    min-width: auto;
+    padding: 0.58rem 0.7rem;
+    font-size: 0.62rem;
+  }
+
+  .navbar-mobile-menu summary {
+    padding: 0.58rem 0.7rem;
+    font-size: 0.62rem;
+  }
+}

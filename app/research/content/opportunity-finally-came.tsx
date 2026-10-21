@@ -253,7 +253,7 @@ export default function OpportunityFinallyCameContent() {
 
       <p>
         I used to look at jobs primarily through titles. If the word
-        "cybersecurity" was not somewhere in the description, it was easy to
+        &quot;cybersecurity&quot; was not somewhere in the description, it was easy to
         assume the role would not move me closer to the goal.
       </p>
 

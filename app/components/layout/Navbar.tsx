@@ -16,7 +16,7 @@ export default function LocalBanner() {
             <Link href="/academy">Overview</Link>
             <Link href="/academy/cybersecurity-101">Lessons</Link>
             <Link href="/academy">Learning Paths</Link>
-            <Link href="/academy/threats">Quizzes &amp; Practice</Link>
+            <Link href="/academy#academy-library">Quizzes &amp; Practice</Link>
             <Link href="/my-journey/rewards">Achievements</Link>
             <Link href="/next-chapter">The Next Chapter</Link>
           </div>
@@ -99,7 +99,7 @@ export default function LocalBanner() {
         <div className="navbar-mobile-panel">
           <Link href="/academy">Academy</Link>
           <Link href="/academy/cybersecurity-101">Lessons</Link>
-          <Link href="/academy/threats">Quizzes &amp; Practice</Link>
+          <Link href="/academy#academy-library">Quizzes &amp; Practice</Link>
           <Link href="/my-journey/rewards">Academy Achievements</Link>
           <Link href="/career">Career Intelligence</Link>
           <Link href="/career/bundles">Career Packages</Link>

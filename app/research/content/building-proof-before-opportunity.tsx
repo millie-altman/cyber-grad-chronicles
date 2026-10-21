@@ -4,7 +4,7 @@ export default function BuildingProofBeforeOpportunityContent() {
       <p>
         One of the biggest lessons I learned while pursuing cybersecurity is
         that opportunity rarely comes before evidence. Early in my journey, I
-        believed I needed a job title, professional experience, or someone's
+        believed I needed a job title, professional experience, or someone&apos;s
         permission before I could begin contributing.
       </p>
 
@@ -21,7 +21,7 @@ export default function BuildingProofBeforeOpportunityContent() {
         Breaking into cybersecurity can feel overwhelming because many
         entry-level positions ask for experience. While certifications and
         education provide important knowledge, employers also want evidence that
-        you can apply what you've learned.
+        you can apply what you&apos;ve learned.
       </p>
 
       <p>
@@ -80,7 +80,7 @@ export default function BuildingProofBeforeOpportunityContent() {
 
       <p>
         If I could give one piece of advice to someone beginning their own
-        cybersecurity journey, it would be this: don't wait until you think your
+        cybersecurity journey, it would be this: don&apos;t wait until you think your
         work is perfect. Start building, keep documenting, and allow your
         portfolio to tell the story of your growth.
       </p>

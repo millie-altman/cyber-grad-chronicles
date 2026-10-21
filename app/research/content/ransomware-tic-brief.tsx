@@ -61,7 +61,7 @@ export default function RansomwareTicBriefContent() {
 
       <p>
         Modern ransomware has evolved far beyond simple file encryption.
-        Today's operations are often structured as ransomware-as-a-service
+        Today&apos;s operations are often structured as ransomware-as-a-service
         ecosystems that combine professional developers, access brokers,
         affiliate operators, and data leak platforms into highly organized
         criminal enterprises.
