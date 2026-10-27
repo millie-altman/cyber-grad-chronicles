@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import LocalBanner from "../../../components/layout/Navbar";
 import Footer from "../../../components/layout/Footer";
 import Link from "next/link";
 import "../../military-spouse-hub.css";
 import "../community.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/military-spouse-hub/community/success-stories" },
+};
 
 const storyCategories = [
   {

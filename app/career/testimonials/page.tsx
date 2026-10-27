@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/career/testimonials" },
   title: "Testimonials",
   description:
     "Share your experience with Cyber Grad Chronicles Career Intelligence.",

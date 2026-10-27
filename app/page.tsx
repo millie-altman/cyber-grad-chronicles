@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import LocalBanner from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Link from "next/link";
 import "./home.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const coreAreas = [
   { number: "01", title: "Academy", href: "/academy", description: "Build practical cybersecurity knowledge through lessons, learning paths, quizzes, achievements, and module completion.", link: "Start learning" },

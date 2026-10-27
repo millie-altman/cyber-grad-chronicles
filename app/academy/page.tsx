@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import LibrarySearch from "../components/ui/LibrarySearch";
 import Image from "next/image";
 import Link from "next/link";
 import { academyModules } from "./academyData";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/academy" },
+};
 
 export default function AcademyPage() {
   const lessonCount = academyModules.reduce(

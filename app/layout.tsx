@@ -60,10 +60,6 @@ export const metadata: Metadata = {
     "Cyber Grad Chronicles",
   ],
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     type: "website",
     url: "https://cybergradchronicles.com",

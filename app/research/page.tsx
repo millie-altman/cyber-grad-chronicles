@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import LibrarySearch from "../components/ui/LibrarySearch";
 import Link from "next/link";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { researchArticles, ResearchCategory } from "./articleData";
 import "./research.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/research" },
+};
 
 const categories: {
   id: string;

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -18,6 +19,16 @@ export function generateStaticParams() {
   return researchArticles.map((article) => ({
     slug: article.slug,
   }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const article = researchArticles.find((article) => article.slug === slug);
+  if (!article) notFound();
+
+  return {
+    alternates: { canonical: `/research/${article.slug}` },
+  };
 }
 
 export default async function ResearchArticlePage({ params }: Props) {

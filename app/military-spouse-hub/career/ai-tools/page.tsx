@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../../../components/layout/Navbar";
 import Footer from "../../../components/layout/Footer";
 import "../../military-spouse-hub.css";
 import "../career.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/military-spouse-hub/career/ai-tools" },
+};
 
 const aiPromptSections = [
   {

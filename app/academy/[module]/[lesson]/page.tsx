@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/academy/[module]/[lesson]">): Promise<Metadata> {
   const values = await params;
   const { lesson } = getAcademyLesson(values.module, values.lesson);
-  return lesson ? { title: lesson.title, description: lesson.introduction } : {};
+  return lesson ? { title: lesson.title, description: lesson.introduction, alternates: { canonical: `/academy/${values.module}/${lesson.slug}` } } : {};
 }
 
 export default async function LessonPage({ params }: PageProps<"/academy/[module]/[lesson]">) {

@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import LocalBanner from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import "./connect.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/connect" },
+};
 
 const contactReasons = [
   "Cybersecurity collaboration",

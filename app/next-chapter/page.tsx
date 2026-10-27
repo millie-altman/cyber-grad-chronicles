@@ -6,6 +6,7 @@ import "../research/research.css";
 import "./next-chapter.css";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/next-chapter" },
   title: "The Next Chapter | Coming to the Chronicles",
   description: "A preview of the next features, learning tools, career resources, and community experiences coming to Cyber Grad Chronicles.",
 };

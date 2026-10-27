@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import LocalBanner from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ChangelogExplorer, { type ChangelogItem } from "./ChangelogExplorer";
 import "../home.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/changelog" },
+};
 
 const updates: ChangelogItem[] = [
   { date: "October 2026", title: "The Next Chapter is taking shape", description: "A new planning hub organizes upcoming Digital Twin, Career Intelligence, Academy, Research Lab, Community, and founder-focused features across the five core areas of the Chronicles.", href: "/next-chapter", items: ["Digital Twin", "Career Roadmap", "Academy practice", "Future platform features"] },

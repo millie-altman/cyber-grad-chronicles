@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import EncouragementFlashcard from "./EncouragementFlashcard";
 import "../military-spouse-hub.css";
 import "./encouragement.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/military-spouse-hub/community" },
+};
 
 const reminders = [
   ["01", "You still count", "Your goals do not become less important because someone else’s orders set the timeline."],

@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Navbar from "../../../components/layout/Navbar";
 import Footer from "../../../components/layout/Footer";
 import Link from "next/link";
 import "../../military-spouse-hub.css";
 import "../education.css";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/military-spouse-hub/education/certifications" },
+};
 
 const certificationRoadmap = [
   {
