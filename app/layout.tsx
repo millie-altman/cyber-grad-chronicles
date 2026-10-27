@@ -1,7 +1,9 @@
+
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { JetBrains_Mono, Libre_Baskerville, Manrope } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -106,6 +108,7 @@ export default function RootLayout({
     >
       <body>
         <ClerkProvider>{children}</ClerkProvider>
+        <Analytics />
       </body>
     </html>
   );
