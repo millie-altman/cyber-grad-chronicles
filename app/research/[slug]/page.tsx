@@ -27,7 +27,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) notFound();
 
   return {
+    title: article.title,
+    description: article.description,
+    keywords: [article.category, ...article.quickStart],
     alternates: { canonical: `/research/${article.slug}` },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.description,
+      url: `/research/${article.slug}`,
+      siteName: "Cyber Grad Chronicles",
+      ...(article.image && {
+        images: [{ url: article.image, alt: article.title }],
+      }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      ...(article.image && { images: [article.image] }),
+    },
   };
 }
 
