@@ -1,3 +1,4 @@
+import WhenSystemsFalterContent from "./when-systems-falter";
 import ThingsIWishIKnewBeforeBreakingIntoTechContent from "./things-i-wish-i-knew-before-breaking-into-tech";
 import CommonResumeMistakesContent from "./common-resume-mistakes";
 import OpportunityFinallyCameContent from "./opportunity-finally-came";
@@ -31,6 +32,7 @@ import TransitionGapContent from "./the-transition-gap";
 import MovedAcrossTheCountryContent from "./moved-across-the-country";
 
 export const contentMap: Record<string, React.ComponentType> = {
+  "when-systems-falter": WhenSystemsFalterContent,
   "opportunity-finally-came": OpportunityFinallyCameContent,
   "things-i-wish-i-knew-before-breaking-into-tech": ThingsIWishIKnewBeforeBreakingIntoTechContent,
   "common-resume-mistakes": CommonResumeMistakesContent,

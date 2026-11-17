@@ -29,6 +29,26 @@ export type ResearchArticle = {
 
 export const researchArticles: ResearchArticle[] = [
   {
+    fileId: "AI-004",
+    slug: "when-systems-falter",
+    title: "When Systems Falter: NVIDIA, Microsoft 365, and the FAA's AI Rollout",
+    category: "AI Security Research",
+    type: "Operational Resilience Analysis",
+    difficulty: "Beginner",
+    description: "What reported Brev credential exposure, a Microsoft 365 outage, and the FAA's SMART rollout reveal about operational resilience, digital trust, and responsible AI adoption.",
+    lastUpdated: "November 16, 2026",
+    quickStart: ["Operational Resilience", "Cloud Security", "AI Governance", "Credential Security", "Business Continuity"],
+    note: "Innovation creates opportunities, but it also introduces responsibilities. Understanding dependencies and preparing for failure are part of protecting the people who rely on technology.",
+    keyTakeaways: [
+      "Potential credential exposure, service outages, and AI adoption present distinct risks; they should not be treated as one connected incident.",
+      "Credential rotation, least privilege, monitoring, and continuity planning support operational resilience.",
+      "Attackers can exploit a legitimate outage without having caused it.",
+      "The FAA stated that SMART did not cause the ground stop; timing alone does not establish causation.",
+      "AI deployment calls for testing, human oversight, clear responsibility, and contingency planning."
+    ],
+    related: ["autonomous-offensive-cyber", "cti-research-lab", "phishing-red-flags"]
+  },
+  {
     fileId: "CI-002",
     slug: "things-i-wish-i-knew-before-breaking-into-tech",
     title: "Things I Wish I Knew Before Trying to Break Into Tech",
