@@ -4,63 +4,16 @@ import Link from "next/link";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { researchArticles, ResearchCategory } from "./articleData";
+import { researchCategories, featuredResearchSlugs } from "./categories";
 import "./research.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/research" },
 };
 
-const categories: {
-  id: string;
-  label: ResearchCategory;
-  eyebrow: string;
-  title: string;
-  description: string;
-}[] = [
-  {
-    id: "threat-intelligence",
-    label: "Threat Intelligence",
-    eyebrow: "Threat Intelligence",
-    title: "Threat actors, ransomware, and finished intelligence.",
-    description:
-      "Actor profiles, ransomware analysis, malware case studies, and CTI-style intelligence products connected to my research archive.",
-  },
-  {
-    id: "labs-projects",
-    label: "Labs & Projects",
-    eyebrow: "Labs & Projects",
-    title: "Hands-on work turned into documented proof.",
-    description:
-      "Lab reflections, Python security tools, CTI environments, and project walkthroughs built to show practical skill development.",
-  },
-  {
-    id: "career-journal",
-    label: "Career Journal",
-    eyebrow: "Career Journal",
-    title: "The human side of building this career.",
-    description:
-      "Reflections on building from Alaska, military-spouse employment barriers, creating proof before opportunity, and documenting an unconventional cybersecurity journey.",
-  },
-  {
-    id: "community-awareness",
-    label: "Community Awareness",
-    eyebrow: "Community Awareness",
-    title: "Practical security education for real people.",
-    description:
-      "Plain-language guidance on phishing, passwords, social engineering, military family safety, and community cyber awareness.",
-  },
-];
-
 const featuredArticle = researchArticles.find(
   (article) => article.slug === "get-to-know-me"
 );
-
-const featuredByCategory: Partial<Record<ResearchCategory, string>> = {
-  "Threat Intelligence": "blackcat-alphv",
-  "Labs & Projects": "cti-research-lab",
-  "Career Journal": "opportunity-finally-came",
-  "Community Awareness": "securing-the-interior",
-};
 
 function getArticlesByCategory(category: ResearchCategory) {
   return researchArticles.filter(
@@ -232,14 +185,14 @@ export default function ResearchPage() {
 
             <p>
               A curated archive of threat briefs, actor profiles, malware case
-              studies, lab notes, career reflections, and cyber awareness
+              studies, AI security research, lab notes, career field notes, personal reflections, and cyber awareness
               resources built through documented practice.
             </p>
 
 
             <div className="research-stats" aria-label="Library overview">
               <span>{researchArticles.length} articles</span>
-              <span>{categories.length} topics</span>
+              <span>{researchCategories.length} topics</span>
               <span>Research, projects, and practical guides</span>
             </div>
 
@@ -277,7 +230,7 @@ export default function ResearchPage() {
         >
         {/* CATEGORY NAVIGATION */}
         <nav className="research-jump-strip" aria-label="Research categories">
-          {categories.map((category) => (
+          {researchCategories.map((category) => (
             <a href={`#${category.id}`} key={category.id}>
               {category.eyebrow}
             </a>
@@ -305,12 +258,12 @@ export default function ResearchPage() {
         )}
 
         {/* LIBRARY SECTIONS */}
-        {categories.map((category) => {
+        {researchCategories.map((category) => {
           const articles = getArticlesByCategory(category.label);
 
           if (articles.length === 0) return null;
 
-          const featuredSlug = featuredByCategory[category.label];
+          const featuredSlug = featuredResearchSlugs[category.label];
 
           const categoryFeaturedArticle = articles.find(
             (article) => article.slug === featuredSlug

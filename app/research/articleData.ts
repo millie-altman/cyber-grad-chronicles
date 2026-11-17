@@ -2,6 +2,8 @@ export type ResearchCategory =
   | "Featured"
   | "Threat Intelligence"
   | "Labs & Projects"
+  | "AI Security Research"
+  | "Career Field Notes"
   | "Career Journal"
   | "Community Awareness";
 
@@ -27,11 +29,62 @@ export type ResearchArticle = {
 
 export const researchArticles: ResearchArticle[] = [
   {
+    fileId: "CI-002",
+    slug: "things-i-wish-i-knew-before-breaking-into-tech",
+    title: "Things I Wish I Knew Before Trying to Break Into Tech",
+    category: "Career Field Notes",
+    type: "Career Guide",
+    difficulty: "Beginner",
+    description: "Millie Altman reflects on building technical experience, navigating rejection, translating transferable skills, and finding a sustainable path into technology and cybersecurity.",
+    lastUpdated: "November 16, 2026",
+    quickStart: ["Breaking Into Tech", "Entry-Level Careers", "Transferable Skills", "Technical Portfolio", "Job Search"],
+    note: "Your career does not have to look like someone else's to be meaningful. And your progress does not have to be linear to count.",
+    keyTakeaways: [
+      "Build relevant projects and document your approach while distinguishing project work from enterprise experience.",
+      "Pair credentials with practical evidence of what you can do.",
+      "Recognize transferable skills and adjust your applications based on observable patterns.",
+      "Keep building something meaningful and remain open to adjacent career paths."
+    ],
+    related: ["common-resume-mistakes", "building-proof-before-opportunity", "qualified-capable-still-waiting"]
+  },
+
+{
+  "fileId": "CI-001",
+  "slug": "common-resume-mistakes",
+  "title": "Common Résumé Mistakes That Can Create HR Problems (And How to Avoid Them)",
+  "category": "Career Field Notes",
+  "type": "Career Guide",
+  "difficulty": "Beginner",
+  "description": "Ten résumé mistakes that can complicate hiring, and practical ways to present your employment history, credentials, technical skills, and projects accurately.",
+  "image": "/images/resume-image.png",
+  "lastUpdated": "November 16, 2026",
+  "quickStart": [
+    "Resume Accuracy",
+    "Employment Verification",
+    "ATS",
+    "Cybersecurity Careers",
+    "AI Resume Tools"
+  ],
+  "note": "Your credibility is an asset. Protect it by documenting your experience accurately and communicating the value of what you have actually accomplished.",
+  "keyTakeaways": [
+    "Keep employment dates, job titles, education, and credentials accurate across applications and professional profiles.",
+    "Distinguish professional responsibilities from labs, projects, volunteer work, and skills still in development.",
+    "Verify every AI-generated statement and use only metrics you can substantiate.",
+    "Correct errors promptly, protect personal information, and follow the employer’s document requirements."
+  ],
+  "related": [
+    "building-proof-before-opportunity",
+    "qualified-capable-still-waiting",
+    "military-spouse-cybersecurity"
+  ]
+},
+  {
     fileId: "AI-001",
     slug: "prompt-injection",
     title: "Prompt Injection: When Input Becomes an Instruction",
     originalTitle: "Prompt Injection",
-    category: "Labs & Projects",
+    image: "/images/agentic-ai.png",
+    category: "AI Security Research",
     type: "Agentic AI Security Research",
     difficulty: "Intermediate",
     description: "How prompt injection can redirect tool-enabled agents, and why authorization, least privilege, and action validation belong outside the model.",
@@ -61,7 +114,7 @@ export const researchArticles: ResearchArticle[] = [
     slug: "indirect-prompt-injection",
     title: "Indirect Prompt Injection: The Risk in What Agents Read",
     originalTitle: "Indirect Prompt Injection",
-    category: "Labs & Projects",
+    category: "AI Security Research",
     type: "Agentic AI Security Research",
     difficulty: "Intermediate",
     description: "A study of malicious instructions in retrieved documents, tool responses, and agent memory, with a proposed synthetic-data defense lab.",
@@ -91,7 +144,7 @@ export const researchArticles: ResearchArticle[] = [
     slug: "autonomous-offensive-cyber",
     title: "Autonomous Offensive Cyber: Reading the Evidence",
     originalTitle: "Autonomous Offensive Cyber: Analysis of Booz Allen's The Offensive Frontier",
-    category: "Labs & Projects",
+    category: "AI Security Research",
     type: "Agentic AI Research Analysis",
     difficulty: "Intermediate",
     description: "An analysis of Booz Allen's Cyber Weapon Index, the difference between vulnerability research and intrusion execution, and the limits of controlled evaluations.",
@@ -562,7 +615,7 @@ export const researchArticles: ResearchArticle[] = [
     slug: "building-proof-before-opportunity",
     title: "Proof Before Permission",
     originalTitle: "Building Proof Before Opportunity",
-    category: "Career Journal",
+    category: "Career Field Notes",
     type: "Career Reflection",
     difficulty: "Beginner",
     description:
@@ -716,7 +769,7 @@ export const researchArticles: ResearchArticle[] = [
       "opportunity-finally-came",
       "qualified-capable-still-waiting",
       "military-spouse-cybersecurity",
-      "the-transition-gap",
+      "understanding-the-transition-gap",
     ],
   },
   {

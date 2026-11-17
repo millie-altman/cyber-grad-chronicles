@@ -1,3 +1,6 @@
+import ThingsIWishIKnewBeforeBreakingIntoTechContent from "./things-i-wish-i-knew-before-breaking-into-tech";
+import CommonResumeMistakesContent from "./common-resume-mistakes";
+import OpportunityFinallyCameContent from "./opportunity-finally-came";
 import PromptInjectionContent from "./prompt-injection";
 import IndirectPromptInjectionContent from "./indirect-prompt-injection";
 import AutonomousOffensiveCyberContent from "./autonomous-offensive-cyber";
@@ -28,6 +31,9 @@ import TransitionGapContent from "./the-transition-gap";
 import MovedAcrossTheCountryContent from "./moved-across-the-country";
 
 export const contentMap: Record<string, React.ComponentType> = {
+  "opportunity-finally-came": OpportunityFinallyCameContent,
+  "things-i-wish-i-knew-before-breaking-into-tech": ThingsIWishIKnewBeforeBreakingIntoTechContent,
+  "common-resume-mistakes": CommonResumeMistakesContent,
   "prompt-injection": PromptInjectionContent,
   "indirect-prompt-injection": IndirectPromptInjectionContent,
   "autonomous-offensive-cyber": AutonomousOffensiveCyberContent,
@@ -54,6 +60,6 @@ export const contentMap: Record<string, React.ComponentType> = {
   "apt29": APT29Content,
   "lazarus-group": LazarusGroupContent,
   "volt-typhoon": VoltTyphoonContent,
-  "the-transition-gap": TransitionGapContent,
+  "understanding-the-transition-gap": TransitionGapContent,
   "moved-across-the-country": MovedAcrossTheCountryContent
 };

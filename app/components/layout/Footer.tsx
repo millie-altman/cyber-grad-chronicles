@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { researchCategories } from "../../research/categories";
 import "./footer.css";
 
 export default function Footer() {
@@ -18,6 +19,15 @@ export default function Footer() {
           <Link href="/research">Research Lab</Link>
           <Link href="/military-spouse-hub">Community</Link>
           <Link href="/about">About the Founder</Link>
+        </div>
+
+        <div className="footer-column">
+          <h4>Research Library</h4>
+          {researchCategories.map((category) => (
+            <Link href={`/research#${category.id}`} key={category.id}>
+              {category.label}
+            </Link>
+          ))}
         </div>
 
         <div className="footer-column">

@@ -1,5 +1,6 @@
 import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
+import { researchCategories } from "../../research/categories";
 import "./navbar.css";
 
 export default function LocalBanner() {
@@ -28,6 +29,7 @@ export default function LocalBanner() {
             <Link href="/next-chapter#next-07">Career Roadmap</Link>
             <Link href="/next-chapter#next-02">Career Packages</Link>
             <Link href="/career/ai-tools">AI Tools</Link>
+            <Link href="/research#career-field-notes">Career Field Notes</Link>
             <Link href="/career#military-spouse-resources">Military Spouse Resources</Link>
             <Link href="/career/resume-review">Resume Support</Link>
             <Link href="/career/linkedin-review">LinkedIn Review</Link>
@@ -40,10 +42,11 @@ export default function LocalBanner() {
         <div className="nav-menu">
           <Link href="/research">Research Lab</Link>
           <div className="nav-dropdown">
-            <Link href="/research#threat-intelligence">Threat Intelligence</Link>
-            <Link href="/research#labs-projects">Labs &amp; Projects</Link>
-            <Link href="/research#career-journal">Career Journal</Link>
-            <Link href="/research#community-awareness">Community Awareness</Link>
+            {researchCategories.map((category) => (
+              <Link href={`/research#${category.id}`} key={category.id}>
+                {category.label}
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -110,10 +113,11 @@ export default function LocalBanner() {
           <Link href="/career/portfolio-review">Portfolio Tools</Link>
           <Link href="/career/interview-prep">Interview Preparation</Link>
           <Link href="/research">Research Lab</Link>
-          <Link href="/research#threat-intelligence">Threat Intelligence</Link>
-          <Link href="/research#labs-projects">Labs &amp; Projects</Link>
-          <Link href="/research#career-journal">Career Journal</Link>
-          <Link href="/research#community-awareness">Community Awareness</Link>
+          {researchCategories.map((category) => (
+            <Link href={`/research#${category.id}`} key={category.id}>
+              {category.label}
+            </Link>
+          ))}
           <Link href="/military-spouse-hub">Community</Link>
           <Link href="/military-spouse-hub/where-to-start">Practical Resources</Link>
           <Link href="/military-spouse-hub/community/success-stories">Stories</Link>
